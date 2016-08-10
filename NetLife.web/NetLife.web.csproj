@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81C06424-9862-4107-875F-1607976640BE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetLife.web</RootNamespace>
+    <AssemblyName>NetLife.web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ATVCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ATVCommon\bin\ATVCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ATVEntity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ATVEntity\bin\ATVEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="BOATV, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BOATV\bin\BOATV.dll</HintPath>
+    </Reference>
+    <Reference Include="Channelvn.Enyim.Caching, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Channelvn.Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Channelvn.MemcachedProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Channelvn.MemcachedProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="DALATV">
+      <HintPath>..\DALATV\bin\DALATV.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\Advs\Adv.ascx" />
+    <Content Include="Controls\Common\Footer.ascx" />
+    <Content Include="Controls\Common\Header.ascx" />
+    <Content Include="Controls\Common\Menu.ascx" />
+    <Content Include="Controls\Common\SlideHeader.ascx" />
+    <Content Include="Controls\Details\Comment.ascx" />
+    <Content Include="Controls\Details\Detail.ascx" />
+    <Content Include="Controls\Details\RelatedNews.ascx" />
+    <Content Include="Controls\Home\Blog.ascx" />
+    <Content Include="Controls\Home\CategoryHomePage.ascx" />
+    <Content Include="Controls\Home\DateTime.ascx" />
+    <Content Include="Controls\Home\Hot.ascx" />
+    <Content Include="Controls\Home\HighlightsHomePage.ascx" />
+    <Content Include="Controls\Home\StarCategory.ascx" />
+    <Content Include="Controls\Home\VideoClip.ascx" />
+    <Content Include="Controls\Lists\HighlightsList.ascx" />
+    <Content Include="Controls\Lists\Hot.ascx" />
+    <Content Include="Controls\Lists\List.ascx" />
+    <Content Include="Controls\Lists\Paging.ascx" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\Style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Config\DLL\UrlRewritingNet.UrlRewriter.dll" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\adv.jpg" />
+    <Content Include="Images\Adv\wrapper.swf" />
+    <Content Include="Images\bg-footer.jpg" />
+    <Content Include="Images\bg-h3nb.jpg" />
+    <Content Include="Images\bg-li.jpg" />
+    <Content Include="Images\bg-title.png" />
+    <Content Include="Images\boder-menu-footer.jpg" />
+    <Content Include="Images\boder-menu.jpg" />
+    <Content Include="Images\books.jpg" />
+    <Content Include="Images\bx_loader.gif" />
+    <Content Include="Images\commentfb.jpg" />
+    <Content Include="Images\controls.png" />
+    <Content Include="Images\email.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\fb.jpg" />
+    <Content Include="Images\folder.jpg" />
+    <Content Include="Images\home-black.jpg" />
+    <Content Include="Images\homepage.jpg" />
+    <Content Include="Images\hr.jpg" />
+    <Content Include="Images\ic-clock.jpg" />
+    <Content Include="Images\ic-homegray.jpg" />
+    <Content Include="Images\ic-search.jpg" />
+    <Content Include="Images\icon-home.png" />
+    <Content Include="Images\img-blog.jpg" />
+    <Content Include="Images\img-clip.jpg" />
+    <Content Include="Images\img-hot.jpg" />
+    <Content Include="Images\img-item-cat.jpg" />
+    <Content Include="Images\img-list.jpg" />
+    <Content Include="Images\img-nbm.jpg" />
+    <Content Include="Images\img-none.jpg" />
+    <Content Include="Images\img-slide.jpg" />
+    <Content Include="Images\like.jpg" />
+    <Content Include="Images\logo-footer.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\mail.jpg" />
+    <Content Include="Images\next.jpg" />
+    <Content Include="Images\pen.jpg" />
+    <Content Include="Images\phone.jpg" />
+    <Content Include="Images\preview.jpg" />
+    <Content Include="Images\rss.gif" />
+    <Content Include="Images\rss.jpg" />
+    <Content Include="Images\share.jpg" />
+    <Content Include="js\ads.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Custom.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery-1.9.1.js" />
+    <Content Include="js\jquery.bxslider.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="Pages\Cache.aspx" />
+    <Content Include="Pages\Detail.aspx" />
+    <Content Include="Pages\List.aspx" />
+    <Content Include="Pages\Move301.aspx" />
+    <Content Include="Pages\Page404.aspx" />
+    <Content Include="Pages\Search.aspx" />
+    <Content Include="Pages\Rss\Default.aspx" />
+    <Content Include="Pages\Rss\Rss_Content.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NetLifeWeb.Master" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Config\Category.config" />
+    <Content Include="Config\Meta.config" />
+    <Content Include="Config\RewriteRules.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\vssver2.scc" />
+    <Content Include="GetThumbNail.ashx" />
+    <Content Include="Log\LogView.ashx" />
+    <Content Include="Log\LogImpression.ashx" />
+    <Content Include="Log\LogAds.ashx" />
+    <Content Include="Pages\Ads\Show.ashx" />
+    <Content Include="Pages\Ads\log.ashx" />
+    <Fakes Include="Fakes\ATVEntity.fakes" />
+    <None Include="Properties\PublishProfiles\nl.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Advs\Adv.ascx.cs">
+      <DependentUpon>Adv.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Advs\Adv.ascx.designer.cs">
+      <DependentUpon>Adv.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SlideHeader.ascx.cs">
+      <DependentUpon>SlideHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SlideHeader.ascx.designer.cs">
+      <DependentUpon>SlideHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Details\Comment.ascx.cs">
+      <DependentUpon>Comment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Details\Comment.ascx.designer.cs">
+      <DependentUpon>Comment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Details\Detail.ascx.cs">
+      <DependentUpon>Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Details\Detail.ascx.designer.cs">
+      <DependentUpon>Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Details\RelatedNews.ascx.cs">
+      <DependentUpon>RelatedNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Details\RelatedNews.ascx.designer.cs">
+      <DependentUpon>RelatedNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\Blog.ascx.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\Blog.ascx.designer.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\CategoryHomePage.ascx.cs">
+      <DependentUpon>CategoryHomePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\CategoryHomePage.ascx.designer.cs">
+      <DependentUpon>CategoryHomePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\DateTime.ascx.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\DateTime.ascx.designer.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\Hot.ascx.cs">
+      <DependentUpon>Hot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\Hot.ascx.designer.cs">
+      <DependentUpon>Hot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\HighlightsHomePage.ascx.cs">
+      <DependentUpon>HighlightsHomePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\HighlightsHomePage.ascx.designer.cs">
+      <DependentUpon>HighlightsHomePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\StarCategory.ascx.cs">
+      <DependentUpon>StarCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\StarCategory.ascx.designer.cs">
+      <DependentUpon>StarCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Home\VideoClip.ascx.cs">
+      <DependentUpon>VideoClip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Home\VideoClip.ascx.designer.cs">
+      <DependentUpon>VideoClip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lists\HighlightsList.ascx.cs">
+      <DependentUpon>HighlightsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lists\HighlightsList.ascx.designer.cs">
+      <DependentUpon>HighlightsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lists\Hot.ascx.cs">
+      <DependentUpon>Hot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lists\Hot.ascx.designer.cs">
+      <DependentUpon>Hot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lists\List.ascx.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lists\List.ascx.designer.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lists\Paging.ascx.cs">
+      <DependentUpon>Paging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lists\Paging.ascx.designer.cs">
+      <DependentUpon>Paging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetThumbNail.ashx.cs">
+      <DependentUpon>GetThumbNail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Log\LogAds.ashx.cs">
+      <DependentUpon>LogAds.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\LogImpression.ashx.cs">
+      <DependentUpon>LogImpression.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\LogView.ashx.cs">
+      <DependentUpon>LogView.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="NetLifeWeb.Master.cs">
+      <DependentUpon>NetLifeWeb.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NetLifeWeb.Master.designer.cs">
+      <DependentUpon>NetLifeWeb.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ads\log.ashx.cs">
+      <DependentUpon>log.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cache.aspx.cs">
+      <DependentUpon>Cache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cache.aspx.designer.cs">
+      <DependentUpon>Cache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ads\Show.ashx.cs">
+      <DependentUpon>Show.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Move301.aspx.cs">
+      <DependentUpon>Move301.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Move301.aspx.designer.cs">
+      <DependentUpon>Move301.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page404.aspx.cs">
+      <DependentUpon>Page404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Page404.aspx.designer.cs">
+      <DependentUpon>Page404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\Rss\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rss\Rss_Content.aspx.cs">
+      <DependentUpon>Rss_Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>41193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:41193/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

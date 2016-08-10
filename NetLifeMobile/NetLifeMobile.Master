@@ -1,0 +1,195 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NetLifeMobile.master.cs" Inherits="NetLifeMobile.NetLifeMobile" %>
+
+<%@ Import Namespace="ATVCommon" %>
+
+<%@ Register Src="Controls/Common/Header.ascx" TagName="Header" TagPrefix="uc1" %>
+
+<%@ Register Src="Controls/Common/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title id="title" runat="server">Netlife - Trang thông tin điện tử tổng hợp</title>
+    <meta id="keywords" name="keywords" runat="server" content="tin tức online, tin tức nhanh, tin nóng, thế giới 24h, kinh doanh, pháp luật, khoa học, công nghệ." />
+    <meta id="description" name="description" runat="server" content="Trang thông tin điện tử tổng hợp Netlife - Hợp tác với Báo điện tử Tầm Nhìn - Cập nhật nhanh nhất tin tức trong nước và thế giới" />
+    <meta name="page-topic" content="Netlife - Trang thông tin điện tử tổng hợp" />
+    <meta name="copyright" content="netlife.vn" />
+    <meta name="author" content="netlife.vn" />
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="audience" content="General" />
+    <%--Tuyen add remove cache 0807216--%>
+<%--    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+    <meta http-equiv="pragma" content="no-cache" />--%>
+    <%--End----%>
+    <meta name="resource-type" content="Document" />
+    <meta name="distribution" content="Global" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="Abstract" content="Trang thông tin điện tử tổng hợp Netlife." />
+    <meta property="fb:app_id" content="1526016807656820" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width = 320" />
+    <meta name="viewport" content="initial-scale=1, user-scalable=no" />
+    <link href="/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Styles/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="/Styles/Style2.css?v=2" rel="stylesheet" />
+    <script  src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script  src="/Scripts/bootstrap.min.js"></script>
+    <script  src="/Scripts/popup.js"></script>
+    <script  src="http://netlife.vn/js/adsa.js?v=2"></script>
+    <script  src="http://static.netlife.vn/scripts/jquery.fmsmedia2.dev.min.v1.0.3.js" type="text/javascript"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-59329585-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Start Alexa Certify Javascript -->
+   <%-- <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "1hPjk1a0Sn00wM", domain: "netlife.vn", dynamic: true };
+        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript>
+<img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=1hPjk1a0Sn00wM" style="display: none" height="1" width="1" alt="" /></noscript>
+    <!-- End Alexa Certify Javascript -->
+    <!-- Begin comScore Tag -->
+    <script>
+        var comscore = comscore || [];
+        _comscore.push({ c1: "2", c2: "19847823" });
+        (function () {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=19847823&cv=2.0&cj=1" />
+</noscript>--%>
+    <!-- End comScore Tag -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <uc1:Header ID="Header1" runat="server" />
+        <div class="clearfix">
+        </div>
+        <div class="content">
+            <div class="container" style="padding: 10px !important">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <uc2:Footer ID="Footer1" runat="server" />
+            </div>
+        </div>
+        <img style="display: none" src="http://netlife.vn/Log/LogView.ashx?categoryId=<% = Lib.QueryString.CategoryID %>&newsId=<% = Lib.QueryString.NewsID %>&d=<% = DateTime.Now.ToFileTime() %>" />
+        <script>
+            var iScrollPos = 100;
+            $.fn.scrollStopped = function (callback) {
+                var $this = $(this), self = this;
+                $this.scroll(function () {
+                    if ($this.data('scrollTimeout')) {
+                        clearTimeout($this.data('scrollTimeout'));
+                    }
+                    $this.data('scrollTimeout', setTimeout(callback, 10, self));
+                });
+            };
+
+
+            $(window).scrollStopped(function () {
+                var iCurScrollPos = $(this).scrollTop();
+
+                if (iCurScrollPos < 100) {
+                    $(".header").slideDown("slow");
+                    return;
+                }
+
+                if (iCurScrollPos >= iScrollPos) {
+                    $(".header").slideUp("slow");
+                } else {
+                    $(".header").slideDown("slow");
+                }
+                iScrollPos = iCurScrollPos;
+
+            });
+
+
+
+            $(function () {
+                var Accordion = function (el, multiple) {
+                    this.el = el || {};
+                    this.multiple = multiple || false;
+
+                    // Variables privadas
+                    var links = this.el.find('.link');
+                    // Evento
+                    links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown);
+                }
+
+                Accordion.prototype.dropdown = function (e) {
+                    var $el = e.data.el;
+                    $this = $(this),
+                    $next = $this.next();
+
+                    $next.slideToggle();
+                    $this.parent().toggleClass('open');
+
+                    if (!e.data.multiple) {
+                        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                    };
+                }
+
+                var accordion = new Accordion($('#accordion'), false);
+            });
+
+            var a = $('body');
+            function showmenu(accordion) {
+                if (false == $(accordion).is(':visible')) {
+                    $(accordion).show(100);
+                    a.find('#addcl').addClass('col-xs-6');
+                    a.find('#mn').removeClass('col-xs-3').addClass('col-xs-2');
+                    a.find('#lg').removeClass('col-xs-6').addClass('col-xs-4');
+                    a.find('.searchmb').hide();
+                    $("#popup_content").hide();
+
+
+                } else {
+                    $(accordion).hide(100);
+                    a.find('#addcl').removeClass('col-xs-6');
+                    a.find('#mn').removeClass('col-xs-2').addClass('col-xs-3');
+                    a.find('#lg').removeClass('col-xs-4').addClass('col-xs-6');
+                    a.find('.searchmb').show();
+
+                }
+            }
+
+        </script>
+        <script>
+            $(".vmcplayer").each(function () {
+                showMediaPlayer($(this).parent().attr('id'), $(this).attr('href'), $(this).find("img").attr('src'), $(this).attr('data-width'), $(this).attr('data-height'));
+            });
+        </script>
+            	<!--Script tag (include before the closing </body> tag)-->
+        <!--
+    	<script type="text/javascript">
+	        var abd_media = "media.adnetwork.vn";
+	        var abd_width = 618; /*width of video player*/
+	        var abd_height = 348; /*height of video player*/
+	        var abd_skip = 7;
+	        var abd_wid = 1427708093;
+	        var abd_zid = 1434602139;
+	        var abd_content_id = ".row detailcontent"; /*.class or #id of content wrapper*/
+	        var abd_position = 3; /*the paragraph position where ads display*/
+		</script>
+    	<script src="http://media.adnetwork.vn/assets/js/abd.inpage.preroll.v2.js" type="text/javascript"></script>
+
+            -->
+    </form>
+</body>
+</html>
