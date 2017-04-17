@@ -58,31 +58,22 @@ namespace NetLife.web {
         protected global::NetLife.web.Controls.Home.StarCategory CategoryHomePage3;
         
         /// <summary>
-        /// StarCategory2 control.
+        /// CategoryHomePage4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NetLife.web.Controls.Home.StarCategory StarCategory2;
+        protected global::NetLife.web.Controls.Home.StarCategory CategoryHomePage4;
         
         /// <summary>
-        /// StarCategory3 control.
+        /// CategoryHomePage5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NetLife.web.Controls.Home.StarCategory StarCategory3;
-        
-        /// <summary>
-        /// StarCategory4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NetLife.web.Controls.Home.StarCategory StarCategory4;
+        protected global::NetLife.web.Controls.Home.StarCategory CategoryHomePage5;
         
         /// <summary>
         /// Adv2 control.

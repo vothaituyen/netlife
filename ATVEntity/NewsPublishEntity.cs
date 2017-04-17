@@ -81,8 +81,9 @@ namespace ATVEntity
         private string GetThumbNail(string title, string url, string img, int width)
         {
             if (img == null || String.IsNullOrEmpty(img)) return String.Empty;
-            //return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}?width={3}&crop=auto&scale=both\" title=\"{2}\" alt=\"{2}\" border=\"0\"/></a>", url, (img.StartsWith(ImagesStorageUrl) ? img : ImagesStorageUrl + "/" + img), HttpUtility.HtmlEncode(title), width); ;
-            return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" title=\"{2}\" alt=\"{2}\" border=\"0\"/></a>", url, (img.StartsWith(ImagesStorageUrl) ? img : ImagesStorageUrl + "/" + img), HttpUtility.HtmlEncode(title), width); ;
+            return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}?width={3}&crop=auto&scale=both\" title=\"{2}\" alt=\"{2}\" border=\"0\"/></a>", url, (img.StartsWith(ImagesStorageUrl) ? img : ImagesStorageUrl + "/" + img), HttpUtility.HtmlEncode(title), width); ;
+            // return String.Format("<a title=\"{2}\" href=\"{0}\"><img src=\"{1}\" title=\"{2}\" alt=\"{2}\" border=\"0\"/></a>", url, (img.StartsWith(ImagesStorageUrl) ? img : ImagesStorageUrl + "/" + img), HttpUtility.HtmlEncode(title), width); ;
+            // tuyen uncomment 12082016, tuyen comment 25082016
         }
 
       

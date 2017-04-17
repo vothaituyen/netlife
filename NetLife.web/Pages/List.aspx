@@ -28,7 +28,7 @@
             <uc2:Adv ID="Adv2" PositionId="11" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv4" PositionId="12" ClassName="row padbt10 fl" runat="server" />
             <%--<uc4:Hot ID="Hot1" runat="server" />--%>
-            <uc5:VideoClip ID="VideoClip1" Cat_ID="78" runat="server" />
+            <uc5:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />
             <uc2:Adv ID="Adv1" PositionId="9" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv3" PositionId="10" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv5" PositionId="18" ClassName="row padbt10 fl" runat="server" />

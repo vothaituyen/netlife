@@ -6,16 +6,17 @@
             <li id="ichome"><a href="/">
                 <img src="/Images/icon-home.png" /></a></li>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-        </ul>
-        <div class="col-md-3">
+            <div class="col-md-2">
             <div class="ip col-md-12">
-                <input type="text" class="col-md-10" placeholder="Nhập nội dung tìm kiếm..." name="keyword" id="keyword"
+                <input type="text" class="col-md-8" placeholder="Nhập nội dung tìm kiếm..." name="keyword" id="keyword"
                     style="margin-bottom: 0" onfocus="if(this.value=='Từ khoá') this.value='';"/>
                 <button class="col-md-2" id="btn-search" onclick="search()">
                     <img src="/Images/ic-search.jpg" />
                 </button>
             </div>
         </div>
+        </ul>
+
     </div>
 </div>
 
@@ -24,7 +25,7 @@
     function search() {
         var key = $('#keyword').val();
         if (key != "" && key != "Tìm kiếm")
-            location.href = "/Pages/Search?key=" + $('#keyword').val();
+            location.href = "/Pages/Search.aspx?key=" + $('#keyword').val();
         else alert("Bạn chưa nhập từ khóa!");
         return false;
     }

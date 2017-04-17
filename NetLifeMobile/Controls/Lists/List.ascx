@@ -1,10 +1,17 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="List.ascx.cs" Inherits="NetLifeMobile.Controls.Lists.List" %>
 <%@ Register Src="Paging.ascx" TagName="Paging" TagPrefix="uc1" %>
 <%@ Register src="../Advs/Ads.ascx" tagname="Ads" tagprefix="uc2" %>
+<%--<center>    <uc1:Ads ID="Ads5" PositionId="40" runat="server" /></center>--%>
+<center>    <uc2:Ads ID="Ads5" PositionId="40" runat="server" /></center>
 <div class="row" style="padding-bottom: 10px;">
 
-    <div class="col-xs-12 breadcrumb-mb">
-        <asp:HyperLink runat="server" ID="hplNext"></asp:HyperLink>
+    <div class="col-xs-12">
+
+           <asp:HyperLink runat="server" ID="hplNextMenu"></asp:HyperLink>
+     
+          <span id="rcorners1">
+                <asp:HyperLink runat="server" ID="hplNext"></asp:HyperLink>
+           <//span>
         
     </div>
 
@@ -63,17 +70,17 @@
     });
 </script>--%>
 
-<script type="text/javascript">
+<%--<script type="text/javascript">
     $(document).ready(function () {
         $(".info-list-item p a").each(function (index) {
             if ($(this).parent().width() < 210) {
-                $(this).text($(this).text().substr(0, 37) + "...");
+                $(this).text($(this).text().substr(0, 67) + "...");
             }
-            else if ($(this).text().length > 50 && $(this).parent().width() < 350 && $(this).parent().width() >= 210) {
-                $(this).text($(this).text().substr(0, 50) + "...");
+            else if ($(this).text().length > 67 && $(this).parent().width() < 350 && $(this).parent().width() >= 210) {
+                $(this).text($(this).text().substr(0, 67) + "...");
             }
         });
     });
-</script>
+</script>--%>
 
 

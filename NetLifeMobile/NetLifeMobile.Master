@@ -10,37 +10,41 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title id="title" runat="server">Netlife - Trang thông tin điện tử tổng hợp</title>
-    <meta id="keywords" name="keywords" runat="server" content="tin tức online, tin tức nhanh, tin nóng, thế giới 24h, kinh doanh, pháp luật, khoa học, công nghệ." />
-    <meta id="description" name="description" runat="server" content="Trang thông tin điện tử tổng hợp Netlife - Hợp tác với Báo điện tử Tầm Nhìn - Cập nhật nhanh nhất tin tức trong nước và thế giới" />
-    <meta name="page-topic" content="Netlife - Trang thông tin điện tử tổng hợp" />
+    <title id="title" runat="server">Giải trí - Khám phá - Làm đẹp cùng Netlife</title>
+    <meta itemprop="homeLocation" content="Hochiminh City, Vietnam">
+    <meta id="keywords" name="keywords" runat="server" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
+    <meta id="description" name="description" runat="server" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
+    <meta name="page-topic" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
     <meta name="copyright" content="netlife.vn" />
     <meta name="author" content="netlife.vn" />
     <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
     <meta http-equiv="audience" content="General" />
-    <%--Tuyen add remove cache 0807216--%>
-<%--    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <%--<meta http-equiv="Cache-control" content="public">--%>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
     <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
-    <meta http-equiv="pragma" content="no-cache" />--%>
     <%--End----%>
+
     <meta name="resource-type" content="Document" />
     <meta name="distribution" content="Global" />
     <meta name="robots" content="noodp,index,follow" />
     <meta name="revisit-after" content="1 days" />
-    <meta name="Abstract" content="Trang thông tin điện tử tổng hợp Netlife." />
+    <meta name="Abstract" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
     <meta property="fb:app_id" content="1526016807656820" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width = 320" />
+    <meta name="viewport" content="width = device-width" />
     <meta name="viewport" content="initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="netlife.vn/favicon.ico" />
+    <link href="/Styles/Style.css" rel="stylesheet" />
     <link href="/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/Styles/bootstrap-theme.css" rel="stylesheet" />
     <link href="/Styles/bootstrap.css" rel="stylesheet" />
-    <link href="/Styles/Style2.css?v=2" rel="stylesheet" />
-    <script  src="/Scripts/jquery-1.10.2.min.js"></script>
+
+    
+    <script  src="/Scripts/jquery-1.7.2.min.js"></script>
     <script  src="/Scripts/bootstrap.min.js"></script>
     <script  src="/Scripts/popup.js"></script>
-    <script  src="http://netlife.vn/js/adsa.js?v=2"></script>
-    <script  src="http://static.netlife.vn/scripts/jquery.fmsmedia2.dev.min.v1.0.3.js" type="text/javascript"></script>
+    <script  src="/Scripts/ads.js?v=2"></script>
+    <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -51,30 +55,16 @@
         ga('create', 'UA-59329585-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- Start Alexa Certify Javascript -->
-   <%-- <script type="text/javascript">
-        _atrk_opts = { atrk_acct: "1hPjk1a0Sn00wM", domain: "netlife.vn", dynamic: true };
-        (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
-    </script>
-    <noscript>
-<img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=1hPjk1a0Sn00wM" style="display: none" height="1" width="1" alt="" /></noscript>
-    <!-- End Alexa Certify Javascript -->
-    <!-- Begin comScore Tag -->
-    <script>
-        var comscore = comscore || [];
-        _comscore.push({ c1: "2", c2: "19847823" });
-        (function () {
-            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-            el.parentNode.insertBefore(s, el);
-        })();
-    </script>
-    <noscript>
-<img src="http://b.scorecardresearch.com/p?c1=2&c2=19847823&cv=2.0&cj=1" />
-</noscript>--%>
-    <!-- End comScore Tag -->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <script src='http://adnetwork.adasiaholdings.com/config.js?nwid=2060' type="text/javascript"></script>
+    <script type="text/javascript">
+        sas.setup({ domain: 'http://adnetwork.adasiaholdings.com', async: true, renderMode: 0});
+	    //  renderMode define when ads must be rendered :
+	    //  	- DEFAULT		(0) : as soon as ad is ready
+	    //  	- READY			(1) : render ads when document is ready
+	    //  - ON_DEMAND		(2) : user must call sas.callAds()
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -82,7 +72,7 @@
         <div class="clearfix">
         </div>
         <div class="content">
-            <div class="container" style="padding: 10px !important">
+            <div class="container" style="padding: 5px !important">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
                 <uc2:Footer ID="Footer1" runat="server" />
@@ -157,7 +147,7 @@
                     a.find('#lg').removeClass('col-xs-6').addClass('col-xs-4');
                     a.find('.searchmb').hide();
                     $("#popup_content").hide();
-
+                    //accordion.find('.submenu').not($next).slideUp().parent().removeClass('open');
 
                 } else {
                     $(accordion).hide(100);
@@ -175,21 +165,18 @@
                 showMediaPlayer($(this).parent().attr('id'), $(this).attr('href'), $(this).find("img").attr('src'), $(this).attr('data-width'), $(this).attr('data-height'));
             });
         </script>
-            	<!--Script tag (include before the closing </body> tag)-->
-        <!--
-    	<script type="text/javascript">
-	        var abd_media = "media.adnetwork.vn";
-	        var abd_width = 618; /*width of video player*/
-	        var abd_height = 348; /*height of video player*/
-	        var abd_skip = 7;
-	        var abd_wid = 1427708093;
-	        var abd_zid = 1434602139;
-	        var abd_content_id = ".row detailcontent"; /*.class or #id of content wrapper*/
-	        var abd_position = 3; /*the paragraph position where ads display*/
-		</script>
-    	<script src="http://media.adnetwork.vn/assets/js/abd.inpage.preroll.v2.js" type="text/javascript"></script>
-
-            -->
+        <script type="text/javascript">
+	        sas.call("std", {
+		        siteId:		129831,	// 
+		        pageId:		736446,	// Page : VN_Netlife/vn_netlife_outstream
+		        formatId: 	44269,	// Format : Video-Read 1x1
+		        target:		''	// Targeting
+	        });
+        </script>
+        <noscript>
+	        <a href="http://adnetwork.adasiaholdings.com/ac?jump=1&nwid=2060&siteid=129831&pgname=vn_netlife_outstream&fmtid=44269&visit=m&tmstp=[timestamp]&out=nonrich" target="_blank">                
+		        <img src="http://adnetwork.adasiaholdings.com/ac?out=nonrich&nwid=2060&siteid=129831&pgname=vn_netlife_outstream&fmtid=44269&visit=m&tmstp=[timestamp]" border="0" alt="" /></a>
+        </noscript>
     </form>
 </body>
 </html>

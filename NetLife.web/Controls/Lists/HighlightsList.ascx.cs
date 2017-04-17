@@ -12,7 +12,8 @@ namespace NetLife.web.Controls.Lists
 {
     public partial class HighlightsList : System.Web.UI.UserControl
     {
-        private string hot = "<li><div class=\"row\"><span class=\"col-md-4\" style=\"padding-top:10px;\"><a title=\"{2}\" href=\"{1}\"><img src=\"{0}\" alt=\"\" height=\"50\" width=\"60\"></a></span><span class=\"col-md-8\"><a title=\"{2}\" href=\"{1}\">{2}</a></span></div></li>";
+        //private string hot = "<li><div class=\"row\"><span class=\"col-md-4\" style=\"padding-top:10px;\"><a title=\"{2}\" href=\"{1}\"><img src=\"{0}\" alt=\"\" height=\"50\" width=\"60\"></a></span><span class=\"col-md-8\"><a title=\"{2}\" href=\"{1}\">{2}</a></span></div></li>";
+        private string hot = "<li><div class=\"row\"><span class=\"col-md-4\" style=\"padding-top:10px;\"><a title=\"{2}\" href=\"{1}\"><img src=\"{0}?width=60&height=50&mode=crop\" alt=\"{2}\" ></a></span><span class=\"col-md-8\"><a title=\"{2}\" href=\"{1}\">{2}</a></span></div></li>";
         private string baiNoiBat = "<div class=\"row img-nb\">{0}</div><div class=\"row title-nb\"> <a title=\"{2}\" href=\"{1}\">{2}</a> </div>";
 
         private long newsId = 0;

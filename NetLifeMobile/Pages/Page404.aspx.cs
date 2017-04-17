@@ -11,6 +11,10 @@ namespace NetLife.web.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.TrySkipIisCustomErrors = true;
+            Response.StatusCode = 404;
+            Response.Status = "404 Not Found";
+            HttpContext.Current.ApplicationInstance.CompleteRequest();
 
         }
     }

@@ -11,12 +11,12 @@
 </div>
  
 <div class="row detailinfo">
-     <div class="row likefb">
+<%--     <div class="row likefb">
                         <iframe scrolling="no" frameborder="0" src="//www.facebook.com/plugins/like.php?href=http://netlife.vn/<% = Request.RawUrl.ToString() %>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=20&amp;appId=1526016807656820&amp;width=480px"
                             style="border: medium none; overflow: hidden; height: 20px; margin-top: 0px; margin-left: 0px; width: 100%" allowtransparency="true"></iframe>
-                    </div>
-    <h2>
-        <asp:Literal runat="server" ID="ltrTitle"></asp:Literal></h2>
+                    </div>--%>
+    <h1>
+        <asp:Literal runat="server" ID="ltrTitle"></asp:Literal></h1>
 
    
     <div class="row detailcontent">
@@ -47,7 +47,7 @@
     <!-- -->
 
 </div>
-<div class="row detailinfo">
+<div class="row detailinfo" >
     <div class="row infoshare">
         <div class="col-md-10">
             <span class="nvb" style="display: none">
@@ -93,13 +93,13 @@
     </ul>
 </div>
 <div class="row tinlq" id="lienquan" runat="server">
-    <h3>Tin liên quan
+    <h3>Tin mới nhất
     </h3>
     <ul class="relatenews row">
-        <asp:Literal runat="server" ID="ltrListRelate"></asp:Literal>
+        <asp:Literal runat="server" ID="LiteralNews1"></asp:Literal>
     </ul>
-    <ul id="relatenews" class="relatenews" runat="server" visible="false">
-        <asp:Literal runat="server" ID="ltrListRelate2"></asp:Literal>
+    <ul id="listnews" class="relatenews" runat="server" visible="false">
+        <asp:Literal runat="server" ID="LiteralNews2"></asp:Literal>
     </ul>
 </div>
 

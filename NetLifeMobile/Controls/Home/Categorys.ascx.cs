@@ -17,7 +17,11 @@ namespace NetLifeMobile.Controls.Home
         string catName = "<a href=\"{1}\"><div class=\"row tit-cat\">{0}</div> </a>";
         string baiNoiBat = "<div class=\"col-xs-12 item-cat-img\">{0} </div><a href=\"{1}\"> <div class=\"col-xs-12 tit-content-cat\">{2}</div>  </a>";
         //string listNews = "<a href=\"{1}\"><li>{2}</li> </a>"; // htthao edit 20160527
-        string listNews = "<li class=\"news_home\"><div class=\"row\"><span class=\"col-xs-2 col-sm-1 col-md-1\"><a href=\"{1}\"><img src=\"{3}\" alt=\"\" height=\"50\" width=\"60\"></span> <span class=\"col-xs-10 title\" style=\"padding-left:20px;\">{2}</a></span></div></li>"; // htthao add 20160527
+        //string listNews = "<li class=\"news_home\"><div class=\"row\"><span class=\"col-xs-2 col-sm-1 col-md-1\"><a href=\"{1}\"><img src=\"{3}\" alt=\"\" height=\"50\" width=\"60\"></span> <span class=\"col-xs-10 title\" style=\"padding-left:20px;\">{2}</a></span></div></li>"; // htthao add 20160527
+        //string listNews = "<li class=\"news_home\"><div class=\"row\"><span class=\"col-xs-2 col-sm-1 col-md-1\"><a href=\"{1}\"><img src=\"{3}?width=100&height=83&mode=crop\" alt=\"\" ></span> <span class=\"col-xs-10 title\" style=\"padding-left:40px;\">{2}</a></span></div></li>";
+        //string listNews = "<li class=\"news_home\"> <div class=\"row\"> <a href=\"{1}\"> <span class=\"col-xs-5 col-sm-5 col-md-5\" > <img src=\"{3}?width=213&crop=auto&scale=both\" alt=\"\"> </span> <span class=\"col-xs-7 col-sm-7 col-md-7 title\">{2} </span> </a> </div> </li>";
+        //string listNews = "<li class=\"news_home\"> <div class=\"row\"> <a href=\"{1}\"> <span class=\"col-xs-4 col-sm-3\"> <center><img src=\"{3}?width=213&crop=auto&scale=both\" alt=\"\" ></center> </span> <span class=\"col-xs-8 col-sm-9 title\" style=\"padding-left:5px;\">{2} </span> </a> </div> </li>";
+        string listNews = "<div class=\"row item-list\"> 	<div class=\"col-xs-12 pd\">       <div class=\"col-xs-5 img-list-item\">          <a href=\"{1}\" title=\"{2}\">             <img src=\"{3}?width=213&crop=auto&scale=both\" title=\"{2}\" alt=\"{2}\">          </a>       </div>       <div class=\"col-xs-7 info-list-item\"><a href=\"{1}\">{2} </a></div> 	</div> </li>";
 
         private long newsId = 0;
 
@@ -33,7 +37,7 @@ namespace NetLifeMobile.Controls.Home
                 ltrNotBat.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
                 newsId = lst[0].NEWS_ID;
             }
-            List<NewsPublishEntity> lstNew = BOATV.NewsPublished.GetListNewsByCatAndDate(_cat_id, newsId, 1, 3, 0);
+            List<NewsPublishEntity> lstNew = BOATV.NewsPublished.GetListNewsByCatAndDate(_cat_id, newsId, 1, 6, 0);
             if (lstNew.Count > 0)
             {
                 for (int i = 0; i < lstNew.Count; i++)

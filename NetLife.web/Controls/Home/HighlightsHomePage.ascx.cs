@@ -14,7 +14,8 @@ namespace NetLife.web.Controls.Home
     {
         private int top = 7;
         public int Top {  set { top = value; } }
-        private string news = "<li><div class=\"row\"><span class=\"col-md-4\" style=\"padding-right:0px;\"><a href=\"{1}\"><img src=\"{0}\" alt=\"\" height=\"50\" width=\"60\"></a></span><span class=\"col-md-8\"><a title=\"{2}\" href=\"{1}\">{2}</a></span></div></li>";
+        //private string news = "<li><div class=\"row\"><span class=\"col-md-4\" style=\"padding-right:0px;\"><a href=\"{1}\"><img src=\"{0}\" alt=\"\" height=\"50\" width=\"60\"></a></span><span class=\"col-md-8\"><a title=\"{2}\" href=\"{1}\">{2}</a></span></div></li>";
+        private string news = "<li><div class=\"row\"><span class=\"col-md-4\" style=\"padding-right:0px;\"><a href=\"{1}\"><img src=\"{0}?width=60&height=50&mode=crop\" alt=\"{2}\" ></a></span><span class=\"col-md-8\"><a title=\"{2}\" href=\"{1}\">{2}</a></span></div></li>";
         string title = "<span><a href=\"{0}\">{1}</a></span>";
         string listitem = "<div class=\"col-md-3 item-nb\">{0}<h3><a href=\"{1}\" title=\"{2}\">{2}</a></h3></div>";
         private string strListOne = "<div class=\"row img-nb\">{0}</div><div class=\"row title-nb\"> <a href=\"{1}\">{2}</a></div>";

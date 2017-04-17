@@ -67,7 +67,7 @@
     function search() {
         var key = $('#keyword').val();
         if (key != "" && key != "Tìm kiếm")
-            location.href = "/Pages/Search?key=" + $('#keyword').val();
+            location.href = "/Pages/Search.aspx?key=" + $('#keyword').val();
         else alert("Bạn chưa nhập từ khóa!");
         return false;
     }

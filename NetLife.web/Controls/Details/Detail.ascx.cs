@@ -21,6 +21,7 @@ namespace NetLife.web.Controls.Details
         //private string itemOther = "<li><a title=\"{1}\" href=\"{0}\">{1}</a></li>";
         private string itemOtherNews = "<li class=\"news\"><a title=\"{1}\" href=\"{0}\">{1}</a></li>";
         private string itemOther = "<li class=\"news\"><div class=\"row\">{2}<a title=\"{1}\" href=\"{0}\">{1}</a></div></li>";
+        private string itemNews = "<li class=\"news\"><div class=\"row\">{2}<a title=\"{1}\" href=\"{0}\">{1}</a></div></li>";
         //private string itemOtherNews = "<li class=\"news\">{2}<a title=\"{1}\" href=\"{0}\">{1}</a></li>";
         private string relatedNewsId = "";
         private List<NewsPublishEntity> dataEntity;
@@ -47,19 +48,50 @@ namespace NetLife.web.Controls.Details
                 string repl = @"${start} target=""_blank"" ${end}";
                 string newString = Regex.Replace(content, pattern, repl);
                 ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/");
-                //neu clip thi add script quang cao
-                if (
-                    Lib.QueryString.CategoryID == 78 || 
-                    Lib.QueryString.CategoryID == 90 ||
-                    Lib.QueryString.CategoryID == 91 ||
-                    Lib.QueryString.CategoryID == 92 ||
-                    Lib.QueryString.CategoryID == 93 ||
-                    Lib.QueryString.CategoryID == 94 ||
-                    Lib.QueryString.CategoryID == 95 
-                    )
+                ltrContent.Text = ltrContent.Text.Replace("jpg\"", "jpg?maxwidth=480\"" + " alt=\"" + ne.NEWS_TITLE + "\"");
+
+
+
+                string html = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(37), Lib.Object2Integer(Lib.QueryString.CategoryID));
+                //string adsContent = "";
+                //if (!String.IsNullOrWhiteSpace(html) && html.Length > 2)
+                //{
+                //    if (html.Contains("235")) //pc video ebound
+                //    {
+                //        ltrContent.Text = newString.Replace("<video", "<div id=\"selectorElement\" style=\"width:500px;height:auto;\"><video").Replace("video>", "video><script data-cfasync=\"false\" id=\"EboundAd\" type=\"text/javascript\" src=\"//eboundservices.com/ads/ads.js\" width=\"500px\" height=\"auto\"></script></div>");
+                //    }
+                //    else if (html.Contains("233")) //pc video ambient
+                //    {
+                //        adsContent = "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, html.Replace("\\n", " ").Replace("\\t", " "), 37).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>";
+                //        ltrContent.Text = ltrContent.Text + adsContent;
+                //    }
+                //}
+                if (html.Length > 2) //add ad video 7
                 {
-                    ltrContent.Text = ltrContent.Text + "<script type=\"text/javascript\" src=\"http://media.adnetwork.vn/js/jwplayer.js\"></script> <script type=\"text/javascript\"> var _abd = _abd || []; _abd.push([\"1427708093\",\"Video\",\"1427711687\",\"abdplayer\",\"500\",\"282\"]); </script> <script src=\"http://media.adnetwork.vn/js/adnetwork.js\" type=\"text/javascript\"></script> <noscript><a href=\"http://track.adnetwork.vn/247/adServerNs/zid_1427711687/wid_1427708093/\" target=\"_blank\"><img src=\"http://delivery.adnetwork.vn/247/noscript/zid_1427711687/wid_1427708093/\" /></a></noscript>";
+                    if (html.Contains("ambient")) //ambient
+                    {
+                        ltrContent.Text += Environment.NewLine;
+                        ltrContent.Text += html;
+                    }
+                    else if (html.Contains("ebound")) //ebound
+                    {
+                        String[] part = html.Split('@');
+                        ltrContent.Text += Environment.NewLine;
+                        ltrContent.Text = ltrContent.Text.Replace("<video", part[0] + "<video").Replace("video>", "video>" + part[1]);
+                    }
+
                 }
+                if (!ltrContent.Text.Contains("people_write"))
+                {
+                    ltrContent.Text += "\n<table class=\"tplCaption\"><div class=\"people_write hide\" itemprop=\"author\" itemscope=\"\" itemtype=\"https://schema.org/Person\"> <b><span itemprop=\"name\" class=\"icon_author\">Tổng hợp</span>/ Theo google</b><br></div> </div> </div></table>";
+                }
+
+
+
+
+
+
+
                 ltrDate.Text = ne.NEWS_PUBLISHDATE.ToString("dd/MM/yyyy");
                 ltrTime.Text = ne.NEWS_PUBLISHDATE.ToString("hh:mm");
                 ltrDes.Text = ne.NEWS_INITCONTENT;
@@ -136,24 +168,24 @@ namespace NetLife.web.Controls.Details
                         relatenews.Visible = true;
                     }
                     */
-                    if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
-                        ltrListRelate.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
-                    else
-                    {
-                        ltrListRelate2.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
-                        relatenews.Visible = true;
-                    }
+                    //if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
+                    //    ltrListRelate.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                    //else
+                    //{
+                    //    ltrListRelate2.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                    //    relatenews.Visible = true;
+                    //}
                     // HTTHAO add 20160525: to get Related News Id for filter "Tin Cung Chuyen Muc"
-                    if(relatedNewsId==null || relatedNewsId == "")
+                    if (relatedNewsId == null || relatedNewsId == "")
                     {
                         relatedNewsId = nep.NEWS_ID.ToString();
                     }
                     else
                     {
                         relatedNewsId = relatedNewsId + "," + nep.NEWS_ID.ToString();
-                    }                    
+                    }
                 }
-               
+
                 for (int i = 0; i < (iCount > 3 ? 3 : iCount); i++) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
                 {
                     nep = dataEntity[i];
@@ -168,7 +200,7 @@ namespace NetLife.web.Controls.Details
 
             //ltrVideo
 
-            var video = NewsPublished.NP_Danh_Sach_Tin(0, 78, 4, 1, 150);
+            var video = NewsPublished.NP_Danh_Sach_Tin(0, 134, 4, 1, 150);
             if (video != null)
             {
                 NewsPublishEntity nep;
@@ -214,6 +246,35 @@ namespace NetLife.web.Controls.Details
 
                 }
 
+            }
+            {
+                var listNews = NewsPublished.NP_Tin_Moi_Trong_Ngay(10, 60);
+                if (listNews != null)
+                {
+                    NewsPublishEntity nep;
+                    int iCount = listNews != null ? listNews.Count : 0;
+                    //for (int i = 0; i < iCount; i++)
+                    //{
+                    //    nep = otherNews[i];
+                    //    nep.Imgage = new ImageEntity(40, nep.Imgage.ImageUrl);
+                    //    ltrOther.Text += String.Format(itemOther, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                    //}
+                    for (int i = 0; i < (iCount > 6 ? 6 : iCount); i++) //(int i = 0; i < iCount; i++)
+                    {
+                        nep = listNews[i];
+                        nep.Imgage = new ImageEntity(150, nep.Imgage.ImageUrl);
+                        /*HTTHAO EDIT: Chinh muc tin cung chuyen muc hien thi tuong tu Muc tin lien quan*/
+                        if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
+                            LiteralNews1.Text += String.Format(itemNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                        else
+                        {
+                            LiteralNews2.Text += String.Format(itemNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                            listnews.Visible = true;
+                        }
+
+
+                    }
+                }
             }
         }
     }

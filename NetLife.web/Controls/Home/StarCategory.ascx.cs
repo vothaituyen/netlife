@@ -28,26 +28,9 @@ namespace NetLife.web.Controls.Home
             CategoryEntity cat = BOCategory.GetCategory(_cat_id);
             //ltrCatName.Text = String.Format(catName, cat.Cat_Name, cat.HREF); // old source
             
-            if (_cat_id == 54)
-            {
-                ltrCatName.Text = String.Format(catName, cat.Cat_Name, cat.HREF);
-            }
-            else if (_cat_id == 67)
-            {
-                ltrCatName_thoitrang.Text = String.Format(catName, cat.Cat_Name, cat.HREF);
-            }
-            else if (_cat_id == 68)
-            {
-                ltrCatName_giaitri.Text = String.Format(catName, cat.Cat_Name, cat.HREF);
-            }
-            else
-            {                
+             
                 ltrCatName_other.Text = String.Format(catName, cat.Cat_Name, cat.HREF);
-                if (_cat_id == 50)
-                {
-                    ltrCatName_other.Text = String.Format(catName, "Làm Đẹp", cat.HREF.ToString().Replace("choi", "lam-dep"));
-                }
-            }
+
 
             List<NewsPublishEntity> lst = BOATV.NewsPublished.GetListNewsByNewsMode2(_cat_id, 1, 1, 16, 310); // thay 10 bang 11
             //List<NewsPublishEntity> lst;
@@ -61,64 +44,22 @@ namespace NetLife.web.Controls.Home
             //}
             if (lst != null && lst.Count > 0)
             {
-                //ltrNotBat.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
-                //newsId = lst[0].NEWS_ID;
+     
                 lst[0].NEWS_INITCONTENT = lst[0].NEWS_INITCONTENT.ToString().Substring(0, (lst[0].NEWS_INITCONTENT.ToString().Length < 100 ? lst[0].NEWS_INITCONTENT.ToString().Length : 97)) + (lst[0].NEWS_INITCONTENT.ToString().Length < 100 ? "" : "...");
                 lst[0].NEWS_TITLE = lst[0].NEWS_TITLE.ToString().Substring(0, (lst[0].NEWS_TITLE.ToString().Length < 70 ? lst[0].NEWS_TITLE.ToString().Length : 70)) + (lst[0].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
-                if (_cat_id == 54) 
-                {
-                    ltrNotBat.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
-                    newsId = lst[0].NEWS_ID;
-                }
-                else if (_cat_id == 67)
-                {
-                    ltrNotBat_thoitrang.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
-                    newsId = lst[0].NEWS_ID;
-                }
-                else if (_cat_id == 68)
-                {
-                    ltrNotBat_giaitri.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
-                    newsId = lst[0].NEWS_ID;
-                }
-                else
-                {
+
                     ltrNotBat_other.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
                     newsId = lst[0].NEWS_ID;
-                }
+                
                
-                for (int i = 1; i <= (_cat_id == 54? 15:5); i++)
+                for (int i = 1; i <= (_cat_id == 54? 5:5); i++)
                 {
-                    //lst[i].Imgage = new ImageEntity(140, lst[i].Imgage.ImageUrl);
-                    //lrtListNew.Text += String.Format(listNews, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);
-                    //lrtListNew.Text = lrtListNew.Text.Replace("<img", "<img width=\"80\" height=\"60\"");
-                    //lst[i].NEWS_TITLE
                     lst[i].NEWS_TITLE = lst[i].NEWS_TITLE.ToString().Substring(0, (lst[i].NEWS_TITLE.ToString().Length < 70 ? lst[i].NEWS_TITLE.ToString().Length : 70)) + (lst[i].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
-                    if (_cat_id == 54)
-                    {
-                        lst[i].Imgage = new ImageEntity(140, lst[i].Imgage.ImageUrl);
-                        lrtListNew.Text += String.Format(listNews, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);
-                        lrtListNew.Text = lrtListNew.Text.Replace("<img", "<img width=\"80\" height=\"60\"");
-                    }
-                    else if(_cat_id == 67)
-                    {
-                        lst[i].Imgage = new ImageEntity(140, lst[i].Imgage.ImageUrl);
-                        lrtListNew_thoitrang.Text += String.Format(listNews, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);
-                        lrtListNew_thoitrang.Text = lrtListNew_thoitrang.Text.Replace("<img", "<img width=\"80\" height=\"60\"");
-                        
-                    }
-                    else if (_cat_id == 68)
-                    {
-                        lst[i].Imgage = new ImageEntity(140, lst[i].Imgage.ImageUrl);
-                        lrtListNew_giaitri.Text += String.Format(listNews, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);
-                        lrtListNew_giaitri.Text = lrtListNew_giaitri.Text.Replace("<img", "<img width=\"80\" height=\"60\"");
-                        
-                    }
-                    else
-                    {
+                   
                         lst[i].Imgage = new ImageEntity(140, lst[i].Imgage.ImageUrl);
                         lrtListNew_other.Text += String.Format(listNews, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);
-                        lrtListNew_other.Text = lrtListNew_other.Text.Replace("<img", "<img width=\"80\" height=\"60\"");
-                    }
+                     
+                    
                 }
             }
         }

@@ -19,13 +19,13 @@ namespace NetLife.web.Controls.Lists
         long newsId = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Lib.QueryString.ParentCategoryID > 0)
-            {
-                var cat = BOCategory.GetCategory(Lib.QueryString.ParentCategoryID);
-                if (cat != null)
-                    Utils.Move301(cat.HREF);
-                return;
-            }
+            //if (Lib.QueryString.ParentCategoryID > 0)
+            //{
+            //    var cat = BOCategory.GetCategory(Lib.QueryString.ParentCategoryID);
+            //    if (cat != null)
+            //        Utils.Move301(cat.HREF);
+            //    return;
+            //}
 
             List<NewsPublishEntity> lst = BOATV.NewsPublished.GetListNewsByNewsMode3(Lib.QueryString.CategoryID, 1, 5, 6, 1, 453);
             if (lst != null && lst.Count > 0)

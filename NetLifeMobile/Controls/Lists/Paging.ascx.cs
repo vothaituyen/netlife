@@ -157,7 +157,7 @@ namespace NetLife.web.Controls.Lists
         protected void Page_Load(object sender, EventArgs e)
         {
             pager.Visible = totalPage > 1;
-            this.EnableViewState = false;
+            this.EnableViewState = true;
         }
     }
 }

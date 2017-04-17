@@ -1,453 +1,418 @@
-﻿   
-
-function getDomainByName(domain, url) {
-
-    return (url == "m." + domain || url == domain || url == ("www." + domain));
-}
- 
-  
-
-var logLocation = "http://netlife.vn";
-var adVnn = [];
-/*gan them logo vads*/
- 
-var vadslogo = '';
-var addCss = "";
-var FlashDetect = new function () {
-    var self = this; self.installed = false; self.raw = ""; self.major = -1; self.minor = -1; self.revision = -1; self.revisionStr = ""; var activeXDetectRules = [{ "name": "ShockwaveFlash.ShockwaveFlash.7", "version": function (obj) { return getActiveXVersion(obj); } }, {
-        "name": "ShockwaveFlash.ShockwaveFlash.6", "version": function (obj) {
-            var version = "6,0,21"; try { obj.AllowScriptAccess = "always"; version = getActiveXVersion(obj); } catch (err) { }
-            return version;
-        }
-    }, { "name": "ShockwaveFlash.ShockwaveFlash", "version": function (obj) { return getActiveXVersion(obj); } }]; var getActiveXVersion = function (activeXObj) {
-        var version = -1; try { version = activeXObj.GetVariable("$version"); } catch (err) { }
-        return version;
-    }; var getActiveXObject = function (name) {
-        var obj = -1; try { obj = new ActiveXObject(name); } catch (err) { obj = { activeXError: true }; }
-        return obj;
-    }; var parseActiveXVersion = function (str) { var versionArray = str.split(","); return { "raw": str, "major": parseInt(versionArray[0].split(" ")[1], 10), "minor": parseInt(versionArray[1], 10), "revision": parseInt(versionArray[2], 10), "revisionStr": versionArray[2] }; }; var parseStandardVersion = function (str) { var descParts = str.split(/ +/); var majorMinor = descParts[2].split(/\./); var revisionStr = descParts[3]; return { "raw": str, "major": parseInt(majorMinor[0], 10), "minor": parseInt(majorMinor[1], 10), "revisionStr": revisionStr, "revision": parseRevisionStrToInt(revisionStr) }; }; var parseRevisionStrToInt = function (str) { return parseInt(str.replace(/[a-zA-Z]/g, ""), 10) || self.revision; }; self.majorAtLeast = function (version) { return self.major >= version; }; self.minorAtLeast = function (version) { return self.minor >= version; }; self.revisionAtLeast = function (version) { return self.revision >= version; }; self.versionAtLeast = function (major) { var properties = [self.major, self.minor, self.revision]; var len = Math.min(properties.length, arguments.length); for (i = 0; i < len; i++) { if (properties[i] >= arguments[i]) { if (i + 1 < len && properties[i] == arguments[i]) { continue; } else { return true; } } else { return false; } } }; self.FlashDetect = function () { if (navigator.plugins && navigator.plugins.length > 0) { var type = 'application/x-shockwave-flash'; var mimeTypes = navigator.mimeTypes; if (mimeTypes && mimeTypes[type] && mimeTypes[type].enabledPlugin && mimeTypes[type].enabledPlugin.description) { var version = mimeTypes[type].enabledPlugin.description; var versionObj = parseStandardVersion(version); self.raw = versionObj.raw; self.major = versionObj.major; self.minor = versionObj.minor; self.revisionStr = versionObj.revisionStr; self.revision = versionObj.revision; self.installed = true; } } else if (navigator.appVersion.indexOf("Mac") == -1 && window.execScript) { var version = -1; for (var i = 0; i < activeXDetectRules.length && version == -1; i++) { var obj = getActiveXObject(activeXDetectRules[i].name); if (!obj.activeXError) { self.installed = true; version = activeXDetectRules[i].version(obj); if (version != -1) { var versionObj = parseActiveXVersion(version); self.raw = versionObj.raw; self.major = versionObj.major; self.minor = versionObj.minor; self.revision = versionObj.revision; self.revisionStr = versionObj.revisionStr; } } } } }();
-};
-FlashDetect.JS_RELEASE = "1.0.4";
-
-function createCookie(name, value, days) {
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 30 * 60 * 1000));
-        var expires = "; expires=" + date.toGMTString();
-    }
-    else var expires = "";
-    document.cookie = name + "30=" + value + expires + "; path=/";
+﻿function getDomainByName(e, t) {
+    return t == "m." + e || t == e || t == "www." + e
 }
 
-function readCookie(name) {
-    var nameEQ = name + "30=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) {
-            return c.substring(nameEQ.length, c.length);
-        }
+function createCookie(e, t, i) {
+    if (i) {
+        var n = new Date
+        n.setTime(n.getTime() + 30 * i * 60 * 1e3)
+        var o = "; expires=" + n.toGMTString()
+    } else var o = ""
+    document.cookie = e + "30=" + t + o + "; path=/"
+}
+
+function readCookie(e) {
+    for (var t = e + "30=", i = document.cookie.split(";"), n = 0; n < i.length; n++) {
+        for (var o = i[n];
+            " " == o.charAt(0) ;) o = o.substring(1, o.length)
+        if (0 == o.indexOf(t)) return o.substring(t.length, o.length)
     }
-    return null;
+    return null
 }
 
 function isSupportFlash() {
-    return FlashDetect.installed;
-}
-var hoverBannerTimeOut;
-function vmc_ExpandBanner(a, b, c, d) {
-    var obj = $("#" + a);
-    if (obj != null) {
-        hoverBannerTimeOut = setTimeout(function () {
-            obj.attr("style", "z-index:999999999;overflow:visible; position:relative;width:" + obj.attr("w") + "px;height:" + obj.attr("h") + "px;");
-        }, 3000);
-
-    }
+    return FlashDetect.installed
 }
 
-function vmc_Minimize_Ballon(d, w, h) {
-    $("#" + d).css({ "width": w, "height": h });
+function vmc_ExpandBanner(e, t, i, n) {
+    var o = $("#" + e)
+    null != o && (hoverBannerTimeOut = setTimeout(function () {
+        o.attr("style", "z-index:999999999;overflow:visible; position:relative;width:" + o.attr("w") + "px;height:" + o.attr("h") + "px;")
+    }, 3e3))
 }
 
-function vmc_GetPositionExpand(d) {
-    console.log('d=' + d);
-    if (typeof (d) == 'undefined') { d = 2; }
-    var result = "";
-    switch (d) {
+function vmc_Minimize_Ballon(e, t, i) {
+    $("#" + e).css({
+        width: t,
+        height: i
+    })
+}
+
+function vmc_GetPositionExpand(e) {
+    console.log("d=" + e), void 0 === e && (e = 2)
+    var t = ""
+    switch (e) {
         case 0:
-            result = "top:0;left:0;position: absolute;";
-            break;
+            t = "top:0;left:0;position: absolute;"
+            break
         case 1:
-            result = "bottom:0;left:0;position: absolute;";
-            break;
+            t = "bottom:0;left:0;position: absolute;"
+            break
         case 2:
-            result = "top:0px;right:0;position: absolute;";
-            break;
+            t = "top:0px;right:0;position: absolute;"
+            break
         case 3:
-            result = "bottom:0;right:0;position: absolute;";
-            break;
+            t = "bottom:0;right:0;position: absolute;"
+            break
         case 4:
-            result = "bottom:0;right:0;position: absolute;";
-            break;
+            t = "bottom:0;right:0;position: absolute;"
+            break
         case 5:
-            result = "top:-145px;right:0;position: absolute;";
-            break;
+            t = "top:-145px;right:0;position: absolute;"
     }
-    return result;
+    return t
 }
 
-function vmc_ResizeBanner(a, b, c, d) {
-    var obj = $("#" + a);
-    if (obj != null) {
-        obj.attr("style", "overflow:hidden; position:relative;width:" + obj.attr("w") + "px;height:" + obj.attr("h") + "px;");
-        obj.find("div").attr("style", "width:" + b + "px;height:" + c + "px;" + vmc_GetPositionExpand(d));
-
-    }
+function vmc_ResizeBanner(e, t, i, n) {
+    var o = $("#" + e)
+    null != o && (o.attr("style", "overflow:hidden; position:relative;width:" + o.attr("w") + "px;height:" + o.attr("h") + "px;"), o.find("div").attr("style", "width:" + t + "px;height:" + i + "px;" + vmc_GetPositionExpand(n)))
 }
 
-function vmc_CollapseBanner(a) {
-    var obj = $("#" + a);
-    clearTimeout(hoverBannerTimeOut);
-    if (obj != null)
-        obj.attr("style", "z-index:0;overflow:hidden; position:relative;width:" + obj.attr("w") + "px;height:" + obj.attr("h") + "px;");
+function vmc_CollapseBanner(e) {
+    var t = $("#" + e)
+    clearTimeout(hoverBannerTimeOut), null != t && t.attr("style", "z-index:0;overflow:hidden; position:relative;width:" + t.attr("w") + "px;height:" + t.attr("h") + "px;")
 }
 
 function RunBanner(rawdata, zone_id) {
-    this.current = 0;
-    this.zoneId = zone_id;
-    this.zoneName = '';
-    this.len = rawdata.length; // > 3 ? rawdata.length : 3;
-    this.data = rawdata;
-
-    if (this.len > 0) {
-        var cc = readCookie(zone_id);
-        if (cc != null && cc.length > 0) {
-            this.current = eval(cc) + 1;
-            if (this.current >= this.len) this.current = 0;
-        }
-        else {
-            this.current = Math.floor(Math.random() * this.len);
-        }
-        createCookie(zone_id, this.current, 1);
-
+    if (this.current = 0, this.zoneId = zone_id, this.zoneName = "", this.len = rawdata.length, this.data = rawdata, this.len > 0) {
+        var cc = readCookie(zone_id)
+        null != cc && cc.length > 0 ? (this.current = eval(cc) + 1, this.current >= this.len && (this.current = 0)) : this.current = Math.floor(Math.random() * this.len), createCookie(zone_id, this.current, 1)
     }
-
-
     this.Show = function () {
-        if (this.len > 0)
-            this.ChangeBanner();
-    };
-
-    this.ChangeBanner = function () {
+        this.len > 0 && this.ChangeBanner()
+    }, this.ChangeBanner = function () {
         try {
-
-            this.AdsvnRenderBanner(this.data[this.current]);
+            this.AdsvnRenderBanner(this.data[this.current])
+        } catch (e) {
+            console.log(e.message + ":loi")
         }
-        catch (e) {
-            console.log(e.message + ':loi');
-        }
-    };
-
-    this.AdsvnRenderBanner = function (obj) {
-        if (typeof obj == undefined) return;
-        if (obj.Link.length == 0) obj.Link = location.href;
-        /*track impression*/
-        adVnn.push(obj.ID);
-        arrayAdsInPage.push(obj);
-        /*het track impression*/
-        if (obj.Type == 1) {
-            document.write('<div class="vmc_ads_viewport" advId="' + obj.ID + '" style="z-index:555; margin:0 0 5px 0; padding:0;width:' + obj.Width + 'px;' + obj.Style + '"><a href="' + AdsvnRenderLink(obj.ID, obj.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + obj.src + '" width="' + obj.Width + 'px" height="' + obj.Height + '"/></a>' + vadslogo + '</div>');
-            if (obj.Img.length > 0) {
-                document.write('<iframe src="' + obj.Img + (obj.Img.indexOf('?') != -1 ? "&r=" : "?r=") + Math.random() + '" width="0" style="display:none" height="0"></iframe>');
-            }
-        }
-        else if (obj.Type == 2) {
-            if (isSupportFlash())
-                document.write('<div class="vmc_ads_viewport" advId="' + obj.ID + '" style="z-index:555; margin:0 0 5px 0; padding:0;width:' + obj.Width + 'px;' + obj.Style + '"><embed src="' + obj.src + '"  ' + (obj.Link.length > 0 ? 'flashvars="stringURL=' + encodeURIComponent(obj.Link) + '"' : '') + ' width="' + obj.Width + 'px" height="' + obj.Height + '" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" quality="high" ></embed>' + vadslogo + '</div>');
-            else {
-                
-                document.write('<div class="vmc_ads_viewport" advId="' + obj.ID + '"  style="z-index:555; margin:0 0 5px 0; padding:0;width:' + obj.Width + 'px;' + obj.Style + '"><a href="' + AdsvnRenderLink(obj.ID, obj.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + obj.Img + '" width="' + obj.Width + 'px" height="' + obj.Height + '"/></a></div>');
-            }
-        }
-        else if (obj.Type == 3 || (obj.Type == 4 && !isIE())) {
-            document.writeln('<div class="vmc_ads_viewport" advId="' + obj.ID + '"   style="z-index:555; margin:0 0 0px 0; padding:0;width:' + obj.Width + 'px;' + obj.Style + '">' + obj.src + '</div>');
-        }
-        else if (obj.Type == 5) {
-            //TVC
-        }
-        else if (obj.Type == 6) {
-            var divExpand = "divExpand" + (new Date()).getTime();
-            if (isSupportFlash()) {
-                document.write('<div class="vmc_ads_viewport" advId="' + obj.ID + '"   id="' + divExpand + '" style="z-index:555; width: 980px; height: 50px; overflow: hidden;"><embed quality="high"  allowscriptaccess="always" flashvars="div_id=' + divExpand + '&stringURL=' + encodeURIComponent(obj.Link) + '" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="' + obj.src + '" height="480" width="980">' + vadslogo + '</div>');
-            }
-            else {
-                document.write('<div class="vmc_ads_viewport" advId="' + obj.ID + '"   style="z-index:555; margin:0 0 5px 0; padding:0;width:980px;' + obj.Style + '"><a href="' + AdsvnRenderLink(obj.ID, obj.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + obj.Img + '" width="980px" height="50px"/></a></div>');
-            }
-        }
-        else if (obj.Type == 7) {
-
-            var divID = "div_" + obj.Zone_ID + "_" + (new Date().getTime());
-            if (isSupportFlash()) {
-                document.write(addCss + '<div class="vmc_ads_viewport"  advId="' + obj.ID + '"  style="z-index:555; margin:0 0 5px 0; padding:0;"><div id="' + divID + '" onmouseover="AdsvnMouseOver(this)" w="' + obj.Width + '" h="' + obj.Height + '"  style="position:relative; overflow:hidden; padding:0;width:' + obj.Width + 'px;height:' + obj.Height + 'px;' + obj.Style + '"><div style="position:absolute;left:0;top:0; background-color:#fff;"><embed src="' + obj.src + '"  ' + (obj.Link.length > 0 ? 'flashvars="zoneid=' + divID + '&amp;stringURL=' + encodeURIComponent(obj.Link) + '"' : '') + ' width="100%" height=100%" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" quality="high" ></embed></div></div>' + vadslogo + '</div>');
-            }
-            else {
-                document.write('<div class="vmc_ads_viewport"  advId="' + obj.ID + '"  w="' + obj.Width + '" h="' + obj.Height + '"  style="z-index:555; margin:0 0 5px 0; padding:0;width:' + obj.Width + 'px; height:' + obj.Height + 'px;' + obj.Style + '"><a href="' + AdsvnRenderLink(obj.ID, obj.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + obj.Img + '" width="100%" height="100%"/></a>' + vadslogo + '</div>');
-            }
-        }
-        else if (obj.Type == 9) {
-            var divID = "div_" + obj.Zone_ID + "_" + (new Date().getTime());
-            if (isSupportFlash()) {
-                document.write(addCss + '<div class="vmc_ads_viewport"  advId="' + obj.ID + '"  style="z-index:555; margin:0 0 5px 0; padding:0;"><div id="' + divID + '"  style="position:fixed; overflow:hidden; padding:0; right:5px; bottom:5px;"><embed src="' + obj.src + '"  flashvars="div_id=' + divID + '&amp;stringURL=' + escape(AdsvnRenderLink(obj.ID, obj.Link)) + '" width="' + obj.Width + 'px" height="' + obj.Height + 'px" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" quality="high" ></embed>' + vadslogo + '</div>');
-            }
-        }
-        else if (obj.Type == 10) //Banner Catfish
-        {
-            setTimeout(function () { $("#catfish").hide(); }, 10000);
-            document.write('<div id="catfish" style="width: 100%;position:fixed;bottom:0;left:0;"><div style="width:300px;height:50px;margin:0 auto"><img src="' + obj.src + '" style="display:none"/><a href="' + obj.Link + '"> <img src="' + obj.src + '" style="display: block;margin: 0 auto" /></a></div></div>');
-        }
-        else if (obj.Type == 11) //Banner Popup
-        {
-            var a = '<div id="vmcFullbg" style="z-index:10000;background:#000;position:fixed;top:0; left:0; height:100%; width:100%;"><span></span></div><div id="adv_ttv_mobile_3000" style="z-index:10000;width: 100%;height: 100%;position:absolute;top:0; left:0;"><div style="position:relative;clear:both;width: 100%;height: 100%;"><div id="ban_pop" style="clear:both;position: relative"><div id="cl_pop_bt" style="overflow-y: hidden; position: absolute; top: 20px; right: 0px;"><a id="adv_ttv_close" href="javascript:void(0)" onclick="close_avt()" class="adv_ttv_close_adv" style="height:32px;display:inline-block;"><span style="display: block; text-align: center; font-family: arial; float: right; font-size: 13px; border-radius: 3px 0px 0px 3px; font-weight: bold; background-color:#ffffff; color: #ff0000; padding: 0px 10px; height: 31px; line-height: 31px;">\u0110\u00f3ng <i style="font-weight: bold; display: inline-block; height: 100%; vertical-align: top; font-size: 21px; padding-top: 1px;">\u00d7</i></span></a></div><a id="log-ads" style="position: absolute;top: 0;right: 0;"><img src="http://img.vietnamnetad.vn/Images/logo/vads-logo.png" height="17"></a>';
-            a += '<img src="' + obj.Link + '" style="display:none"/><a rel="nofollow" href="' + obj.Link + '" target="_blank" id="adv_ttv_mobile_3000_a" style="clear:both; display:block; text-decoration:none;border:0;"><img border="0" width="100%" style="display:block;margin:0 auto" id="img_adv_ttv_mobile_3000" vspace="0" hspace="0" src="' + obj.src + '" alt="Qu\u1ea3ng c\u00e1o" /></a></div></div></div>';
-            vmcTimeout = setTimeout('close_avt()', 7000);
-            document.write(a);
-        }
-        else if (obj.Type == 12) //Banner Background Inpage
-        {
-            renderBannerBackground(obj);
-        }
+    }, this.AdsvnRenderBanner = function (e) {
+        if (void 0 != typeof e)
+            if (0 == e.Link.length && (e.Link = location.href), adVnn.push(e.ID), arrayAdsInPage.push(e), 1 == e.Type) document.write('<div class="vmc_ads_viewport" advId="' + e.ID + '" style="z-index:555; margin:0 0 5px 0; padding:0;width:' + e.Width + "px;" + e.Style + '"><a href="' + AdsvnRenderLink(e.ID, e.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + e.src + '" width="' + e.Width + 'px" height="' + e.Height + '"/></a>' + vadslogo + "</div>"), e.Img.length > 0 && document.write('<iframe src="' + e.Img + (-1 != e.Img.indexOf("?") ? "&r=" : "?r=") + Math.random() + '" width="0" style="display:none" height="0"></iframe>')
+            else if (2 == e.Type) isSupportFlash() ? document.write('<div class="vmc_ads_viewport" advId="' + e.ID + '" style="z-index:555; margin:0 0 5px 0; padding:0;width:' + e.Width + "px;" + e.Style + '"><embed src="' + e.src + '"  ' + (e.Link.length > 0 ? 'flashvars="stringURL=' + encodeURIComponent(e.Link) + '"' : "") + ' width="' + e.Width + 'px" height="' + e.Height + '" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" quality="high" ></embed>' + vadslogo + "</div>") : document.write('<div class="vmc_ads_viewport" advId="' + e.ID + '"  style="z-index:555; margin:0 0 5px 0; padding:0;width:' + e.Width + "px;" + e.Style + '"><a href="' + AdsvnRenderLink(e.ID, e.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + e.Img + '" width="' + e.Width + 'px" height="' + e.Height + '"/></a></div>')
+            else if (3 == e.Type || 4 == e.Type && !isIE()) document.writeln('<div class="vmc_ads_viewport" advId="' + e.ID + '"   style="z-index:555; margin:0 0 0px 0; padding:0;width:' + e.Width + "px;" + e.Style + '">' + e.src + "</div>")
+            else if (5 == e.Type);
+            else if (6 == e.Type) {
+                var t = "divExpand" + (new Date).getTime()
+                isSupportFlash() ? document.write('<div class="vmc_ads_viewport" advId="' + e.ID + '"   id="' + t + '" style="z-index:555; width: 980px; height: 50px; overflow: hidden;"><embed quality="high"  allowscriptaccess="always" flashvars="div_id=' + t + "&stringURL=" + encodeURIComponent(e.Link) + '" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="' + e.src + '" height="480" width="980">' + vadslogo + "</div>") : document.write('<div class="vmc_ads_viewport" advId="' + e.ID + '"   style="z-index:555; margin:0 0 5px 0; padding:0;width:980px;' + e.Style + '"><a href="' + AdsvnRenderLink(e.ID, e.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + e.Img + '" width="980px" height="50px"/></a></div>')
+            } else if (7 == e.Type) {
+                var i = "div_" + e.Zone_ID + "_" + (new Date).getTime()
+                isSupportFlash() ? document.write(addCss + '<div class="vmc_ads_viewport"  advId="' + e.ID + '"  style="z-index:555; margin:0 0 5px 0; padding:0;"><div id="' + i + '" onmouseover="AdsvnMouseOver(this)" w="' + e.Width + '" h="' + e.Height + '"  style="position:relative; overflow:hidden; padding:0;width:' + e.Width + "px;height:" + e.Height + "px;" + e.Style + '"><div style="position:absolute;left:0;top:0; background-color:#fff;"><embed src="' + e.src + '"  ' + (e.Link.length > 0 ? 'flashvars="zoneid=' + i + "&amp;stringURL=" + encodeURIComponent(e.Link) + '"' : "") + ' width="100%" height=100%" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" quality="high" ></embed></div></div>' + vadslogo + "</div>") : document.write('<div class="vmc_ads_viewport"  advId="' + e.ID + '"  w="' + e.Width + '" h="' + e.Height + '"  style="z-index:555; margin:0 0 5px 0; padding:0;width:' + e.Width + "px; height:" + e.Height + "px;" + e.Style + '"><a href="' + AdsvnRenderLink(e.ID, e.Link) + '" target="_blank"><img style="border:none; padding:0; margin:0;" src="' + e.Img + '" width="100%" height="100%"/></a>' + vadslogo + "</div>")
+            } else if (9 == e.Type) {
+                var i = "div_" + e.Zone_ID + "_" + (new Date).getTime()
+                isSupportFlash() && document.write(addCss + '<div class="vmc_ads_viewport"  advId="' + e.ID + '"  style="z-index:555; margin:0 0 5px 0; padding:0;"><div id="' + i + '"  style="position:fixed; overflow:hidden; padding:0; right:5px; bottom:5px;"><embed src="' + e.src + '"  flashvars="div_id=' + i + "&amp;stringURL=" + escape(AdsvnRenderLink(e.ID, e.Link)) + '" width="' + e.Width + 'px" height="' + e.Height + 'px" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="transparent" quality="high" ></embed>' + vadslogo + "</div>")
+            } else if (10 == e.Type) setTimeout(function () {
+                $("#catfish").hide()
+            }, 1e4), document.write('<div id="catfish" style="width: 100%;position:fixed;bottom:0;left:0;"><div style="width:300px;height:50px;margin:0 auto"><img src="' + e.src + '" style="display:none"/><a href="' + e.Link + '"> <img src="' + e.src + '" style="display: block;margin: 0 auto" /></a></div></div>')
+            else if (11 == e.Type) {
+                var n = '<div id="vmcFullbg" style="z-index:10000;background:#000;position:fixed;top:0; left:0; height:100%; width:100%;"><span></span></div><div id="adv_ttv_mobile_3000" style="z-index:10000;width: 100%;height: 100%;position:absolute;top:0; left:0;"><div style="position:relative;clear:both;width: 100%;height: 100%;"><div id="ban_pop" style="clear:both;position: relative"><div id="cl_pop_bt" style="overflow-y: hidden; position: absolute; top: 20px; right: 0px;"><a id="adv_ttv_close" href="javascript:void(0)" onclick="close_avt()" class="adv_ttv_close_adv" style="height:32px;display:inline-block;"><span style="display: block; text-align: center; font-family: arial; float: right; font-size: 13px; border-radius: 3px 0px 0px 3px; font-weight: bold; background-color:#ffffff; color: #ff0000; padding: 0px 10px; height: 31px; line-height: 31px;">Đóng <i style="font-weight: bold; display: inline-block; height: 100%; vertical-align: top; font-size: 21px; padding-top: 1px;">×</i></span></a></div><a id="log-ads" style="position: absolute;top: 0;right: 0;"><img src="http://img.vietnamnetad.vn/Images/logo/vads-logo.png" height="17"></a>'
+                n += '<img src="' + e.Link + '" style="display:none"/><a rel="nofollow" href="' + e.Link + '" target="_blank" id="adv_ttv_mobile_3000_a" style="clear:both; display:block; text-decoration:none;border:0;"><img border="0" width="100%" style="display:block;margin:0 auto" id="img_adv_ttv_mobile_3000" vspace="0" hspace="0" src="' + e.src + '" alt="Quảng cáo" /></a></div></div></div>', vmcTimeout = setTimeout("close_avt()", 7e3), document.write(n)
+            } else 12 == e.Type && renderBannerBackground(e)
     }
 }
-
-var vmcTimeout;
-
 
 function close_avt() {
-    document.getElementById("adv_ttv_mobile_3000").style.display = "none";
-    document.getElementById("vmcFullbg").style.display = "none";
-    vmcTimeout && window.clearTimeout(vmcTimeout);
+    document.getElementById("adv_ttv_mobile_3000").style.display = "none", document.getElementById("vmcFullbg").style.display = "none", vmcTimeout && window.clearTimeout(vmcTimeout)
 }
 
-function AdsvnMouseOver(obj) {
-    obj.style.overflow = 'visible';
+function AdsvnMouseOver(e) {
+    e.style.overflow = "visible"
 }
 
-function AdsvnMouseOut(obj) {
-    obj.style.overflow = 'hidden';
+function AdsvnMouseOut(e) {
+    e.style.overflow = "hidden"
 }
 
-function AdsvnRenderClick(itemId) {
-    if (itemId <= 0) return;
-    var img = new Image();
-    img.src = logLocation + "/Dout/Click.ashx?itemId=" + itemId + '&location=' + encodeURIComponent(location.href);
+function AdsvnRenderClick(e) {
+    if (!(0 >= e)) {
+        var t = new Image
+        t.src = logLocation + "/Dout/Click.ashx?itemId=" + e + "&location=" + encodeURIComponent(location.href)
+    }
 }
 
 function isIE() {
-    return (navigator.appName == 'Microsoft Internet Explorer');
+    return "Microsoft Internet Explorer" == navigator.appName
 }
 
-function AdsvnRenderLink(itemId, link) {
-    return logLocation + "/Dout/Click.ashx?itemId=" + itemId + '&isLink=1&location=' + encodeURIComponent(location.href) + (link ? ("&nextUrl=" + encodeURIComponent(link)) : "");
+function AdsvnRenderLink(e, t) {
+    return logLocation + "/Dout/Click.ashx?itemId=" + e + "&isLink=1&location=" + encodeURIComponent(location.href) + (t ? "&nextUrl=" + encodeURIComponent(t) : "")
 }
 
- 
-
-var jsTimeout = new Number();
-var jsTimeDelay = 60;
-var jsAcceleration = 0.2;
-var jsVelocity = 3;
-
-function jsAnimate(div_id, attr, value) {
-    var _originValue = new Number();
-    var _splitArr = new Array();
-
-    _splitArr = String(document.getElementById(div_id).style[attr]).split("px");
-    _originValue = parseInt(_splitArr[0]);
-    clearTimeout(jsTimeout);
-    if (parseInt(value) > _originValue) {
-        jsTimeout = setTimeout('animateProcess("' + div_id + '", "' + attr + '", "increase", "' + _originValue + '", "' + value + '", 1)', jsTimeDelay);
-    } else if (parseInt(value) < _originValue) {
-        jsTimeout = setTimeout('animateProcess("' + div_id + '", "' + attr + '", "increase", "' + _originValue + '", "' + value + '", 1)', jsTimeDelay);
-    }
+function jsAnimate(e, t, i) {
+    var n = new Number,
+        o = []
+    o = (document.getElementById(e).style[t] + "").split("px"), n = parseInt(o[0]), clearTimeout(jsTimeout), parseInt(i) > n ? jsTimeout = setTimeout('animateProcess("' + e + '", "' + t + '", "increase", "' + n + '", "' + i + '", 1)', jsTimeDelay) : parseInt(i) < n && (jsTimeout = setTimeout('animateProcess("' + e + '", "' + t + '", "increase", "' + n + '", "' + i + '", 1)', jsTimeDelay))
 }
 
-function animateProcess(div_id, attr, type, begin, end, timing) {
-    clearTimeout(jsTimeout);
-    var _distance = (jsAcceleration * Math.pow(parseInt(timing), 2)) / 2 + jsVelocity * parseInt(timing);
-    var _s = new Number();
-    switch (type) {
+function animateProcess(e, t, i, n, o, a) {
+    clearTimeout(jsTimeout)
+    var r = jsAcceleration * Math.pow(parseInt(a), 2) / 2 + jsVelocity * parseInt(a),
+        s = new Number
+    switch (i) {
         case "increase":
-            _s = parseInt(begin) + parseInt(_distance);
-            if (_s >= parseInt(end)) {
-                document.getElementById(div_id).style[attr] = end + "px";
-            } else {
-                document.getElementById(div_id).style[attr] = _s + "px";
-                timing++;
-                jsTimeout = setTimeout('animateProcess("' + div_id + '", "' + attr + '", "' + type + '", "' + _s + '", "' + end + '", ' + timing + ')', jsTimeDelay);
-            }
-            break;
+            s = parseInt(n) + parseInt(r), s >= parseInt(o) ? document.getElementById(e).style[t] = o + "px" : (document.getElementById(e).style[t] = s + "px", a++, jsTimeout = setTimeout('animateProcess("' + e + '", "' + t + '", "' + i + '", "' + s + '", "' + o + '", ' + a + ")", jsTimeDelay))
+            break
         case "decrease":
-            _s = parseInt(begin) - parseInt(_distance);
-            if (_s <= parseInt(end)) {
-                document.getElementById(div_id).style[attr] = end + "px";
-            } else {
-                document.getElementById(div_id).style[attr] = _s + "px";
-                timing++;
-                jsTimeout = setTimeout('animateProcess("' + div_id + '", "' + attr + '", "' + type + '", "' + _s + '", "' + end + '", ' + timing + ')', jsTimeDelay);
-            }
-            break;
+            s = parseInt(n) - parseInt(r), s <= parseInt(o) ? document.getElementById(e).style[t] = o + "px" : (document.getElementById(e).style[t] = s + "px", a++, jsTimeout = setTimeout('animateProcess("' + e + '", "' + t + '", "' + i + '", "' + s + '", "' + o + '", ' + a + ")", jsTimeDelay))
     }
 }
 
-function hookExpand(objID, val, isExpand) {
-    var obj = document.getElementById(objID);
-    if (obj == null) return;
-
-    if (isExpand) {
-        // Scroll to this Obj
-        var desty = obj.offsetTop;
-        var thisNode = obj;
-        while (thisNode.offsetParent &&
-			  (thisNode.offsetParent != document.body)) {
-            thisNode = thisNode.offsetParent;
-            desty += thisNode.offsetTop;
+function hookExpand(e, t, i) {
+    var n = document.getElementById(e)
+    if (null != n) {
+        if (i) {
+            for (var o = n.offsetTop, a = n; a.offsetParent && a.offsetParent != document.body;) a = a.offsetParent, o += a.offsetTop
+            window.scrollTo(0, o)
         }
-        window.scrollTo(0, desty);
-    }
-
-    obj.style.clip = val;
-}
-
-function hookExpandOverflow(objID, val, isExpand) {
-    var obj = document.getElementById(objID);
-    if (obj == null) return;
-    obj.style.clip = val;
-    if (isExpand) {
-        // Scroll to this Obj
-        var desty = obj.offsetTop;
-        var thisNode = obj;
-        while (thisNode.offsetParent &&
-			  (thisNode.offsetParent != document.body)) {
-            thisNode = thisNode.offsetParent;
-            desty += thisNode.offsetTop;
-        }
-        window.scrollTo(0, desty);
-
-        // Remove parent overflow: hidden
-        var pNode = obj.parentNode;
-        while (pNode.parentNode &&
-			  (pNode.parentNode != document.body)) {
-            if (pNode.style.overflow != 'visible') pNode.style.overflow = 'visible';
-            if (parseInt(pNode.offsetHeight) >= 500) break;
-            pNode = pNode.parentNode;
-        }
+        n.style.clip = t
     }
 }
 
+function hookExpandOverflow(e, t, i) {
+    var n = document.getElementById(e)
+    if (null != n && (n.style.clip = t, i)) {
+        for (var o = n.offsetTop, a = n; a.offsetParent && a.offsetParent != document.body;) a = a.offsetParent, o += a.offsetTop
+        window.scrollTo(0, o)
+        for (var r = n.parentNode; r.parentNode && r.parentNode != document.body && ("visible" != r.style.overflow && (r.style.overflow = "visible"), !(parseInt(r.offsetHeight) >= 500)) ;) r = r.parentNode
+    }
+}
 
-jQuery.fn.isOnScreen = function () {
-    var win = jQuery(window);
-    var viewport = {
-        top: win.scrollTop(),
-        left: win.scrollLeft()
-    };
-    viewport.right = viewport.left + win.width();
-    viewport.bottom = viewport.top + win.height();
-    var bounds = this.offset();
-    bounds.right = bounds.left + this.outerWidth();
-    bounds.bottom = bounds.top + this.outerHeight();
-    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-};
-
-var arrayIsInviewport = new Array();
-/*Nhung quang cao co tren trang*/
-var arrayAdsInPage = new Array();
-
-var vmcScrollTimeout = null;
-var vmcScrollendDelay = 500;
-
-function vmcAppendFrame(url) {
-    var iframe = document.createElement('iframe');
-    iframe.style.display = "none";
-    iframe.src = url;
-    document.body.appendChild(iframe);
+function vmcAppendFrame(e) {
+    var t = document.createElement("iframe")
+    t.style.display = "none", t.src = e, document.body.appendChild(t)
 }
 
 function scrollbeginHandler() { }
 
 function scrollendHandler() {
-     vmcScrollTimeout = null;
-}
-setInterval(function () { scrollendHandler() }, 500);
-var isVnnLoaded = false;
-window.onload = function () {
-    if (adVnn.length > 0 && !isVnnLoaded) {
-        isVnnLoaded = true;
-        if (arrayIsInviewport.length == 0) arrayIsInviewport = adVnn;
-        (new Image()).src = logLocation + "/Dout/View.ashx?itemIds=" + adVnn.join(",") + '&location=' + encodeURIComponent(location.href) + "&trueImpression=0&t=" + new Date();
-
-    }
+    vmcScrollTimeout = null
 }
 
-window.onbeforeunload = function () {
-    if (adVnn.length > 0 && !isVnnLoaded) {
-        isVnnLoaded = true;
-        if (arrayIsInviewport.length == 0) arrayIsInviewport = adVnn;
-        (new Image()).src = logLocation + "/Dout/View.ashx?itemIds=" + adVnn.join(",") + '&location=' + encodeURIComponent(location.href) + "&trueImpression=0&t=" + new Date();
+function renderBannerBackground(e) {
+    return ""
+}
 
-    }
-};
-
-/*Sticky*/
-jQuery.fn.extend({
-    VADSSticky: function (e, t, n) {
-        var r = $(this);
-        if ($("#" + t).length == 0 || $("#" + e).length == 0 || $("#" + n).length == 0) return;
-        var ot = $("#" + t);
-        var oe = $("#" + e);
-        var o = $("#" + n);
-		 
-        r.scroll(function () {
-            var i = ot.offset().top;
-            var s = oe.offset().top;
-            var u = o.height();
-            var e = r.scrollTop();
-            if (s <= e) {
-                if (e + u >= i) {
-                    o.css({
-                        top: -1 * (u - (i - e) + 20) + "px",
-                        position: "fixed"
-                    })
-                } else {
-                    o.css({
-                        top: "30px",
-                        position: "fixed"
-                    });
+function vmcloadJs(e, t) {
+    var i = document.createElement("script")
+    i.type = "text/javascript", i.src = e, 2 <= arguments.length && (i.onload = t, i.onreadystatechange = function () {
+        4 != i.readyState && "complete" != i.readyState || t()
+    }), document.getElementsByTagName("head")[0].appendChild(i)
+}
+var logLocation = "http://netlife.vn",
+    adVnn = [],
+    vadslogo = "",
+    addCss = "",
+    FlashDetect = new function () {
+        var e = this
+        e.installed = !1, e.raw = "", e.major = -1, e.minor = -1, e.revision = -1, e.revisionStr = ""
+        var t = [{
+            name: "ShockwaveFlash.ShockwaveFlash.7",
+            version: function (e) {
+                return n(e)
+            }
+        }, {
+            name: "ShockwaveFlash.ShockwaveFlash.6",
+            version: function (e) {
+                var t = "6,0,21"
+                try {
+                    e.AllowScriptAccess = "always", t = n(e)
+                } catch (i) { }
+                return t
+            }
+        }, {
+            name: "ShockwaveFlash.ShockwaveFlash",
+            version: function (e) {
+                return n(e)
+            }
+        }],
+            n = function (e) {
+                var t = -1
+                try {
+                    t = e.GetVariable("$version")
+                } catch (i) { }
+                return t
+            },
+            o = function (e) {
+                var t = -1
+                try {
+                    t = new ActiveXObject(e)
+                } catch (i) {
+                    t = {
+                        activeXError: !0
+                    }
                 }
-            } else {
-                o.css({
+                return t
+            },
+            a = function (e) {
+                var t = e.split(",")
+                return {
+                    raw: e,
+                    major: parseInt(t[0].split(" ")[1], 10),
+                    minor: parseInt(t[1], 10),
+                    revision: parseInt(t[2], 10),
+                    revisionStr: t[2]
+                }
+            },
+            r = function (e) {
+                var t = e.split(/ +/),
+                    i = t[2].split(/\./),
+                    n = t[3]
+                return {
+                    raw: e,
+                    major: parseInt(i[0], 10),
+                    minor: parseInt(i[1], 10),
+                    revisionStr: n,
+                    revision: s(n)
+                }
+            },
+            s = function (t) {
+                return parseInt(t.replace(/[a-zA-Z]/g, ""), 10) || e.revision
+            }
+        e.majorAtLeast = function (t) {
+            return e.major >= t
+        }, e.minorAtLeast = function (t) {
+            return e.minor >= t
+        }, e.revisionAtLeast = function (t) {
+            return e.revision >= t
+        }, e.versionAtLeast = function (t) {
+            var n = [e.major, e.minor, e.revision],
+                o = Math.min(n.length, arguments.length)
+            for (i = 0; i < o; i++) {
+                if (n[i] >= arguments[i]) {
+                    if (i + 1 < o && n[i] == arguments[i]) continue
+                    return !0
+                }
+                return !1
+            }
+        }, e.FlashDetect = function () {
+            if (navigator.plugins && navigator.plugins.length > 0) {
+                var i = "application/x-shockwave-flash",
+                    n = navigator.mimeTypes
+                if (n && n[i] && n[i].enabledPlugin && n[i].enabledPlugin.description) {
+                    var s = n[i].enabledPlugin.description,
+                        d = r(s)
+                    e.raw = d.raw, e.major = d.major, e.minor = d.minor, e.revisionStr = d.revisionStr, e.revision = d.revision, e.installed = !0
+                }
+            } else if (-1 == navigator.appVersion.indexOf("Mac") && window.execScript)
+                for (var s = -1, l = 0; l < t.length && -1 == s; l++) {
+                    var c = o(t[l].name)
+                    if (!c.activeXError && (e.installed = !0, s = t[l].version(c), -1 != s)) {
+                        var d = a(s)
+                        e.raw = d.raw, e.major = d.major, e.minor = d.minor, e.revision = d.revision, e.revisionStr = d.revisionStr
+                    }
+                }
+        }()
+    }
+FlashDetect.JS_RELEASE = "1.0.4"
+var hoverBannerTimeOut, vmcTimeout, jsTimeout = new Number,
+    jsTimeDelay = 60,
+    jsAcceleration = .2,
+    jsVelocity = 3
+jQuery.fn.isOnScreen = function () {
+    var e = jQuery(window),
+        t = {
+            top: e.scrollTop(),
+            left: e.scrollLeft()
+        }
+    t.right = t.left + e.width(), t.bottom = t.top + e.height()
+    var i = this.offset()
+    return i.right = i.left + this.outerWidth(), i.bottom = i.top + this.outerHeight(), !(t.right < i.left || t.left > i.right || t.bottom < i.top || t.top > i.bottom)
+}
+var arrayIsInviewport = [],
+    arrayAdsInPage = [],
+    vmcScrollTimeout = null,
+    vmcScrollendDelay = 500
+setInterval(function () {
+    scrollendHandler()
+}, 500)
+var isVnnLoaded = !1
+window.onload = function () {
+    adVnn.length > 0 && !isVnnLoaded && (isVnnLoaded = !0, 0 == arrayIsInviewport.length && (arrayIsInviewport = adVnn), (new Image).src = logLocation + "/Dout/View.ashx?itemIds=" + adVnn.join(",") + "&location=" + encodeURIComponent(location.href) + "&trueImpression=0&t=" + new Date)
+}, window.onbeforeunload = function () {
+    adVnn.length > 0 && !isVnnLoaded && (isVnnLoaded = !0, 0 == arrayIsInviewport.length && (arrayIsInviewport = adVnn), (new Image).src = logLocation + "/Dout/View.ashx?itemIds=" + adVnn.join(",") + "&location=" + encodeURIComponent(location.href) + "&trueImpression=0&t=" + new Date)
+}, jQuery.fn.extend({
+    VADSSticky: function (e, t, i) {
+        var n = $(this)
+        if (0 != $("#" + t).length && 0 != $("#" + e).length && 0 != $("#" + i).length) {
+            var o = $("#" + t),
+                a = $("#" + e),
+                r = $("#" + i)
+            n.scroll(function () {
+                var e = o.offset().top,
+                    t = a.offset().top,
+                    i = r.height(),
+                    s = n.scrollTop()
+                s >= t ? s + i >= e ? r.css({
+                    top: -1 * (i - (e - s) + 20) + "px",
+                    position: "fixed"
+                }) : r.css({
+                    top: "30px",
+                    position: "fixed"
+                }) : r.css({
                     top: "",
                     position: ""
                 })
-            }
-        })
+            })
+        }
     }
-});
- 
-/*background banner*/
-var imgHost = '';
-function renderBannerBackground(obj) {
-     
-    return "";
-};
-
-function vmcloadJs(c, b) {
-    var a = document.createElement("script");
-    a.type = "text/javascript";
-    a.src = c;
-    2 <= arguments.length && (a.onload = b, a.onreadystatechange = function () {
-        4 != a.readyState && "complete" != a.readyState || b();
-    });
-    document.getElementsByTagName("head")[0].appendChild(a);
-};
+})
+var imgHost = "";
+(function (a) {
+    a.fn.extend({
+        showPopup: function (b) {
+            function f(c) {
+                if (b.onClose instanceof Function) b.onClose();
+                a("html").css({
+                    overflow: "auto"
+                });
+                a("body").css({
+                    overflow: "auto"
+                });
+                a("#lean_overlay").fadeOut(200);
+                a(c).css({
+                    display: "none"
+                })
+            }
+            var e = a("<div id='lean_overlay'></div>");
+            a("body").append(e);
+            b = a.extend({
+                top: 100,
+                overlay: 0.5,
+                scroll: !0,
+                closeButton: null
+            }, b);
+            return this.each(function () {
+                var c = b;
+                a(this).click(function (b) {
+                    var d = a(this).attr("href");
+                    a("#lean_overlay").click(function () {
+                        f(d)
+                    });
+                    a(c.closeButton).click(function () {
+                        f(d)
+                    });
+                    a(d).outerHeight();
+                    var e = a(d).outerWidth();
+                    a("#lean_overlay").css({
+                        display: "block",
+                        opacity: 0
+                    });
+                    a("#lean_overlay").fadeTo(200, c.overlay);
+                    a(d).css({
+                        display: "block",
+                        position: "absolute",
+                        opacity: 0,
+                        "z-index": 110
+                    });
+                    c.scroll && (a("html").css({
+                        overflow: "hidden"
+                    }), a("body").css({
+                        overflow: "hidden"
+                    }));
+                    a(d).fadeTo(200, 1);
+                    b.preventDefault()
+                })
+            })
+        }
+    })
+})(jQuery);

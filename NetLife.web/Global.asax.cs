@@ -9,6 +9,7 @@ using System.Web.Security;
 using BOATV;
 using NetLife.web;
 using NetLife.web.Log;
+using System.IO.Compression;
 
 namespace NetLife.web
 {
@@ -21,6 +22,39 @@ namespace NetLife.web
 
             var monitor = new Thread(CacheMonitorManagerUpdate);
             monitor.Start();
+        }
+        protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            //HttpContext.Current.Response.Cache.SetExpires(DateTime.UtcNow.AddDays(-1));
+            //HttpContext.Current.Response.Cache.SetValidUntilExpires(false);
+            //HttpContext.Current.Response.Cache.SetRevalidation(HttpCacheRevalidation.AllCaches);
+            //HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            //HttpContext.Current.Response.Cache.SetNoStore();
+            HttpApplication app = (HttpApplication)sender;
+            string acceptEncoding = app.Request.Headers["Accept-Encoding"];
+            Stream prevUncompressedStream = app.Response.Filter;
+
+            if (acceptEncoding == null || acceptEncoding.Length == 0)
+                return;
+
+            acceptEncoding = acceptEncoding.ToLower();
+
+            if (acceptEncoding.Contains("gzip"))
+            {
+                // gzip
+                app.Response.Filter = new GZipStream(prevUncompressedStream,
+                    CompressionMode.Compress);
+                app.Response.AppendHeader("Content-Encoding",
+                    "gzip");
+            }
+            else if (acceptEncoding.Contains("deflate"))
+            {
+                // defalte
+                app.Response.Filter = new DeflateStream(prevUncompressedStream,
+                    CompressionMode.Compress);
+                app.Response.AppendHeader("Content-Encoding",
+                    "deflate");
+            }
         }
 
         private void CacheMonitorManagerUpdate()

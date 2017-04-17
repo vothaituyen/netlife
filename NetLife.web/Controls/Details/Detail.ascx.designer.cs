@@ -166,31 +166,31 @@ namespace NetLife.web.Controls.Details {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lienquan;
         
         /// <summary>
-        /// ltrListRelate control.
+        /// LiteralNews1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrListRelate;
+        protected global::System.Web.UI.WebControls.Literal LiteralNews1;
         
         /// <summary>
-        /// relatenews control.
+        /// listNews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl relatenews;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl listnews;
         
         /// <summary>
-        /// ltrListRelate2 control.
+        /// LiteralNews2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrListRelate2;
+        protected global::System.Web.UI.WebControls.Literal LiteralNews2;
         
         /// <summary>
         /// cungchuyenmuc control.
@@ -218,7 +218,8 @@ namespace NetLife.web.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl othernews;
-        
+
+
         /// <summary>
         /// LiteralOther2 control.
         /// </summary>

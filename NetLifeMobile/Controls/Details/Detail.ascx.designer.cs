@@ -13,13 +13,13 @@ namespace NetLifeMobile.Controls.Details {
     public partial class Detail {
         
         /// <summary>
-        /// ltrCattxt control.
+        /// ltrCatParentMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrCattxt;
+        protected global::System.Web.UI.WebControls.Literal ltrCatParentMenu;
         
         /// <summary>
         /// ltrCatParent control.
@@ -29,6 +29,15 @@ namespace NetLifeMobile.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrCatParent;
+        
+        /// <summary>
+        /// ltrCattxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrCattxt;
         
         /// <summary>
         /// ltrTitle control.
@@ -56,6 +65,15 @@ namespace NetLifeMobile.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NetLifeMobile.Controls.Advs.Ads Ads1;
+        
+        /// <summary>
+        /// ltrHot control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrHot;
         
         /// <summary>
         /// ltrContent control.
@@ -94,15 +112,6 @@ namespace NetLifeMobile.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal ltrDate;
         
         /// <summary>
-        /// Ads3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NetLifeMobile.Controls.Advs.Ads Ads3;
-        
-        /// <summary>
         /// tags control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,24 @@ namespace NetLifeMobile.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrKeyword;
+        
+        /// <summary>
+        /// Ads3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads3;
+        
+        /// <summary>
+        /// ltrNew control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrNew;
         
         /// <summary>
         /// Ads2 control.
@@ -164,5 +191,23 @@ namespace NetLifeMobile.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrOther;
+        
+        /// <summary>
+        /// Ads6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads6;
+        
+        /// <summary>
+        /// Ads5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads5;
     }
 }

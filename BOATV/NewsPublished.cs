@@ -1191,8 +1191,8 @@ namespace BOATV
             string key = String.Format("GetListNewsByNewsMode2-{0}-{1}-{2}-{3}-{4}", cat, newsMode, newsMode2, top, ImgWidth);
             List<NewsPublishEntity> lst;
             object obj = Utils.GetFromCache<object>(key);
-            if (obj == null)
-            {
+            //if (obj == null)
+            //{
                 lst = new List<NewsPublishEntity>();
                 DataTable da;
                 using (MainDB db = new MainDB())
@@ -1222,7 +1222,7 @@ namespace BOATV
                 Utils.Add_MemCache(key, lst);
                 Utils.SaveToCacheDependency(TableName.DATABASE_NAME, TableName.NEWSPUBLISHED, key, lst);
                 return lst;
-            }
+            //}
             return (List<NewsPublishEntity>)obj;
         }
 
@@ -2070,13 +2070,185 @@ namespace BOATV
 
                 if (doc.DocumentNode.ChildNodes.Count >= 1)
                 {
-                    int topIndex = doc.DocumentNode.ChildNodes.Count / 2; // -1;
-                    for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
+                    //int topIndex = doc.DocumentNode.ChildNodes.Count / 2; // -1;
+                    //for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
+                    //{
+                    //    if (i == 0) output += "<div id=\"abdf\"> <p class=\"pcontent\">";
+                    //    output += doc.DocumentNode.ChildNodes[i].OuterHtml;
+                    //    if (topIndex > 9)
+                    //    {
+                    //        if (i == 9)
+                    //        {
+                    //            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                    //        }
+                    //    }
+                    //    else if(i == topIndex)
+                    //    {
+                    //        output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                    //    }
+                    //}
+
+                    // case short
+                    if (doc.DocumentNode.ChildNodes[0].ChildNodes.Count > 3 || doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 3)
                     {
-                        if (i == 0) output += "<div id=\"abdf\"> <p class=\"pcontent\">";
-                        output += doc.DocumentNode.ChildNodes[i].OuterHtml;
-                        if (i == topIndex) output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                        for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
+                        {
+                            if (i == 0) output += "<div id=\"abdf\"> <p class=\"pcontent\">";
+                            else if (i == 1 && doc.DocumentNode.ChildNodes[0].ChildNodes.Count > 3)
+                            {
+                                for (int j = 0; j < doc.DocumentNode.ChildNodes[0].ChildNodes.Count; j++)
+                                {
+                                    output += doc.DocumentNode.ChildNodes[0].ChildNodes[j].OuterHtml;
+                                    if (doc.DocumentNode.ChildNodes[0].ChildNodes.Count  < 9)
+                                    {
+                                        if (j == 5) {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (j == 9)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                }
+                            }
+                            else if (i == 1 && doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 3)
+                            {
+                                for (int j = 0; j < doc.DocumentNode.ChildNodes[1].ChildNodes.Count; j++)
+                                {
+                                    output += doc.DocumentNode.ChildNodes[1].ChildNodes[j].OuterHtml;
+                                    if (doc.DocumentNode.ChildNodes[1].ChildNodes.Count < 9)
+                                    {
+                                        if (j == 5)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (j == 9)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                }
+                            }
+                            else if (i == 2 && doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 3)
+                            {
+                                for (int j = 0; j < doc.DocumentNode.ChildNodes[1].ChildNodes.Count; j++)
+                                {
+                                    output += doc.DocumentNode.ChildNodes[1].ChildNodes[j].OuterHtml;
+                                    if (doc.DocumentNode.ChildNodes[1].ChildNodes.Count < 9)
+                                    {
+                                        if (j == 5)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (j == 9)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                }
+                            }
+                            else if (i == 2 && doc.DocumentNode.ChildNodes[2].ChildNodes.Count > 3)
+                            {
+                                for (int j = 0; j < doc.DocumentNode.ChildNodes[2].ChildNodes.Count; j++)
+                                {
+                                    output += doc.DocumentNode.ChildNodes[2].ChildNodes[j].OuterHtml;
+                                    if (doc.DocumentNode.ChildNodes[2].ChildNodes.Count < 9)
+                                    {
+                                        if (j == 5)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (j == 9)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                }
+                            }
+                            else if (i == 3 && doc.DocumentNode.ChildNodes[2].ChildNodes.Count > 3)
+                            {
+                                for (int j = 0; j < doc.DocumentNode.ChildNodes[2].ChildNodes.Count; j++)
+                                {
+                                    output += doc.DocumentNode.ChildNodes[2].ChildNodes[j].OuterHtml;
+                                    if (doc.DocumentNode.ChildNodes[2].ChildNodes.Count < 9)
+                                    {
+                                        if (j == 5)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (j == 9)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                }
+                            }
+                            else if (i == 3 && doc.DocumentNode.ChildNodes[3].ChildNodes.Count > 3)
+                            {
+                                for (int j = 0; j < doc.DocumentNode.ChildNodes[3].ChildNodes.Count; j++)
+                                {
+                                    output += doc.DocumentNode.ChildNodes[3].ChildNodes[j].OuterHtml;
+                                    if (doc.DocumentNode.ChildNodes[3].ChildNodes.Count < 9)
+                                    {
+                                        if (j == 5)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (j == 9)
+                                        {
+                                            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                output += doc.DocumentNode.ChildNodes[i].OuterHtml;
+                            }
+                        }
                     }
+                    else //case long
+                    {
+                        for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
+                        {
+                            if (i == 0) output += "<div id=\"abdf\"> <p class=\"pcontent\">";
+                            output += doc.DocumentNode.ChildNodes[i].OuterHtml;
+                            if (doc.DocumentNode.ChildNodes.Count > 9) {
+                                if (i == 9)
+                                {
+                                    output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                }
+                            }
+                            else
+                            {
+                                if (i == 5)
+                                {
+                                    output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                }
+                            }
+
+                        }
+                    }
+
+
                     output += "</div>";
                 }
                 else return origin;
@@ -3488,7 +3660,7 @@ namespace BOATV
             string keyCache = "SearchFulltext" + key;
 
             DataTable tbl = Utils.GetFromCache<DataTable>(keyCache);
-            if (tbl != null) return tbl;
+            //if (tbl != null) return tbl;
 
             using (var db = new MainDB())
             {

@@ -19,17 +19,23 @@
                 <!--Sao:54-->
                 <uc2:StarCategory ID="StarCategory1" Top="9" Cat_ID="54" runat="server" />
                 <!--Yêu:82-->
-               <%-- <uc3:CategoryHomePage ID="CategoryHomePage3" Top="3" Cat_ID="82" runat="server" />--%>
+                <%-- <uc3:CategoryHomePage ID="CategoryHomePage3" Top="3" Cat_ID="82" runat="server" />--%>
                 <!--Xem:67-->
-              <%--  <uc3:CategoryHomePage ID="CategoryHomePage2" Cat_ID="67" runat="server" />--%>
+                <%--  <uc3:CategoryHomePage ID="CategoryHomePage2" Cat_ID="67" runat="server" />--%>
                 <!--Nghe:68-->
-              <%--  <uc3:CategoryHomePage ID="CategoryHomePage1" Cat_ID="68" runat="server" />--%>
+                <%--  <uc3:CategoryHomePage ID="CategoryHomePage1" Cat_ID="68" runat="server" />--%>
 
                 <!-- Gioi tre-->
-                <uc2:StarCategory ID="CategoryHomePage1" Top="3" Cat_ID="67" runat="server" />
+                <uc2:StarCategory ID="CategoryHomePage1" Top="3" Cat_ID="50" runat="server" />
                 <!-- Giai tri-->
-                <uc2:StarCategory ID="CategoryHomePage2" Top="3" Cat_ID="68" runat="server" />
-                
+                <uc2:StarCategory ID="CategoryHomePage2" Top="3" Cat_ID="47" runat="server" />
+
+                <uc2:StarCategory ID="CategoryHomePage3" Top="3" Cat_ID="129" runat="server" />
+
+                <uc2:StarCategory ID="CategoryHomePage4" Top="3" Cat_ID="132" runat="server" />
+
+                <uc2:StarCategory ID="CategoryHomePage5" Top="3" Cat_ID="138" runat="server" />
+
 
                 <script> $(document).ready(function () {
      var colright = $("#zone82").height() + $("#zone67").height() + $("#zone68").height() + 40;
@@ -39,17 +45,17 @@
             </div>
             <!--Bóng:77-->
             <div class="row">
-                <!-- Lam dep-->
-                <uc2:StarCategory ID="CategoryHomePage3" Top="3" Cat_ID="50" runat="server" />
+                <!-- Choi-->
+               <%-- <uc2:StarCategory ID="CategoryHomePage3" Top="3" Cat_ID="129" runat="server" />--%>
                 <!-- Suc khoe-->
-                <uc2:StarCategory ID="StarCategory2" Cat_ID="83" runat="server" />                
+               <%-- <uc2:StarCategory ID="StarCategory2" Cat_ID="132" runat="server" />--%>
             </div>
             <div class="row">
                 <!--Gia dinh-->
-                <uc2:StarCategory ID="StarCategory3" Cat_ID="82" runat="server" />
+               <%-- <uc2:StarCategory ID="StarCategory3" Cat_ID="136" runat="server" />--%>
                 <%--Xa hoi--%>
-                <uc2:StarCategory ID="StarCategory4" Cat_ID="47" runat="server" />
-                
+                <%--<uc2:StarCategory ID="StarCategory4" Cat_ID="47" runat="server" />--%>
+
                 <%--<uc2:StarCategory ID="StarCategory5" Cat_ID="83" runat="server" />--%>
                 <script>
                     $(document).ready(function () {
@@ -66,7 +72,7 @@
             <uc5:Hot ID="Hot2" runat="server" />
             <uc5:Hot ID="Hot3" runat="server" />--%>
             <uc4:Adv ID="Adv1" PositionId="9" ClassName="row padbt10 fl" runat="server" />
-            <uc6:VideoClip ID="VideoClip1" Cat_ID="78" runat="server" />
+            <uc6:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />
             <uc4:Adv ID="Adv6" PositionId="10" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv4" PositionId="18" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv5" PositionId="19" ClassName="row padbt10 fl" runat="server" />

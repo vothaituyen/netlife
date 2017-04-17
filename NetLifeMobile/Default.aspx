@@ -8,9 +8,16 @@
 
 <%@ Register Src="Controls/Advs/Ads.ascx" TagName="Ads" TagPrefix="uc4" %>
 
+
+
+   
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <center> <uc4:Ads ID="Ads4" PositionId="40" runat="server" /></center>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      
     <uc1:HighlightsHomePage ID="HighlightsHomePage1" runat="server" />
     <div class="row">
        <center>  <uc4:Ads ID="Ads3" PositionId="30" runat="server" /></center>

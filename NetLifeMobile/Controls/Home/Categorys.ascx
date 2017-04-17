@@ -10,12 +10,12 @@
                 </div>
             </div>
         </div>
-<script type="text/javascript">
+<%--<script type="text/javascript">
     $(document).ready(function () {
         $(".news_home span.title").each(function (index) {
             if ($(this).width() < 210) {
-                $(this).text($(this).text().substr(0, 37) + "...");
+                $(this).text($(this).text().substr(0, 67) + "...");
             }
         });
     });
-</script>
+</script>--%>

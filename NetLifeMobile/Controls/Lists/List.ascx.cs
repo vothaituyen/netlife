@@ -16,7 +16,7 @@ namespace NetLifeMobile.Controls.Lists
     {
         private int pageSize = 20;
         public int PageSize { set { pageSize = value; } }
-        private string item = "<div class=\"row item-list\"><div class=\"col-xs-12 pd\"><div class=\"col-xs-3 img-list-item\"> {0} </div><div class=\"col-xs-9 info-list-item\"><p> <a href=\"{1}\">{2}</a></p></div> </div></div>";
+        private string item = "<div class=\"row item-list\"><div class=\"col-xs-12 pd\"><div class=\"col-xs-5 img-list-item\"> {0} </div><div class=\"col-xs-7 info-list-item\"><p> <a href=\"{1}\">{2}</a></p></div> </div></div>";
         private string baiNoiBat ="<div class=\"col-xs-12\" style=\"text-align: center\">{0}</div><a href=\"{1}\"> <div class=\"col-xs-12 title-nb\">{2} </div></a>";
         string newsIds = string.Empty;
         long newsId = 0;
@@ -52,6 +52,13 @@ namespace NetLifeMobile.Controls.Lists
                 hplNext.Text = c.Cat_Name;
                 hplNext.NavigateUrl = c.HREF;
                 Utils.SetPageHeader(this.Page, c.Cat_Name, c.Cat_Description, "");
+
+                if (c.Cat_ParentID != null && c.Cat_ParentID > 0) {
+                    var catParentMenu = BOCategory.GetCategory(c.Cat_ParentID);
+                    hplNextMenu.Text = catParentMenu.Cat_Name;
+                    hplNextMenu.NavigateUrl = catParentMenu.HREF;
+                }
+
             }
             
                 
