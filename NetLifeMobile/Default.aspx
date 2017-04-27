@@ -13,7 +13,7 @@
    
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <center> <uc4:Ads ID="Ads4" PositionId="40" runat="server" /></center>
+   <center> <uc4:Ads ID="Ads4" PositionId="40" runat="server" /></center>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

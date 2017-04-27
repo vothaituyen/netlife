@@ -132,7 +132,7 @@ namespace DALATV
 		protected internal DataTable CreateDataTable(IDbCommand command)
 		{
 			DataTable dataTable = new DataTable();
-new System.Data.SqlClient.SqlDataAdapter((System.Data.SqlClient.SqlCommand)command).Fill(dataTable);
+            new System.Data.SqlClient.SqlDataAdapter((System.Data.SqlClient.SqlCommand)command).Fill(dataTable);
 			return dataTable;
 		}
 

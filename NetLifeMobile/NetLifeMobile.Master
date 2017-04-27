@@ -6,6 +6,8 @@
 
 <%@ Register Src="Controls/Common/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
 
+<%@ Register Src="Controls/Advs/Ads.ascx" TagName="Ads" TagPrefix="uc3" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -67,6 +69,7 @@
     </script>
 </head>
 <body>
+     <center> <uc3:Ads ID="Ads4" PositionId="38" runat="server" /></center>
     <form id="form1" runat="server">
         <uc1:Header ID="Header1" runat="server" />
         <div class="clearfix">
@@ -165,6 +168,8 @@
                 showMediaPlayer($(this).parent().attr('id'), $(this).attr('href'), $(this).find("img").attr('src'), $(this).attr('data-width'), $(this).attr('data-height'));
             });
         </script>
+        <!--Adsia outstream -->
+		<div id="sas_44269"></div>
         <script type="text/javascript">
 	        sas.call("std", {
 		        siteId:		129831,	// 
@@ -177,6 +182,7 @@
 	        <a href="http://adnetwork.adasiaholdings.com/ac?jump=1&nwid=2060&siteid=129831&pgname=vn_netlife_outstream&fmtid=44269&visit=m&tmstp=[timestamp]&out=nonrich" target="_blank">                
 		        <img src="http://adnetwork.adasiaholdings.com/ac?out=nonrich&nwid=2060&siteid=129831&pgname=vn_netlife_outstream&fmtid=44269&visit=m&tmstp=[timestamp]" border="0" alt="" /></a>
         </noscript>
+
     </form>
 </body>
 </html>

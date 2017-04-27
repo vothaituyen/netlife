@@ -49,6 +49,15 @@ namespace NetLifeMobile {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
+        /// Ads4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads4;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>

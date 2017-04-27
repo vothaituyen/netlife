@@ -46,7 +46,7 @@ namespace NetLife.web.Controls.Home
             {
      
                 lst[0].NEWS_INITCONTENT = lst[0].NEWS_INITCONTENT.ToString().Substring(0, (lst[0].NEWS_INITCONTENT.ToString().Length < 100 ? lst[0].NEWS_INITCONTENT.ToString().Length : 97)) + (lst[0].NEWS_INITCONTENT.ToString().Length < 100 ? "" : "...");
-                lst[0].NEWS_TITLE = lst[0].NEWS_TITLE.ToString().Substring(0, (lst[0].NEWS_TITLE.ToString().Length < 70 ? lst[0].NEWS_TITLE.ToString().Length : 70)) + (lst[0].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
+                lst[0].NEWS_TITLE = lst[0].NEWS_TITLE.ToString().Substring(0, (lst[0].NEWS_TITLE.ToString().Length < 60 ? lst[0].NEWS_TITLE.ToString().Length : 60)) + (lst[0].NEWS_TITLE.ToString().Length < 60 ? "" : "...");
 
                     ltrNotBat_other.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
                     newsId = lst[0].NEWS_ID;
@@ -54,7 +54,7 @@ namespace NetLife.web.Controls.Home
                
                 for (int i = 1; i <= (_cat_id == 54? 5:5); i++)
                 {
-                    lst[i].NEWS_TITLE = lst[i].NEWS_TITLE.ToString().Substring(0, (lst[i].NEWS_TITLE.ToString().Length < 70 ? lst[i].NEWS_TITLE.ToString().Length : 70)) + (lst[i].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
+                    lst[i].NEWS_TITLE = lst[i].NEWS_TITLE.ToString().Substring(0, (lst[i].NEWS_TITLE.ToString().Length < 60 ? lst[i].NEWS_TITLE.ToString().Length : 60)) + (lst[i].NEWS_TITLE.ToString().Length < 60 ? "" : "...");
                    
                         lst[i].Imgage = new ImageEntity(140, lst[i].Imgage.ImageUrl);
                         lrtListNew_other.Text += String.Format(listNews, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);

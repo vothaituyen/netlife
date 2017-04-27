@@ -86,12 +86,35 @@
         <asp:Literal runat="server" ID="ltrKeyword"></asp:Literal>
     </div>
 </div>
+<%--<div class="row tinlq">
+    <h3>Có thể bạn quan tâm</h3>
+	
+	<!--
+    <ul class="relatenews row">
+        <asp:Literal runat="server" ID="ltrVideo"></asp:Literal>
+    </ul>
+	
+	-->
+	<!-- Native adsense -->
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-format="autorelaxed"
+			 data-ad-client="ca-pub-6376184810599042"
+			 data-ad-slot="9681811617"></ins>
+		<script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	<!-- Native adsense -->
+	
+</div>--%>
 <div class="row tinlq">
     <h3>Video</h3>
     <ul class="relatenews row">
         <asp:Literal runat="server" ID="ltrVideo"></asp:Literal>
     </ul>
 </div>
+  <uc1:Adv ID="Adv3" PositionId="44" runat="server" />
 <div class="row tinlq" id="lienquan" runat="server">
     <h3>Tin mới nhất
     </h3>
@@ -102,6 +125,17 @@
         <asp:Literal runat="server" ID="LiteralNews2"></asp:Literal>
     </ul>
 </div>
+  <uc1:Adv ID="Adv4" PositionId="45" runat="server" />
+<div class="row tinlq" id="Div1" runat="server">
+    <h3>Tin liên quan
+    </h3>
+    <ul class="relatenews row">
+        <asp:Literal runat="server" ID="ltrListRelate"></asp:Literal>
+    </ul>
+    <ul id="relatenews" class="relatenews" runat="server" visible="false">
+        <asp:Literal runat="server" ID="ltrListRelate2"></asp:Literal>
+    </ul>
+</div>
 
 <%--<div class="row tinlq">
     <h3>Tin cùng chuyên mục</h3>
@@ -109,6 +143,7 @@
         <asp:Literal runat="server" ID="ltrOther"></asp:Literal>
     </ul>
 </div>--%>
+  <uc1:Adv ID="Adv5" PositionId="46" runat="server" />
 <div class="row tinlq" id="cungchuyenmuc" runat="server">
     <h3>Tin cùng chuyên mục</h3>
     <ul class="relatenews row">

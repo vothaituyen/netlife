@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Detail.ascx.cs" Inherits="NetLifeMobile.Controls.Details.Detail" %>
 <%@ Import Namespace="ATVCommon" %>
 <%@ Register Src="../Advs/Ads.ascx" TagName="Ads" TagPrefix="uc1" %>
-<%--<center>    <uc1:Ads ID="Ads5" PositionId="40" runat="server" /></center>--%>
+<center><uc1:Ads ID="Ads6" PositionId="40" runat="server" /></center>
 <div class="row">
     <div class="col-xs-12">
         <span id="rcorners1">
@@ -85,10 +85,10 @@
     <center>    <uc1:Ads ID="Ads2" PositionId="33" runat="server" /></center>
 </div>
 
-<div class="row tinlq" runat="server" id="relate">
-    <h2>Tin liên quan</h2>
+<div class="row tinlq">
+    <h2>Tin nổi bật</h2>
     <ul class="col-xs-12">
-        <asp:Literal runat="server" ID="ltrListRelate"></asp:Literal>
+        <asp:Literal runat="server" ID="ltrOther"></asp:Literal>
     </ul>
 </div>
 
@@ -96,15 +96,19 @@
     <center>    <uc1:Ads ID="Ads4" PositionId="34" runat="server" /></center>
 </div>
 
-
-<div class="row tinlq">
-    <h2>Tin nổi bật</h2>
+<div class="row tinlq" runat="server" id="relate">
+    <h2>Tin liên quan</h2>
     <ul class="col-xs-12">
-        <asp:Literal runat="server" ID="ltrOther"></asp:Literal>
+        <asp:Literal runat="server" ID="ltrListRelate"></asp:Literal>
     </ul>
 </div>
-<div class="row" style="padding-top: 10px">
-    <center>    <uc1:Ads ID="Ads6" PositionId="38" runat="server" /></center>
+   <center>    <uc1:Ads ID="Ads7" PositionId="43" runat="server" /></center>
+
+<div class="row tinlq">
+    <h2>Tin cùng chuyên mục</h2>
+    <ul class="col-xs-12">
+        <asp:Literal runat="server" ID="ltsameCategorys"></asp:Literal>
+    </ul>
 </div>
 
 
@@ -120,7 +124,7 @@
 
 
 
-<script type="text/javascript">
+<%--<script type="text/javascript">
     var _abdm = _abdm || [];
     /* INVIEW load placement for account: netlife, site: http://m.netlife.vn, size: 1x1 - mobile, zone: popup */
     _abdm.push(["1428987667", "Popup", "1428997052"]);
@@ -129,7 +133,7 @@
 <noscript>
     <div style="bottom: 0; position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"><a href="http://click.m.ambientplatform.vn/247/admServerNs/zid_1428997052/wid_1428987667/" target="_blank">
         <img src="http://delivery.m.ambientplatform.vn/247/mnoscript/zid_1428997052/wid_1428987667/" /></a></div>
-</noscript>
+</noscript>--%>
 <!--
 <div class="row">
     <center> <uc1:Ads ID="Ads5" PositionId="22" runat="server" /></center>

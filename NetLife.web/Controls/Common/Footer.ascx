@@ -1,5 +1,18 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="NetLife.web.Controls.Common.Footer" %>
 <%@ Register src="../Advs/Adv.ascx" tagname="Adv" tagprefix="uc1" %>
+
+        <div id="gotop" class="fa fa-angle-up" title="Trượt lên trên">
+            <a href="#">
+                <%--<img src="/Images/ic-backtop.jpg" />--%>
+            </a>
+        </div>
+    <script>
+        $('#gotop').click(function(){
+            jQuery('html, body').animate({
+                scrollTop:'0px'
+            },800)});
+    </script>
+
 <div class="row padbt10">
     <div id="zonefooter" style="width: 980px; margin:0 auto">
         <uc1:Adv ID="Adv1" PositionId="17" runat="server" />

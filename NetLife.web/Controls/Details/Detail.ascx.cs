@@ -168,13 +168,13 @@ namespace NetLife.web.Controls.Details
                         relatenews.Visible = true;
                     }
                     */
-                    //if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
-                    //    ltrListRelate.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
-                    //else
-                    //{
-                    //    ltrListRelate2.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
-                    //    relatenews.Visible = true;
-                    //}
+                    if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
+                        ltrListRelate.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                    else
+                    {
+                        ltrListRelate2.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
+                        relatenews.Visible = true;
+                    }
                     // HTTHAO add 20160525: to get Related News Id for filter "Tin Cung Chuyen Muc"
                     if (relatedNewsId == null || relatedNewsId == "")
                     {

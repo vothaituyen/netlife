@@ -47,14 +47,14 @@
 .more { padding: 10px 0;}
 .more .xt { background: #f7f7f7;text-align: center;padding: 20px 0;color: #333;font-weight: bold;}
 .content-detail .tit-detail { color: #bf282f;font-size: 24px;font-weight: bold;line-height: 28px}
-.infoshare {}
+.infoshare { padding: 20px 0;}
 .infoshare .nvb { background: url("/images/pen.jpg") no-repeat left center;padding:0 15px 0 20px;font-weight: bold ;text-transform: uppercase;color: #333333;}
 .infoshare .gio { background: url("/images/ic-clock.jpg") no-repeat left center;padding:0 10px 0 15px}
 .infoshare .ngay { background: url("/images/books.jpg") no-repeat left center;padding:0 10px 0 18px}
-.content-detail .sub-title { margin: 0;font-size: 17px;font-weight: bold;color: #333;line-height: 20px;}
-.content-detail .content-info { color: #333;font-size: 17px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.content-detail .sub-title { margin: 0;font-size: 17px;font-weight: bold;color: #333;line-height: 20px;padding-bottom: 20px;}
+.content-detail .content-info { color: #333;font-size: 17px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;padding-bottom: 20px;}
 .content-detail .content-info img {max-width: 100%}
-.content-info div {}
+.content-info div { padding-bottom: 10px;}
 .likefb { padding: 5px 0;border-top: 1px solid #eee;border-bottom: 1px solid #eee;}
 .tags{ padding: 20px 0;}
 .tags p{ font-weight: bold;font-size: 16px;color: #bf272e;}
@@ -273,8 +273,8 @@ span.relateNews{
     text-align: center;
     font-size: 36px;
     position: fixed;
-    bottom: 26px;
-    right: 36px;
+    bottom: 128px;
+    right: 6px;
     cursor: pointer;
     opacity: 0.7;
     -webkit-transition: all .3s ease-in-out;
@@ -313,7 +313,7 @@ span.relateNews{
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 0px;
- 
+    /*background: #f4cb42;*/
     padding: 5px; 
     width: 20px;
     height: 15px;    

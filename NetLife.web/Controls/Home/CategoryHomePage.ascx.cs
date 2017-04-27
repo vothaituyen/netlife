@@ -13,7 +13,7 @@ namespace NetLife.web.Controls.Home
     {
         private int _cat_id = 0;
         public int Cat_ID { set { _cat_id = value; } get { return _cat_id; } }
-        private int _cat_parent_id = 0;
+        //private int _cat_parent_id = 0;
         string catName = "<h3><a href=\"{1}\" title=\"{0}\">{0}</a></h3>";
         string baiNoiBat = "<div class=\"row\">{0}</div><h2 class=\"row\"><a href=\"{1}\">{2}</a></h2><p>{3}</p>";
         string listNews = "<li class=\"col-md-12 liitem\"><a href=\"{1}\">{2}</a></li>";
@@ -38,7 +38,7 @@ namespace NetLife.web.Controls.Home
             {
                 for (int i = 0; i < lstNew.Count; i++)
                 {
-                    lstNew[i].NEWS_TITLE = lstNew[i].NEWS_TITLE.ToString().Substring(0, (lstNew[i].NEWS_TITLE.ToString().Length < 70 ? lstNew[i].NEWS_TITLE.ToString().Length : 67)) + (lstNew[i].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
+                    lstNew[i].NEWS_TITLE = lstNew[i].NEWS_TITLE.ToString().Substring(0, (lstNew[i].NEWS_TITLE.ToString().Length < 60 ? lstNew[i].NEWS_TITLE.ToString().Length : 57)) + (lstNew[i].NEWS_TITLE.ToString().Length < 60 ? "" : "...");
                     lrtListNew.Text += String.Format(listNews, lstNew[i].URL_IMG, lstNew[i].URL, lstNew[i].NEWS_TITLE);
                 }
             }

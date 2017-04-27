@@ -13,6 +13,15 @@ namespace NetLifeMobile.Controls.Details {
     public partial class Detail {
         
         /// <summary>
+        /// Ads6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads6;
+        
+        /// <summary>
         /// ltrCatParentMenu control.
         /// </summary>
         /// <remarks>
@@ -157,6 +166,24 @@ namespace NetLifeMobile.Controls.Details {
         protected global::NetLifeMobile.Controls.Advs.Ads Ads2;
         
         /// <summary>
+        /// ltrOther control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrOther;
+        
+        /// <summary>
+        /// Ads4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads4;
+        
+        /// <summary>
         /// relate control.
         /// </summary>
         /// <remarks>
@@ -175,31 +202,22 @@ namespace NetLifeMobile.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal ltrListRelate;
         
         /// <summary>
-        /// Ads4 control.
+        /// Ads7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NetLifeMobile.Controls.Advs.Ads Ads4;
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads7;
         
         /// <summary>
-        /// ltrOther control.
+        /// ltsameCategorys control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrOther;
-        
-        /// <summary>
-        /// Ads6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NetLifeMobile.Controls.Advs.Ads Ads6;
+        protected global::System.Web.UI.WebControls.Literal ltsameCategorys;
         
         /// <summary>
         /// Ads5 control.

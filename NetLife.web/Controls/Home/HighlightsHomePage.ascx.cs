@@ -37,7 +37,7 @@ namespace NetLife.web.Controls.Home
                 for (int i = 1; i < 5; i++)
                 {
                     lst[i].Imgage = new ImageEntity(160, lst[i].Imgage.ImageUrl);
-                    lst[i].NEWS_TITLE = lst[i].NEWS_TITLE.ToString().Substring(0, (lst[i].NEWS_TITLE.ToString().Length < 70 ? lst[i].NEWS_TITLE.ToString().Length : 67)) + (lst[i].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
+                    lst[i].NEWS_TITLE = lst[i].NEWS_TITLE.ToString().Substring(0, (lst[i].NEWS_TITLE.ToString().Length < 60 ? lst[i].NEWS_TITLE.ToString().Length : 60)) + (lst[i].NEWS_TITLE.ToString().Length < 63 ? "" : "...");
                     ltrItem.Text += String.Format(listitem, lst[i].URL_IMG, lst[i].URL, lst[i].NEWS_TITLE);
                 }
              

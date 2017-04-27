@@ -22,7 +22,7 @@ namespace NetLife.web.Controls.Home
             {
                 for (int i = 0; i < lstNew.Count; i++)
                 {
-                    lstNew[i].NEWS_TITLE = lstNew[i].NEWS_TITLE.ToString().Substring(0, (lstNew[i].NEWS_TITLE.ToString().Length < 70 ? lstNew[i].NEWS_TITLE.ToString().Length : 70)) + (lstNew[i].NEWS_TITLE.ToString().Length < 70 ? "" : "...");
+                    lstNew[i].NEWS_TITLE = lstNew[i].NEWS_TITLE.ToString().Substring(0, (lstNew[i].NEWS_TITLE.ToString().Length < 60 ? lstNew[i].NEWS_TITLE.ToString().Length : 60)) + (lstNew[i].NEWS_TITLE.ToString().Length < 60 ? "" : "...");
                     Literal1.Text += String.Format(lstNews, lstNew[i].URL_IMG, lstNew[i].URL, lstNew[i].NEWS_TITLE);
                 }
             }

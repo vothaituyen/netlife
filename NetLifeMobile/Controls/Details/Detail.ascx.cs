@@ -42,7 +42,7 @@ namespace NetLifeMobile.Controls.Details
               
                 if (!String.IsNullOrWhiteSpace(htmlMobile2))
                 {
-                    adsContent = "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2.Replace("\\n", " ").Replace("\\t", " "), 31).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>";
+                    adsContent = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2.Replace("\\n", " ").Replace("\\t", " "), 31).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
                 }
 
 
@@ -56,7 +56,7 @@ namespace NetLifeMobile.Controls.Details
                 ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent));
                 //ltrContent.Text = ltrContent.Text.Replace("jpg\"", "jpg?maxwidth=480\"");
                 ltrContent.Text = ltrContent.Text.Replace("jpg\"", "jpg?maxwidth=480\"" + " alt=\"" + ne.NEWS_TITLE + "\"");
-                ltrContent.Text = ltrContent.Text.Replace("<div id=\"abde\">", "<div id=\"abdad\"> <script type=\"text/javascript\"> _ase.push(['1464661938','1491064202']); </script> <script src=\"http://static.gammaplatform.com/js/ad-exchange.js\" type=\"text/javascript\"></script> </div><div id=\"abde\">");
+                //ltrContent.Text = ltrContent.Text.Replace("<div id=\"abde\">", "<div id=\"abdad\"> <script type=\"text/javascript\"> var _ase  = _ase || []; /* load placement for account: Netlife, site: http://m.netlife.vn, zone size : 640x1280 */ _ase.push(['1464661938','1491064202']); </script> <script src=\"http://static.gammaplatform.com/js/ad-exchange.js\" type=\"text/javascript\"></script> </div><div id=\"abde\">");
                 if (!String.IsNullOrWhiteSpace(htmlMobile6Adpruce) && htmlMobile6Adpruce.Length > 2)
                 {
                     ltrContent.Text += Environment.NewLine;
@@ -206,6 +206,20 @@ namespace NetLifeMobile.Controls.Details
                     ltrNew.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl);
                 }
             }
+
+
+            var sameCategorys = NewsPublished.NP_Select_Tin_Khac(Lib.QueryString.ParentCategoryID, Lib.QueryString.CategoryID, Lib.QueryString.NewsID, 10);
+            if (sameCategorys != null)
+            {
+                NewsPublishEntity nep;
+                int iCount = sameCategorys != null ? sameCategorys.Count : 0;
+                for (int i = 0; i < iCount; i++)
+                {
+                    nep = sameCategorys[i];
+                    ltsameCategorys.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl);
+                }
+            }
+
 
         }
     }

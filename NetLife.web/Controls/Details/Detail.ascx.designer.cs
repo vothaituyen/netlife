@@ -157,6 +157,15 @@ namespace NetLife.web.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal ltrVideo;
         
         /// <summary>
+        /// Adv3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Advs.Adv Adv3;
+        
+        /// <summary>
         /// lienquan control.
         /// </summary>
         /// <remarks>
@@ -175,7 +184,7 @@ namespace NetLife.web.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal LiteralNews1;
         
         /// <summary>
-        /// listNews control.
+        /// listnews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -191,6 +200,60 @@ namespace NetLife.web.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal LiteralNews2;
+        
+        /// <summary>
+        /// Adv4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Advs.Adv Adv4;
+        
+        /// <summary>
+        /// Div1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div1;
+        
+        /// <summary>
+        /// ltrListRelate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrListRelate;
+        
+        /// <summary>
+        /// relatenews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl relatenews;
+        
+        /// <summary>
+        /// ltrListRelate2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrListRelate2;
+        
+        /// <summary>
+        /// Adv5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Advs.Adv Adv5;
         
         /// <summary>
         /// cungchuyenmuc control.
@@ -218,8 +281,7 @@ namespace NetLife.web.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl othernews;
-
-
+        
         /// <summary>
         /// LiteralOther2 control.
         /// </summary>

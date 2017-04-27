@@ -13,13 +13,13 @@ namespace NetLifeMobile.Controls.Lists {
     public partial class List {
         
         /// <summary>
-        /// Ads5 control.
+        /// Ads3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NetLifeMobile.Controls.Advs.Ads Ads5;
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads3;
         
         /// <summary>
         /// hplNextMenu control.
