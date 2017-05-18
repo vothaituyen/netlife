@@ -88,6 +88,18 @@
     <img src="http://b.scorecardresearch.com/p?c1=2&c2=19847823&cv=2.0&cj=1" />
     </noscript>
     <!-- End comScore Tag -->
+
+    <!-- head code adasia-->
+    <script src='http://adnetwork.adasiaholdings.com/config.js?nwid=2060' type="text/javascript"></script>
+    <script type="text/javascript">
+            sas.setup({ domain: 'http://adnetwork.adasiaholdings.com', async: true, renderMode: 0 });
+	    //  renderMode define when ads must be rendered :
+	    //  	- DEFAULT		(0) : as soon as ad is ready
+	    //  	- READY			(1) : render ads when document is ready
+	    //  - ON_DEMAND		(2) : user must call sas.callAds()
+    </script>
+    <!-- END head code adasia-->
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -123,24 +135,12 @@
         <div id="adsRight">
             <uc3:Adv ID="Adv3" PositionId="41" runat="server" />
         </div>
-        <style>
-            #adsRight {
-                bottom: 0;
-                margin-right: 510px;
-                position: fixed;
-                right: 50%;
-                width: 120px;
-            }
-
-            #adsLeft {
-                bottom: 0;
-                left: 50%;
-                margin-left: 510px;
-                position: fixed;
-                width: 120px;
-            }
-        </style>
     </form>
-
+    <%--#OUTSTREAM adasia--%>
+    <uc3:Adv ID="Adv4" PositionId="49" runat="server" />
+    <%--#FLOOR adasia--%>
+    <uc3:Adv ID="Adv5" PositionId="50" runat="server" />
+    <%--#FOLD adasia--%>
+    <uc3:Adv ID="Adv6" PositionId="51" runat="server" />
 </body>
 </html>

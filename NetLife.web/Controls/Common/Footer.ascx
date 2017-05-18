@@ -22,35 +22,27 @@
     <div class="container">
         <ul class="col-md-12 nav nav-tabs nav-footer">
             <li id="ic-home"><a href="/">
-                <img src="/Images/ic-homegray.jpg" /></a></li>
+                <div style="margin-left: 20px;"><img src="/Images/ic-homegray.jpg" /></div></a></li>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         </ul>
 
     </div>
-    <div class="col-md-12" style="padding-top: 7px;">
-        <div class="col-md-3 logo-ft">
-            <img src="/Images/logo-footer.jpg" />
-        </div>
-        <div class="col-md-4 infopage">
-            <span style="font-size: 16px; padding-bottom: 10px;" class="row">Trang thông tin điện tử tổng hợp Netlife</span>
+    <div class="container" style="padding-top: 7px;">
+
+<%--            <span style="font-size: 16px; padding-bottom: 10px;" class="row">Trang thông tin điện tử tổng hợp Netlife</span>
             <span class="row">Số giấy phép: 86/GP - STTTT, cấp ngày 02/11/2011 </span><span class="row">Sale and Marketing: Vision Asia Corp. </span>
-            <span class="row">Địa chỉ: Lầu 10, Tòa nhà SFC, số 9 Đinh Tiên Hoàng, P. Đa Kao, Quận 1, TPHCM</span>
-         
-        </div>
-        <div class="col-md-5 lienhe">
-            <div class="col-md-4">
-                <img src="/Images/mail.jpg" />
+            <span class="row">Địa chỉ: Lầu 10, Tòa nhà SFC, số 9 Đinh Tiên Hoàng, P. Đa Kao, Quận 1, TPHCM</span>--%>
+             <div class="col-md-3 infopage" style="padding-bottom: 37px;">
+                <center><img src="/Images/logo-footer.jpg" /></center>
             </div>
-            <div class="col-md-8" style="padding-top: 15px; color: #878787;">
-                <span>
-                    <img src="/Images/email.jpg" />
-                    Sale@visionasia.net </span>
-                <br />
-                <br />
-                <span>
-                    <img src="/Images/phone.jpg" />+84-8 6683-8411</span>
-            </div>
-        </div>
+            <div class="col-md-9 infopage">
+                <span><img style="margin-right:6px;" src="/Images/email.jpg" />Sale@visionasia.net </span>
+                <span><img src="/Images/phone.jpg" />+84-8 6683-8411</span>
+                <span style="font-size: 16px; padding-bottom: 10px;" class="row">Trang thông tin điện tử tổng hợp Netlife</span>
+                <span class="row">Số giấy phép: 51/GP - STTTT, cấp ngày 16/11/2016 </span><span class="row">Sale and Marketing: Vision Asia Corp. </span>
+                <span class="row">Địa chỉ: Tòa Nhà Khải Hoàn, 83B Hoàng Sa, Phường Đa Kao, Quận 1, TP.TPHCM</span>
+             </div>
+
     </div>
 </div>
 

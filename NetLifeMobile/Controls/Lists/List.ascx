@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="List.ascx.cs" Inherits="NetLifeMobile.Controls.Lists.List" %>
 <%@ Register Src="Paging.ascx" TagName="Paging" TagPrefix="uc1" %>
 <%@ Register src="../Advs/Ads.ascx" tagname="Ads" tagprefix="uc2" %>
-<center><uc2:Ads ID="Ads3" PositionId="40" runat="server" /></center>
+    <center><uc2:Ads ID="Ads3" PositionId="40" runat="server" /></center>
 <div class="row" style="padding-bottom: 10px;">
 
     <div class="col-xs-12">

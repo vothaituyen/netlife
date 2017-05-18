@@ -588,7 +588,7 @@ namespace BOATV
 
         }
 
-        //HTTHAO ADD new store Procedure to get "Tin Cung Chuyen Muc" 2016052015
+        // ADD new store Procedure to get "Tin Cung Chuyen Muc" 2016052015
         public static List<NewsPublishEntity> NP_Select_Tin_Cung_Chuyen_Muc(int cat_parentid, int cat_id, long News_ID, int top, string relatedNewsId)// bổ sung Id của tin liên quan để lọc tin trùng
         {
             string key = String.Format("Select_Tin_Cung_Chuyen_Muc-{0}", News_ID);
@@ -630,7 +630,7 @@ namespace BOATV
             return tbl;
 
         }
-        // HTTHAO END add new store procedure 2016052015
+        //  END add new store procedure 2016052015
 
         public static string keyNewID = "News_ID_{0}-{1}";
         public static string keyNewIDHome = "keyNewIDHome_{0}-{1}";
@@ -2058,6 +2058,7 @@ namespace BOATV
             try
             {
                 const string appendDiv = "<div id=\"vmcbackground\"></div>";
+                const string appendDivExtend = "<div id=\"vmcbackgroundExtend\"></div>";
                 string output = string.Empty;
                 var doc = new HtmlDocument();
                 doc.LoadHtml(input);
@@ -2070,25 +2071,6 @@ namespace BOATV
 
                 if (doc.DocumentNode.ChildNodes.Count >= 1)
                 {
-                    //int topIndex = doc.DocumentNode.ChildNodes.Count / 2; // -1;
-                    //for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
-                    //{
-                    //    if (i == 0) output += "<div id=\"abdf\"> <p class=\"pcontent\">";
-                    //    output += doc.DocumentNode.ChildNodes[i].OuterHtml;
-                    //    if (topIndex > 9)
-                    //    {
-                    //        if (i == 9)
-                    //        {
-                    //            output += "</p></div>" + appendDiv + "<div id=\"abde\">";
-                    //        }
-                    //    }
-                    //    else if(i == topIndex)
-                    //    {
-                    //        output += "</p></div>" + appendDiv + "<div id=\"abde\">";
-                    //    }
-                    //}
-
-                    // case long
                     if (doc.DocumentNode.ChildNodes.Count > 5)
                     {
                         for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
@@ -2100,6 +2082,13 @@ namespace BOATV
                                 if (i == 9)
                                 {
                                     output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                }
+                                if (doc.DocumentNode.ChildNodes.Count > 14)
+                                {
+                                    if (i == 14)
+                                    {
+                                        output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                    }
                                 }
                             }
                             else
@@ -2122,9 +2111,10 @@ namespace BOATV
                                 for (int j = 0; j < doc.DocumentNode.ChildNodes[0].ChildNodes.Count; j++)
                                 {
                                     output += doc.DocumentNode.ChildNodes[0].ChildNodes[j].OuterHtml;
-                                    if (doc.DocumentNode.ChildNodes[0].ChildNodes.Count  < 9)
+                                    if (doc.DocumentNode.ChildNodes[0].ChildNodes.Count < 9)
                                     {
-                                        if (j == 5) {
+                                        if (j == 5)
+                                        {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
                                         }
                                     }
@@ -2133,6 +2123,13 @@ namespace BOATV
                                         if (j == 9)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                        if (doc.DocumentNode.ChildNodes[0].ChildNodes.Count > 14)
+                                        {
+                                            if (j == 14)
+                                            {
+                                                output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
                                         }
                                     }
                                 }
@@ -2155,6 +2152,13 @@ namespace BOATV
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
                                         }
+                                        if (doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 14)
+                                        {
+                                            if (j == 14)
+                                            {
+                                                output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -2175,6 +2179,13 @@ namespace BOATV
                                         if (j == 9)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                        if (doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 14)
+                                        {
+                                            if (j == 14)
+                                            {
+                                                output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
                                         }
                                     }
                                 }
@@ -2197,6 +2208,13 @@ namespace BOATV
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
                                         }
+                                        if (doc.DocumentNode.ChildNodes[2].ChildNodes.Count > 14)
+                                        {
+                                            if (j == 14)
+                                            {
+                                                output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -2217,6 +2235,13 @@ namespace BOATV
                                         if (j == 9)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                        }
+                                        if (doc.DocumentNode.ChildNodes[2].ChildNodes.Count > 14)
+                                        {
+                                            if (j == 14)
+                                            {
+                                                output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
                                         }
                                     }
                                 }
@@ -2239,6 +2264,13 @@ namespace BOATV
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abde\">";
                                         }
+                                        if (doc.DocumentNode.ChildNodes[3].ChildNodes.Count > 14)
+                                        {
+                                            if (j == 14)
+                                            {
+                                                output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -2260,6 +2292,13 @@ namespace BOATV
                                 {
                                     output += "</p></div>" + appendDiv + "<div id=\"abde\">";
                                 }
+                                if (doc.DocumentNode.ChildNodes[1].ChildNodes[0].ChildNodes.Count > 14)
+                                {
+                                    if (i == 14)
+                                    {
+                                        output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                    }
+                                }
                             }
                             else
                             {
@@ -2267,6 +2306,7 @@ namespace BOATV
                                 {
                                     output += "</p></div>" + appendDiv + "<div id=\"abde\">";
                                 }
+
                             }
 
                         }
@@ -2323,7 +2363,7 @@ namespace BOATV
                     npe.Imgage = new ImageEntity(100, Utils.GetObj<string>(row["NEWS_IMAGE"]));
                     npe.NEWS_ATHOR = Utils.GetObj<string>(row["News_Athor"]);
                     string content = Utils.GetObj<string>(row["News_Content"]).Replace("//<![CDATA[", "").Replace("//]]>", "");
-                    npe.NEWS_CONTENT = isMobile ? AdsContent(content) : content;
+                    npe.NEWS_CONTENT = AdsContent(content);
                     npe.Keywrods = Utils.GetObj<string>(row["Extension2"]);
                     npe.NEWS_RELATION = NP_Tin_Lien_Quan(cat_parentid, cat_id, Utils.GetObj<string>(row["NEWS_RELATION"]), 200, npe.NEWS_ID);
 

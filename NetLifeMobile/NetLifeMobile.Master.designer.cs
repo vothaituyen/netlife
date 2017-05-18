@@ -58,6 +58,24 @@ namespace NetLifeMobile {
         protected global::NetLifeMobile.Controls.Advs.Ads Ads4;
         
         /// <summary>
+        /// Ads1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads1;
+        
+        /// <summary>
+        /// Ads2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads2;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>

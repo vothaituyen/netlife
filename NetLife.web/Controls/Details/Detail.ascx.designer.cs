@@ -148,24 +148,6 @@ namespace NetLife.web.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal ltrKeyword;
         
         /// <summary>
-        /// ltrVideo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrVideo;
-        
-        /// <summary>
-        /// Adv3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NetLife.web.Controls.Advs.Adv Adv3;
-        
-        /// <summary>
         /// lienquan control.
         /// </summary>
         /// <remarks>
@@ -200,6 +182,15 @@ namespace NetLife.web.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal LiteralNews2;
+        
+        /// <summary>
+        /// Div2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div2;
         
         /// <summary>
         /// Adv4 control.
@@ -247,6 +238,15 @@ namespace NetLife.web.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal ltrListRelate2;
         
         /// <summary>
+        /// Div3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div3;
+        
+        /// <summary>
         /// Adv5 control.
         /// </summary>
         /// <remarks>
@@ -290,5 +290,32 @@ namespace NetLife.web.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal LiteralOther2;
+        
+        /// <summary>
+        /// ltrVideo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrVideo;
+        
+        /// <summary>
+        /// Div4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div4;
+        
+        /// <summary>
+        /// Adv3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Advs.Adv Adv3;
     }
 }

@@ -6,7 +6,7 @@
     <div class="container" style="height: 100px">
         <div class="col-md-3" style="padding-top: 0px">
             <a href="/">
-                <img src="/Images/logo.png" />
+                <div style="padding-left: 20px;"><img src="/Images/logo.png" /></div>
             </a>
         </div>
         <div class="col-md-9 pull-right">

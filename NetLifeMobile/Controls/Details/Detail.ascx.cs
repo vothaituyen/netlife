@@ -34,15 +34,21 @@ namespace NetLifeMobile.Controls.Details
                 }
 
                 string htmlMobile2 = BOAdv.GetAdvItemById(Lib.Object2Integer(31), Lib.QueryString.CategoryID);
+                string htmlMobile2Extend = BOAdv.GetAdvItemById(Lib.Object2Integer(47), Lib.QueryString.CategoryID);
                 string htmlMobile6Adpruce = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(38), Lib.QueryString.CategoryID);//live id = 38, sua dong duoi nua
                 string htmlVideoMobile = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(39), Lib.QueryString.CategoryID);//live id = 39
                 string mobile8 = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(40), Lib.QueryString.CategoryID);//live id = 39
 
                 string adsContent = "";
-              
+                string adsContentExtend = "";
+
                 if (!String.IsNullOrWhiteSpace(htmlMobile2))
                 {
                     adsContent = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2.Replace("\\n", " ").Replace("\\t", " "), 31).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
+                }
+                if (!String.IsNullOrWhiteSpace(htmlMobile2Extend))
+                {
+                    adsContentExtend = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Extend.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
                 }
 
 
@@ -53,7 +59,9 @@ namespace NetLifeMobile.Controls.Details
                 string pattern = @"(?<start><a[^>]*)(?<end>>)";
                 string repl = @"${start} target=""_blank"" ${end}";
                 string newString = Regex.Replace(content, pattern, repl);
-                ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent));
+                ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent)).Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContentExtend));
+
+                //ltrContent.Text = newString.Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground1\"><center>{0}</center></div>", adsContentExtend));
                 //ltrContent.Text = ltrContent.Text.Replace("jpg\"", "jpg?maxwidth=480\"");
                 ltrContent.Text = ltrContent.Text.Replace("jpg\"", "jpg?maxwidth=480\"" + " alt=\"" + ne.NEWS_TITLE + "\"");
                 //ltrContent.Text = ltrContent.Text.Replace("<div id=\"abde\">", "<div id=\"abdad\"> <script type=\"text/javascript\"> var _ase  = _ase || []; /* load placement for account: Netlife, site: http://m.netlife.vn, zone size : 640x1280 */ _ase.push(['1464661938','1491064202']); </script> <script src=\"http://static.gammaplatform.com/js/ad-exchange.js\" type=\"text/javascript\"></script> </div><div id=\"abde\">");

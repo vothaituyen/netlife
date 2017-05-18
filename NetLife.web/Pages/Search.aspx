@@ -34,7 +34,8 @@
         </div>
         <div class="col-md-3-custom-main">
             <uc4:Hot ID="Hot1" runat="server" />
-            <uc5:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />
+            
+            <%--<uc5:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />--%>
         </div>
     </div>
 </asp:Content>

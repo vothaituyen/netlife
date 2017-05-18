@@ -51,7 +51,7 @@ namespace BOATV
                 {
                     //Type = 0 la web
                     //var data = db.SelectQuery("select [TableName] News_ID,[ChangeID] Cat_ID, [ChangeTime] from HtmlCached Where Type=0 where ChangeTime <= getdate()");
-                    var data = db.SelectQuery("select [TableName] News_ID,[ChangeID] Cat_ID, [ChangeTime] from HtmlCached Where ChangeTime <= getdate()"); // htthao edit 20160623
+                    var data = db.SelectQuery("select [TableName] News_ID,[ChangeID] Cat_ID, [ChangeTime] from HtmlCached Where ChangeTime <= getdate()"); //  edit 20160623
                     toprow = data != null ? data.Rows.Count : 0;
                 }
 

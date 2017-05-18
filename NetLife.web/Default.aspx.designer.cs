@@ -103,15 +103,6 @@ namespace NetLife.web {
         protected global::NetLife.web.Controls.Advs.Adv Adv1;
         
         /// <summary>
-        /// VideoClip1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NetLife.web.Controls.Home.VideoClip VideoClip1;
-        
-        /// <summary>
         /// Adv6 control.
         /// </summary>
         /// <remarks>

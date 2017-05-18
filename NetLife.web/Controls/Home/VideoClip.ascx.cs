@@ -25,7 +25,7 @@ namespace NetLife.web.Controls.Home
             CategoryEntity cat = BOCategory.GetCategory(_cat_id);
             ltrCatName.Text = String.Format(catName, cat.Cat_Name, cat.HREF);
 
-            List<NewsPublishEntity> lstNew = BOATV.NewsPublished.GetListNewsByCatAndDate(_cat_id, newsId, 1, 5, 280);
+            List<NewsPublishEntity> lstNew = BOATV.NewsPublished.GetListNewsByCatAndDate(_cat_id, newsId, 1, 3, 280);
             if (lstNew.Count > 0)
             {
                 for (int i = 0; i < lstNew.Count; i++)

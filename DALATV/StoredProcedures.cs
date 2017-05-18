@@ -107,14 +107,14 @@ namespace DALATV
             return table;
         }
 
-        // HTTHAO Add new store proc to get "Tin Cung Chuyen Muc"
+        //  Add new store proc to get "Tin Cung Chuyen Muc"
         public DataTable NP_Select_Tin_Cung_Chuyen_Muc(int cat_id, long News_ID, int top, string relatedNewsId)
         {
             IDbCommand cmd = _db.CreateCommand("Sao_NP_TinCungChuyenMuc", true);
             _db.AddParameter(cmd, "Cat_ID", DbType.Int32, cat_id);
             _db.AddParameter(cmd, "News_ID", DbType.Int64, News_ID);
             _db.AddParameter(cmd, "Top", DbType.Int32, top);
-            _db.AddParameter(cmd, "Related_News_Id", DbType.String, relatedNewsId); // HTTHAO ADD 20160525, loc tin cung chuyen muc khong trung voi tin lien quan
+            _db.AddParameter(cmd, "Related_News_Id", DbType.String, relatedNewsId); //  ADD 20160525, loc tin cung chuyen muc khong trung voi tin lien quan
             DataTable table = _db.CreateDataTable(cmd);
             return table;
         }

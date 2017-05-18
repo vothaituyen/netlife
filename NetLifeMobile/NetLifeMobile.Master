@@ -70,6 +70,10 @@
 </head>
 <body>
      <center> <uc3:Ads ID="Ads4" PositionId="38" runat="server" /></center>
+            <!--Adsia outstream -->
+    <uc3:Ads ID="Ads1" PositionId="52" runat="server" />
+       <!--Adsia parallax -->
+    <uc3:Ads ID="Ads2" PositionId="53" runat="server" />
     <form id="form1" runat="server">
         <uc1:Header ID="Header1" runat="server" />
         <div class="clearfix">
@@ -168,20 +172,8 @@
                 showMediaPlayer($(this).parent().attr('id'), $(this).attr('href'), $(this).find("img").attr('src'), $(this).attr('data-width'), $(this).attr('data-height'));
             });
         </script>
-        <!--Adsia outstream -->
-		<div id="sas_44269"></div>
-        <script type="text/javascript">
-	        sas.call("std", {
-		        siteId:		129831,	// 
-		        pageId:		736446,	// Page : VN_Netlife/vn_netlife_outstream
-		        formatId: 	44269,	// Format : Video-Read 1x1
-		        target:		''	// Targeting
-	        });
-        </script>
-        <noscript>
-	        <a href="http://adnetwork.adasiaholdings.com/ac?jump=1&nwid=2060&siteid=129831&pgname=vn_netlife_outstream&fmtid=44269&visit=m&tmstp=[timestamp]&out=nonrich" target="_blank">                
-		        <img src="http://adnetwork.adasiaholdings.com/ac?out=nonrich&nwid=2060&siteid=129831&pgname=vn_netlife_outstream&fmtid=44269&visit=m&tmstp=[timestamp]" border="0" alt="" /></a>
-        </noscript>
+
+
 
     </form>
 </body>

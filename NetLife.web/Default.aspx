@@ -72,7 +72,7 @@
             <uc5:Hot ID="Hot2" runat="server" />
             <uc5:Hot ID="Hot3" runat="server" />--%>
             <uc4:Adv ID="Adv1" PositionId="9" ClassName="row padbt10 fl" runat="server" />
-            <uc6:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />
+            <%--<uc6:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />--%>
             <uc4:Adv ID="Adv6" PositionId="10" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv4" PositionId="18" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv5" PositionId="19" ClassName="row padbt10 fl" runat="server" />

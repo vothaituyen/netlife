@@ -134,7 +134,7 @@
     <div style="bottom: 0; position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"><a href="http://click.m.ambientplatform.vn/247/admServerNs/zid_1428997052/wid_1428987667/" target="_blank">
         <img src="http://delivery.m.ambientplatform.vn/247/mnoscript/zid_1428997052/wid_1428987667/" /></a></div>
 </noscript>--%>
-<!--
+<!--@@@@@
 <div class="row">
     <center> <uc1:Ads ID="Ads5" PositionId="22" runat="server" /></center>
 </div>
