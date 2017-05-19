@@ -6,7 +6,9 @@
 <%@ Register Src="../Controls/Home/VideoClip.ascx" TagName="VideoClip" TagPrefix="uc5" %>
 <%@ Register Src="../Controls/Home/Blog.ascx" TagName="Blog" TagPrefix="uc6" %>
 <%@ Register Src="../Controls/Lists/Hot.ascx" TagName="Hot" TagPrefix="uc4" %>
+<%@ Register Src="../Controls/Lists/HotRight.ascx" TagName="HotRight" TagPrefix="uc11" %>
 <%@ Register Src="../Controls/Lists/Paging.ascx" TagName="Paging" TagPrefix="uc7" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -34,7 +36,7 @@
         </div>
         <div class="col-md-3-custom-main">
             <uc4:Hot ID="Hot1" runat="server" />
-            
+            <uc11:HotRight runat="server" ID="HotRight" />
             <%--<uc5:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />--%>
         </div>
     </div>

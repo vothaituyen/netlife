@@ -220,6 +220,15 @@ namespace NetLifeMobile.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal ltsameCategorys;
         
         /// <summary>
+        /// Ads8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads8;
+        
+        /// <summary>
         /// Ads5 control.
         /// </summary>
         /// <remarks>

@@ -38,5 +38,14 @@ namespace NetLife.web.Controls.Common {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NetLife.web.Controls.Common.SlideHeader SlideHeader1;
+        
+        /// <summary>
+        /// Adv2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Advs.Adv Adv2;
     }
 }

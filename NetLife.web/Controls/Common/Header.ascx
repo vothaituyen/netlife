@@ -18,6 +18,7 @@
     </div>
     <uc1:Menu ID="Menu1" runat="server" />
     <uc2:SlideHeader ID="SlideHeader1" runat="server" />
+    <uc3:Adv ID="Adv2" PositionId="2" ClassName="" runat="server" />
 </div>
 
 

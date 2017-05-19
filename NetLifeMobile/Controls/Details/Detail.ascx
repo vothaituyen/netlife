@@ -110,6 +110,10 @@
         <asp:Literal runat="server" ID="ltsameCategorys"></asp:Literal>
     </ul>
 </div>
+<div class="row tinlq">
+    <h2>Có thể bạn quan tâm</h2>
+    <uc1:Ads ID="Ads8" PositionId="38" runat="server" />
+</div>
 
 
 

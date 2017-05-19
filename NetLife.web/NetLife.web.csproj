@@ -103,6 +103,7 @@
     <Content Include="Controls\Home\StarCategory.ascx" />
     <Content Include="Controls\Home\VideoClip.ascx" />
     <Content Include="Controls\Lists\HighlightsList.ascx" />
+    <Content Include="Controls\Lists\HotRight.ascx" />
     <Content Include="Controls\Lists\Hot.ascx" />
     <Content Include="Controls\Lists\List.ascx" />
     <Content Include="Controls\Lists\Paging.ascx" />
@@ -322,6 +323,13 @@
     </Compile>
     <Compile Include="Controls\Lists\HighlightsList.ascx.designer.cs">
       <DependentUpon>HighlightsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lists\HotRight.ascx.cs">
+      <DependentUpon>HotRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lists\HotRight.ascx.designer.cs">
+      <DependentUpon>HotRight.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Lists\Hot.ascx.cs">
       <DependentUpon>Hot.ascx</DependentUpon>

@@ -58,6 +58,15 @@ namespace NetLife.web.Pages {
         protected global::NetLife.web.Controls.Advs.Adv Adv4;
         
         /// <summary>
+        /// Hot1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Lists.Hot Hot1;
+        
+        /// <summary>
         /// Adv1 control.
         /// </summary>
         /// <remarks>
@@ -74,6 +83,15 @@ namespace NetLife.web.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NetLife.web.Controls.Advs.Adv Adv3;
+        
+        /// <summary>
+        /// HotRight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Lists.HotRight HotRight;
         
         /// <summary>
         /// Adv5 control.

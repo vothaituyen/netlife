@@ -76,6 +76,15 @@ namespace NetLife.web.Pages {
         protected global::NetLife.web.Controls.Advs.Adv Adv2;
         
         /// <summary>
+        /// HotRight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Lists.HotRight HotRight;
+        
+        /// <summary>
         /// Adv5 control.
         /// </summary>
         /// <remarks>

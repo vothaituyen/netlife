@@ -5,6 +5,8 @@
 <%@ Register Src="Controls/Home/CategoryHomePage.ascx" TagName="CategoryHomePage" TagPrefix="uc3" %>
 <%@ Register Src="Controls/Advs/Adv.ascx" TagName="Adv" TagPrefix="uc4" %>
 <%@ Register Src="Controls/Home/VideoClip.ascx" TagName="VideoClip" TagPrefix="uc6" %>
+<%@ Register Src="Controls/Lists/Hot.ascx" TagName="Hot" TagPrefix="uc7" %>
+<%--<%@ Register Src="Controls/Lists/HotRight.ascx" TagName="HotRight" TagPrefix="uc8" %>--%>
 <%--<%@ Register Src="Controls/Home/Hot.ascx" TagName="Hot" TagPrefix="uc5" %>--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -72,6 +74,9 @@
             <uc5:Hot ID="Hot2" runat="server" />
             <uc5:Hot ID="Hot3" runat="server" />--%>
             <uc4:Adv ID="Adv1" PositionId="9" ClassName="row padbt10 fl" runat="server" />
+            <uc7:Hot ID="Hot1" runat="server" />
+            <%--<uc8:HotRight ID="Hot2" runat="server" />--%>
+
             <%--<uc6:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />--%>
             <uc4:Adv ID="Adv6" PositionId="10" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv4" PositionId="18" ClassName="row padbt10 fl" runat="server" />

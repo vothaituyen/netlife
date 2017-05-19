@@ -129,11 +129,11 @@
         <div style="position: fixed; right: 0; bottom: 0;">
             <uc3:Adv ID="Adv1" PositionId="27" runat="server" />
         </div>
-        <div id="adsLeft">
+<%--        <div id="adsLeft">
             <uc3:Adv ID="Adv2" PositionId="41" runat="server" />
-        </div>
+        </div>--%>
         <div id="adsRight">
-            <uc3:Adv ID="Adv3" PositionId="41" runat="server" />
+            <uc3:Adv ID="Adv3" PositionId="42" runat="server" />
         </div>
     </form>
     <%--#OUTSTREAM adasia--%>

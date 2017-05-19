@@ -131,18 +131,8 @@
     </ul>
 </div>
 <div class="row tinlq">
-    <h3>Có thể bạn quan tâm</h3>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<ins class="adsbygoogle"
-			 style="display:block"
-			 data-ad-format="autorelaxed"
-			 data-ad-client="ca-pub-6376184810599042"
-			 data-ad-slot="9681811617"></ins>
-		<script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
 	<!-- Native adsense -->
-	
+	<uc1:Adv ID="Adv6" PositionId="54" runat="server" />
 </div>
 <div class="row tinlq hide">
     <h3>Video</h3>

@@ -7,8 +7,10 @@
 <%@ Register Src="../Controls/Lists/List.ascx" TagName="List" TagPrefix="uc3" %>
 <%@ Register Src="../Controls/Home/VideoClip.ascx" TagName="VideoClip" TagPrefix="uc5" %>
 <%@ Register Src="../Controls/Home/Blog.ascx" TagName="Blog" TagPrefix="uc6" %>
-<%--<%@ Register Src="../Controls/Lists/Hot.ascx" TagName="Hot" TagPrefix="uc4" %>--%>
+<%@ Register Src="../Controls/Lists/Hot.ascx" TagName="Hot" TagPrefix="uc4" %>
 <%@ Register Src="../Controls/Home/DateTime.ascx" TagName="DateTime" TagPrefix="uc7" %>
+<%@ Register Src="~/Controls/Lists/HotRight.ascx" TagPrefix="uc12" TagName="HotRight" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -27,10 +29,11 @@
         <div class="col-md-3-custom col-right">
             <uc2:Adv ID="Adv2" PositionId="11" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv4" PositionId="12" ClassName="row padbt10 fl" runat="server" />
-            <%--<uc4:Hot ID="Hot1" runat="server" />--%>
+            <uc4:Hot ID="Hot1" runat="server" />
             <%--<uc5:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />--%>
             <uc2:Adv ID="Adv1" PositionId="9" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv3" PositionId="10" ClassName="row padbt10 fl" runat="server" />
+            <uc12:HotRight runat="server" ID="HotRight" />
             <uc2:Adv ID="Adv5" PositionId="18" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv6" PositionId="19" ClassName="row padbt10 fl" runat="server" />
             <uc2:Adv ID="Adv7" PositionId="20" ClassName="row padbt10 fl" runat="server" />
