@@ -107,7 +107,6 @@
     <Content Include="Scripts\ads.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\fix_width_of_all_element_in_detail.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.7.2.min.js" />
     <Content Include="Config\Category.config" />
@@ -115,6 +114,7 @@
     <Content Include="Config\RewriteRules.config" />
     <Content Include="Config\vssver2.scc" />
     <Content Include="Ajax\Load.ashx" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\popup.js" />
     <Content Include="WebService.asmx" />
     <None Include="Properties\PublishProfiles\nlm.pubxml" />

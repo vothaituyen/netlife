@@ -50,7 +50,7 @@
 
                 </div>
     </div>
-    <script>
+<%--    <script>
         $(document).ready(function () {
             $(".content").find("[style]").css("width", "100%");
             $(".content").find("[width]").css("width", "100%");
@@ -60,7 +60,7 @@
             $(".likefb").children().css("width", "100%");
         });
       
-    </script>
+    </script>--%>
 </div>
 
 

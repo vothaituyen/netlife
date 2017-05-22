@@ -45,6 +45,7 @@
     <script  src="/Scripts/jquery-1.7.2.min.js"></script>
     <script  src="/Scripts/bootstrap.min.js"></script>
     <script  src="/Scripts/popup.js"></script>
+    <script  src="/Scripts/custom.js"></script>
     <script  src="/Scripts/ads.js?v=2"></script>
     <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
     <script>
@@ -79,7 +80,7 @@
         <div class="clearfix">
         </div>
         <div class="content">
-            <div class="container" style="padding: 5px !important">
+            <div class="container" style="padding: 5px 5px 0px 5px !important">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
                 <uc2:Footer ID="Footer1" runat="server" />
