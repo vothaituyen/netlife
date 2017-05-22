@@ -292,24 +292,6 @@ namespace NetLife.web.Controls.Details {
         protected global::System.Web.UI.WebControls.Literal LiteralOther2;
         
         /// <summary>
-        /// Adv6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NetLife.web.Controls.Advs.Adv Adv6;
-        
-        /// <summary>
-        /// ltrVideo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrVideo;
-        
-        /// <summary>
         /// Div4 control.
         /// </summary>
         /// <remarks>
@@ -326,5 +308,23 @@ namespace NetLife.web.Controls.Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NetLife.web.Controls.Advs.Adv Adv3;
+        
+        /// <summary>
+        /// Adv6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLife.web.Controls.Advs.Adv Adv6;
+        
+        /// <summary>
+        /// ltrVideo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrVideo;
     }
 }

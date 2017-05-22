@@ -130,8 +130,12 @@
         <asp:Literal runat="server" ID="LiteralOther2"></asp:Literal>
     </ul>
 </div>
+<div class="relatenews row" id="Div4" runat="server">
+  <uc1:Adv ID="Adv3" PositionId="46" runat="server" />
+    </div>
 <div class="row tinlq">
 	<!-- Native adsense -->
+        <h3>Có thể bạn quan tâm</h3>
 	<uc1:Adv ID="Adv6" PositionId="54" runat="server" />
 </div>
 <div class="row tinlq hide">
@@ -140,9 +144,7 @@
         <asp:Literal runat="server" ID="ltrVideo"></asp:Literal>
     </ul>
 </div>
-<div class="relatenews row" id="Div4" runat="server">
-  <uc1:Adv ID="Adv3" PositionId="46" runat="server" />
-    </div>
+
 
 
 <div id="fb-root"></div>

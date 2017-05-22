@@ -1,5 +1,5 @@
 ﻿body {
-	
+	font-size: 16px;
 }
 .video_Sticky {
 		position: fixed;
@@ -42,8 +42,8 @@
 .item-list .img-list-item img { max-width: 100% !important;}
 .item-list .img-list-item { float: left;padding-right: 20px;}
 .item-list .pd { padding: 10px 0;}
-.item-list .info-list-item span { color: #878787;font-size: 12px;font-weight: normal;}
-.item-list .info-list-item p{ color: #333333;font-weight: bold;font-size: 14px;padding: 0;}
+.item-list .info-list-item span { color: #878787;font-size: 16px;font-weight: normal;}
+.item-list .info-list-item p{ color: #333333;font-weight: bold;font-size: 16px;padding: 0;}
 .more { padding: 10px 0;}
 .more .xt { background: #f7f7f7;text-align: center;padding: 20px 0;color: #333;font-weight: bold;}
 .content-detail .tit-detail { color: #bf282f;font-size: 24px;font-weight: bold;line-height: 28px}
@@ -309,7 +309,7 @@ span.relateNews{
 .fa-angle-up:before {
     content: "\f106"
 }
-#rcorners1 {
+.rcorners {
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 0px;
@@ -319,4 +319,5 @@ span.relateNews{
     height: 15px;    
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 20px;
 }

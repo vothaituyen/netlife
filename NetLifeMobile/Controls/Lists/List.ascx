@@ -5,12 +5,15 @@
 <div class="row" style="padding-bottom: 10px;">
 
     <div class="col-xs-12">
-
+        <span class="rcorners">
            <asp:HyperLink runat="server" ID="hplNextMenu"></asp:HyperLink>
-     
-          <span id="rcorners1">
+            </span>
+        <span class="rcorners">
+            	&#8658;
+            </span>
+          <span class="rcorners">
                 <asp:HyperLink runat="server" ID="hplNext"></asp:HyperLink>
-           <//span>
+           </span>
         
     </div>
 

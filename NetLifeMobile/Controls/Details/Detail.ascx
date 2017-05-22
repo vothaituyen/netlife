@@ -4,14 +4,14 @@
 <center><uc1:Ads ID="Ads6" PositionId="40" runat="server" /></center>
 <div class="row">
     <div class="col-xs-12">
-        <span id="rcorners1">
+        <span class="rcorners">
             <asp:Literal runat="server" ID="ltrCatParentMenu"></asp:Literal>
          </span>
          
          <asp:Literal runat="server" ID="ltrCatParent"></asp:Literal>
-             <span id="rcorners1">|
+             <span class="rcorners">&#8658;
                  </span>
-         <span id="rcorners1">
+         <span class="rcorners">
             <asp:Literal runat="server" ID="ltrCattxt"></asp:Literal>
                  </span>
    </div>
