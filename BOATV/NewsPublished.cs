@@ -2059,6 +2059,7 @@ namespace BOATV
             {
                 const string appendDiv = "<div id=\"vmcbackground\"></div>";
                 const string appendDivExtend = "<div id=\"vmcbackgroundExtend\"></div>";
+                const string appendDivPerfect = "<div id=\"vmcbackgroundPerfect\"></div>";
                 string output = string.Empty;
                 var doc = new HtmlDocument();
                 doc.LoadHtml(input);
@@ -2075,19 +2076,23 @@ namespace BOATV
                     {
                         for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
                         {
-                            if (i == 0) output += "<div id=\"abdf\"> <p class=\"pcontent\">";
+                            if (i == 0) output += "<div id=\"abde\"> <p class=\"pcontent\">";
                             output += doc.DocumentNode.ChildNodes[i].OuterHtml;
                             if (doc.DocumentNode.ChildNodes.Count > 9)
                             {
-                                if (i == 9)
+                                if (i == 8)
                                 {
-                                    output += "</p></div>" + appendDiv + "<div id=\"abde\">";
+                                    output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                 }
                                 if (doc.DocumentNode.ChildNodes.Count > 14)
                                 {
                                     if (i == 14)
                                     {
                                         output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                    }
+                                    if (i == 20)
+                                    {
+                                        output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                     }
                                 }
                             }
@@ -2120,7 +2125,7 @@ namespace BOATV
                                     }
                                     else
                                     {
-                                        if (j == 9)
+                                        if (j == 8)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                         }
@@ -2129,6 +2134,10 @@ namespace BOATV
                                             if (j == 14)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                            if (j == 20)
+                                            {
+                                                output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
                                         }
                                     }
@@ -2148,7 +2157,7 @@ namespace BOATV
                                     }
                                     else
                                     {
-                                        if (j == 9)
+                                        if (j == 8)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                         }
@@ -2157,6 +2166,10 @@ namespace BOATV
                                             if (j == 14)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                            if (j == 20)
+                                            {
+                                                output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
                                         }
                                     }
@@ -2176,7 +2189,7 @@ namespace BOATV
                                     }
                                     else
                                     {
-                                        if (j == 9)
+                                        if (j == 8)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                         }
@@ -2185,6 +2198,10 @@ namespace BOATV
                                             if (j == 14)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                            if (j == 20)
+                                            {
+                                                output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
                                         }
                                     }
@@ -2204,7 +2221,7 @@ namespace BOATV
                                     }
                                     else
                                     {
-                                        if (j == 9)
+                                        if (j == 8)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                         }
@@ -2213,6 +2230,10 @@ namespace BOATV
                                             if (j == 14)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                            if (j == 20)
+                                            {
+                                                output += "</p></div>" + appendDivPerfect  + "<div id=\"abdm\">";
                                             }
                                         }
                                     }
@@ -2232,7 +2253,7 @@ namespace BOATV
                                     }
                                     else
                                     {
-                                        if (j == 9)
+                                        if (j == 8)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                         }
@@ -2241,6 +2262,10 @@ namespace BOATV
                                             if (j == 14)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                            if (j == 20)
+                                            {
+                                                output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
                                         }
                                     }
@@ -2260,7 +2285,7 @@ namespace BOATV
                                     }
                                     else
                                     {
-                                        if (j == 9)
+                                        if (j == 8)
                                         {
                                             output += "</p></div>" + appendDiv + "<div id=\"abdf\">";
                                         }
@@ -2269,6 +2294,10 @@ namespace BOATV
                                             if (j == 14)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                            }
+                                            if (j == 20)
+                                            {
+                                                output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
                                         }
                                     }
@@ -2297,6 +2326,10 @@ namespace BOATV
                                     if (i == 14)
                                     {
                                         output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
+                                    }
+                                    if (i == 20)
+                                    {
+                                        output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                     }
                                 }
                             }

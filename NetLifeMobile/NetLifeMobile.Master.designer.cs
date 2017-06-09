@@ -101,5 +101,14 @@ namespace NetLifeMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NetLifeMobile.Controls.Common.Footer Footer1;
+        
+        /// <summary>
+        /// Ads4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NetLifeMobile.Controls.Advs.Ads Ads4;
     }
 }

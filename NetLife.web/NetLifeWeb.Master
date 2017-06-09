@@ -89,16 +89,7 @@
     </noscript>
     <!-- End comScore Tag -->
 
-    <!-- head code adasia-->
-    <script src='http://adnetwork.adasiaholdings.com/config.js?nwid=2060' type="text/javascript"></script>
-    <script type="text/javascript">
-            sas.setup({ domain: 'http://adnetwork.adasiaholdings.com', async: true, renderMode: 0 });
-	    //  renderMode define when ads must be rendered :
-	    //  	- DEFAULT		(0) : as soon as ad is ready
-	    //  	- READY			(1) : render ads when document is ready
-	    //  - ON_DEMAND		(2) : user must call sas.callAds()
-    </script>
-    <!-- END head code adasia-->
+
 
 </head>
 <body>
@@ -137,7 +128,7 @@
         </div>
     </form>
     <%--#OUTSTREAM adasia--%>
-    <uc3:Adv ID="Adv4" PositionId="49" runat="server" />
+    <center><uc3:Adv ID="Adv4" PositionId="49" runat="server" /></center>
     <%--#FLOOR adasia--%>
     <uc3:Adv ID="Adv5" PositionId="50" runat="server" />
     <%--#FOLD adasia--%>

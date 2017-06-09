@@ -49,7 +49,7 @@
         font-size: 16px;
 }
 .more { padding: 10px 0;}
-.more .xt { background: #f7f7f7;text-align: center;padding: 20px 0;color: #333;font-weight: bold;}
+.more .xt { background: #f7f7f7;text-align: center;padding: 0 5px 5px 5px;color: #333;font-weight: bold;}
 .content-detail .tit-detail { color: #bf282f;font-size: 24px;font-weight: bold;line-height: 28px}
 .infoshare { padding: 20px 0; background-color: white;}
 .infoshare .nvb { background: url("/images/pen.jpg") no-repeat left center;padding:0 15px 0 20px;font-weight: bold ;text-transform: uppercase;color: #333333;}

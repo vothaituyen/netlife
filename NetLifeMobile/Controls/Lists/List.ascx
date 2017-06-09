@@ -8,8 +8,7 @@
         <span class="rcorners">
            <asp:HyperLink runat="server" ID="hplNextMenu"></asp:HyperLink>
             </span>
-        <span class="rcorners">
-            	&#8658;
+        <span class="rcorners">|
             </span>
           <span class="rcorners">
                 <asp:HyperLink runat="server" ID="hplNext"></asp:HyperLink>

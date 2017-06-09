@@ -45,6 +45,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLifeMobile", "NetLifeMob
 		{4C2F2DD3-16A8-46CD-83B8-6B97E331DBAC} = {4C2F2DD3-16A8-46CD-83B8-6B97E331DBAC}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_IOS", "API_IOS\API_IOS.csproj", "{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66A783E9-D678-4D8A-B607-2BDAB0754A2F} = {66A783E9-D678-4D8A-B607-2BDAB0754A2F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +130,18 @@ Global
 		{CF8FC986-9FA9-48FB-A9A1-F263B7182DC1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{CF8FC986-9FA9-48FB-A9A1-F263B7182DC1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{CF8FC986-9FA9-48FB-A9A1-F263B7182DC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Debug|x86.Build.0 = Debug|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD8DE5AD-06BC-4324-BD8F-2802562A2DEF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

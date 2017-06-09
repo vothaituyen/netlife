@@ -60,18 +60,8 @@
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <script src='http://adnetwork.adasiaholdings.com/config.js?nwid=2060' type="text/javascript"></script>
-    <script type="text/javascript">
-        sas.setup({ domain: 'http://adnetwork.adasiaholdings.com', async: true, renderMode: 0});
-	    //  renderMode define when ads must be rendered :
-	    //  	- DEFAULT		(0) : as soon as ad is ready
-	    //  	- READY			(1) : render ads when document is ready
-	    //  - ON_DEMAND		(2) : user must call sas.callAds()
-    </script>
 </head>
 <body>
-     <%--<center> <uc3:Ads ID="Ads4" PositionId="38" runat="server" /></center>--%>
-            <!--Adsia outstream -->
     <uc3:Ads ID="Ads1" PositionId="52" runat="server" />
        <!--Adsia parallax -->
     <uc3:Ads ID="Ads2" PositionId="53" runat="server" />
@@ -175,7 +165,7 @@
         </script>
 
 
-
+        <uc3:Ads ID="Ads4" PositionId="22" runat="server" />
     </form>
 </body>
 </html>

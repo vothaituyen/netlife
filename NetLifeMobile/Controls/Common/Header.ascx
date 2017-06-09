@@ -31,18 +31,19 @@
             </a>
 
         </div>
-        <div class="col-xs-6 logo-mb" id="lg">
+        <div class="col-xs-9 logo-mb" id="lg">
             <a href="/">
                 <img class="img-responsive" src="/Images/logo.png" />
             </a>
         </div>
+        <!--
         <div class="col-xs-3 searchmb">
             <a class="search-mb" id="open_popup" name="open_popup" rel="miendatwebPopup" href="#popup_content">
                 <span>
                     <img src="/Images/bg-search.jpg" /></span>
             </a>
 
-        </div>
+        </div>-->
         <div id="popup_content" class="popup col-sm-12">
 
             <input class="col-sm-9" style="padding: 4px 5px; border: none" type="text" name="keyword" id="keyword" onfocus="if(this.value=='Từ khoá') this.value='';" placeholder="Nhập từ tìm kiếm..." />

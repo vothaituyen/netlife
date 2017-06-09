@@ -9,7 +9,7 @@
          </span>
          
          <asp:Literal runat="server" ID="ltrCatParent"></asp:Literal>
-             <span class="rcorners">&#8658;
+             <span class="rcorners">|
                  </span>
          <span class="rcorners">
             <asp:Literal runat="server" ID="ltrCattxt"></asp:Literal>

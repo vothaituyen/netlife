@@ -35,12 +35,14 @@ namespace NetLifeMobile.Controls.Details
 
                 string htmlMobile2 = BOAdv.GetAdvItemById(Lib.Object2Integer(31), Lib.QueryString.CategoryID);
                 string htmlMobile2Extend = BOAdv.GetAdvItemById(Lib.Object2Integer(47), Lib.QueryString.CategoryID);
+                string htmlMobile2Perfect = BOAdv.GetAdvItemById(Lib.Object2Integer(55), Lib.QueryString.CategoryID);
                 string htmlMobile6Adpruce = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(38), Lib.QueryString.CategoryID);//live id = 38, sua dong duoi nua
                 string htmlVideoMobile = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(39), Lib.QueryString.CategoryID);//live id = 39
                 string mobile8 = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(40), Lib.QueryString.CategoryID);//live id = 39
 
                 string adsContent = "";
                 string adsContentExtend = "";
+                string adsContentPerfect = "";
 
                 if (!String.IsNullOrWhiteSpace(htmlMobile2))
                 {
@@ -51,6 +53,10 @@ namespace NetLifeMobile.Controls.Details
                 {
                     adsContentExtend = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Extend.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
                 }
+                if (!String.IsNullOrWhiteSpace(htmlMobile2Perfect))
+                {
+                    adsContentPerfect = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Perfect.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
+                }
 
 
 
@@ -60,7 +66,8 @@ namespace NetLifeMobile.Controls.Details
                 string pattern = @"(?<start><a[^>]*)(?<end>>)";
                 string repl = @"${start} target=""_blank"" ${end}";
                 string newString = Regex.Replace(content, pattern, repl);
-                ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent)).Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContentExtend));
+                //ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent)).Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContentExtend));
+                ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent)).Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContentExtend)).Replace("<div id=\"vmcbackgroundPerfect\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContentPerfect));
                 //ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("{0}", adsContent)).Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContentExtend));
 
                 //ltrContent.Text = newString.Replace("<div id=\"vmcbackgroundExtend\"></div>", string.Format("<div id=\"vmcbackground1\"><center>{0}</center></div>", adsContentExtend));
