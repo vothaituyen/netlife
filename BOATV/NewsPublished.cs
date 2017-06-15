@@ -2072,7 +2072,7 @@ namespace BOATV
 
                 if (doc.DocumentNode.ChildNodes.Count >= 1)
                 {
-                    if (doc.DocumentNode.ChildNodes.Count > 5)
+                    if (doc.DocumentNode.ChildNodes.Count > 10)
                     {
                         for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
                         {
@@ -2086,11 +2086,11 @@ namespace BOATV
                                 }
                                 if (doc.DocumentNode.ChildNodes.Count > 14)
                                 {
-                                    if (i == 14)
+                                    if (i == 17)
                                     {
                                         output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                     }
-                                    if (i == 20)
+                                    if (i == 24)
                                     {
                                         output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                     }
@@ -2131,11 +2131,11 @@ namespace BOATV
                                         }
                                         if (doc.DocumentNode.ChildNodes[0].ChildNodes.Count > 14)
                                         {
-                                            if (j == 14)
+                                            if (j == 17)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                             }
-                                            if (j == 20)
+                                            if (j == 24)
                                             {
                                                 output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
@@ -2163,11 +2163,11 @@ namespace BOATV
                                         }
                                         if (doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 14)
                                         {
-                                            if (j == 14)
+                                            if (j == 17)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                             }
-                                            if (j == 20)
+                                            if (j == 24)
                                             {
                                                 output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
@@ -2195,11 +2195,11 @@ namespace BOATV
                                         }
                                         if (doc.DocumentNode.ChildNodes[1].ChildNodes.Count > 14)
                                         {
-                                            if (j == 14)
+                                            if (j == 17)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                             }
-                                            if (j == 20)
+                                            if (j == 24)
                                             {
                                                 output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
@@ -2227,11 +2227,11 @@ namespace BOATV
                                         }
                                         if (doc.DocumentNode.ChildNodes[2].ChildNodes.Count > 14)
                                         {
-                                            if (j == 14)
+                                            if (j == 17)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                             }
-                                            if (j == 20)
+                                            if (j == 24)
                                             {
                                                 output += "</p></div>" + appendDivPerfect  + "<div id=\"abdm\">";
                                             }
@@ -2259,11 +2259,11 @@ namespace BOATV
                                         }
                                         if (doc.DocumentNode.ChildNodes[2].ChildNodes.Count > 14)
                                         {
-                                            if (j == 14)
+                                            if (j == 17)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                             }
-                                            if (j == 20)
+                                            if (j == 24)
                                             {
                                                 output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
@@ -2291,11 +2291,11 @@ namespace BOATV
                                         }
                                         if (doc.DocumentNode.ChildNodes[3].ChildNodes.Count > 14)
                                         {
-                                            if (j == 14)
+                                            if (j == 17)
                                             {
                                                 output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                             }
-                                            if (j == 20)
+                                            if (j == 24)
                                             {
                                                 output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                             }
@@ -2323,11 +2323,11 @@ namespace BOATV
                                 }
                                 if (doc.DocumentNode.ChildNodes[1].ChildNodes[0].ChildNodes.Count > 14)
                                 {
-                                    if (i == 14)
+                                    if (i == 17)
                                     {
                                         output += "</p></div>" + appendDivExtend + "<div id=\"abdi\">";
                                     }
-                                    if (i == 20)
+                                    if (i == 24)
                                     {
                                         output += "</p></div>" + appendDivPerfect + "<div id=\"abdm\">";
                                     }
