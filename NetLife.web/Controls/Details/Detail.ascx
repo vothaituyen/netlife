@@ -11,10 +11,6 @@
 </div>
  
 <div class="row detailinfo">
-<%--     <div class="row likefb">
-                        <iframe scrolling="no" frameborder="0" src="//www.facebook.com/plugins/like.php?href=http://netlife.vn/<% = Request.RawUrl.ToString() %>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=20&amp;appId=1526016807656820&amp;width=480px"
-                            style="border: medium none; overflow: hidden; height: 20px; margin-top: 0px; margin-left: 0px; width: 100%" allowtransparency="true"></iframe>
-                    </div>--%>
     <h1>
         <asp:Literal runat="server" ID="ltrTitle"></asp:Literal></h1>
 
@@ -59,10 +55,6 @@
                         </div>
            
         </div>
-       <%-- <div class="col-md-6">
-            <iframe scrolling="no" frameborder="0" src="//www.facebook.com/plugins/like.php?href=http://netlife.vn/<% = Request.RawUrl.ToString() %>&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=20&amp;appId=1526016807656820&amp;width=480px"
-                style="border: medium none; overflow: hidden; height: 30px; margin-top: 0px; width: 300px" allowtransparency="true"></iframe>
-        </div>--%>
     </div>
     </div>
 
@@ -75,10 +67,6 @@
     </div>
 </div>
 
-<%--<div class="row likefb">
-    <iframe scrolling="no" frameborder="0" src="//www.facebook.com/plugins/like.php?href=http://netlife.vn/<% = Request.RawUrl.ToString() %>&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=20&amp;appId=1526016807656820&amp;width=480px"
-        style="border: medium none; overflow: hidden; height: 20px; margin-top: 0px; width: 480px" allowtransparency="true"></iframe>
-</div>--%>
 
 <div id="tags" runat="server" class="row tags">
     <p class="col-md-1">TAGS</p>

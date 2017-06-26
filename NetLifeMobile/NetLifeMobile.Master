@@ -13,6 +13,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title id="title" runat="server">Giải trí - Khám phá - Làm đẹp cùng Netlife</title>
+    
+    <meta name="google-site-verification" content="OYvlk85AuqsBp-AaxP4qMpucx1_y2bJ8ddhi16ZmYX0" />
     <meta itemprop="homeLocation" content="Hochiminh City, Vietnam">
     <meta id="keywords" name="keywords" runat="server" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
     <meta id="description" name="description" runat="server" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
@@ -36,7 +38,7 @@
     <meta name="viewport" content="width = device-width" />
     <meta name="viewport" content="initial-scale=1, user-scalable=no" />
     <link rel="icon" type="image/x-icon" href="netlife.vn/favicon.ico" />
-    <link href="/Styles/Style.css" rel="stylesheet" />
+<%--    <link href="/Styles/Style.css" rel="stylesheet" />
     <link href="/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/Styles/bootstrap-theme.css" rel="stylesheet" />
     <link href="/Styles/bootstrap.css" rel="stylesheet" />
@@ -47,7 +49,21 @@
     <script  src="/Scripts/popup.js"></script>
     <script  src="/Scripts/custom.js"></script>
     <script  src="/Scripts/ads.js?v=2"></script>
-    <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
+    <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>--%>
+    <link href="http://tin247.com.vn/mb/Styles/Style.css" rel="stylesheet" />
+    <link href="http://tin247.com.vn/mb/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://tin247.com.vn/mb/Styles/bootstrap-theme.css" rel="stylesheet" />
+    <link href="http://tin247.com.vn/mb/Styles/bootstrap.css" rel="stylesheet" />
+
+  
+	
+	<script  src="http://tin247.com.vn/mb/Scripts/jquery-1.7.2.min.js"></script>
+    <script  src="http://tin247.com.vn/mb/Scripts/bootstrap.min.js"></script>
+    <script  src="http://tin247.com.vn/mb/Scripts/popup.js"></script>
+    <script  src="http://tin247.com.vn/mb/Scripts/custom.js"></script>
+    <script  src="http://tin247.com.vn/mb/Scripts/ads.js?v=2"></script>
+    <script  src="http://tin247.com.vn/mb/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -60,6 +76,16 @@
     </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <!--Adsia ads content-->
+    <script type="application/javascript" src="//ced.sascdn.com/tag/2060/smart.js" async></script>
+    <script type="application/javascript">
+        var sas = sas || {};
+        sas.cmd = sas.cmd || [];
+        sas.cmd.push(function () {
+            sas.setup({ networkid: 2060, domain: "//adnetwork.adasiaholdings.com", async: true });
+        });
+    </script>
+
 </head>
 <body>
     <uc3:Ads ID="Ads1" PositionId="52" runat="server" />

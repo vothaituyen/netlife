@@ -1,12 +1,1 @@
-﻿(function (a) {
-    a.fn.extend({
-        showPopup: function (b) {
-            function f(c) { if (b.onClose instanceof Function) b.onClose(); a("html").css({ overflow: "auto" }); a("body").css({ overflow: "auto" }); a("#lean_overlay").fadeOut(200); a(c).css({ display: "none" }) } var e = a("<div id='lean_overlay'></div>"); a("body").append(e); b = a.extend({ top: 100, overlay: 0.5, scroll: !0, closeButton: null }, b); return this.each(function () {
-                var c = b; a(this).click(function (b) {
-                    var d = a(this).attr("href"); a("#lean_overlay").click(function () { f(d) }); a(c.closeButton).click(function () { f(d) });
-                    a(d).outerHeight(); var e = a(d).outerWidth(); a("#lean_overlay").css({ display: "block", opacity: 0 }); a("#lean_overlay").fadeTo(200, c.overlay); a(d).css({ display: "block", position: "absolute", opacity: 0, "z-index": 110 }); c.scroll && (a("html").css({ overflow: "hidden" }), a("body").css({ overflow: "hidden" })); a(d).fadeTo(200, 1); b.preventDefault()
-                })
-            })
-        }
-    })
-})(jQuery);
+﻿!function (o) { o.fn.extend({ showPopup: function (e) { function n(n) { e.onClose instanceof Function && e.onClose(), o("html").css({ overflow: "auto" }), o("body").css({ overflow: "auto" }), o("#lean_overlay").fadeOut(200), o(n).css({ display: "none" }) } var l = o("<div id='lean_overlay'></div>"); return o("body").append(l), e = o.extend({ top: 100, overlay: .5, scroll: !0, closeButton: null }, e), this.each(function () { var l = e; o(this).click(function (e) { var t = o(this).attr("href"); o("#lean_overlay").click(function () { n(t) }), o(l.closeButton).click(function () { n(t) }), o(t).outerHeight(); o(t).outerWidth(); o("#lean_overlay").css({ display: "block", opacity: 0 }), o("#lean_overlay").fadeTo(200, l.overlay), o(t).css({ display: "block", position: "absolute", opacity: 0, "z-index": 110 }), l.scroll && (o("html").css({ overflow: "hidden" }), o("body").css({ overflow: "hidden" })), o(t).fadeTo(200, 1), e.preventDefault() }) }) } }) }(jQuery);

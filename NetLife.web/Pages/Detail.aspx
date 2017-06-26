@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NetLifeWeb.Master" AutoEventWireup="true" CodeBehind="Detail.aspx.cs" Inherits="NetLife.web.Pages.Detail" %>
+
 <%@ Register Src="../Controls/Details/Detail.ascx" TagName="Detail" TagPrefix="uc1" %>
 <%@ Register Src="../Controls/Details/Comment.ascx" TagName="Comment" TagPrefix="uc3" %>
 <%@ Register Src="../Controls/Advs/Adv.ascx" TagName="Adv" TagPrefix="uc4" %>
@@ -20,22 +21,23 @@
             </div>
         </div>
         <div class="col-md-3-custom-main">
-            <uc4:Adv ID="Adv3" PositionId="11"  ClassName="row padbt10 fl" runat="server" />
+            <uc4:Adv ID="Adv3" PositionId="11" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv4" PositionId="12" ClassName="row padbt10 fl" runat="server" />
-             <uc5:Hot ID="Hot1" runat="server" />
-            
-            <%--<uc6:VideoClip ID="VideoClip1" Cat_ID="134" runat="server" />--%>
+            <uc5:Hot ID="Hot1" runat="server" />
+
+            <uc6:VideoClip ID="VideoClip1" Cat_ID="142" runat="server" />
 
             <%--<uc8:HotRight ID="HotRigh1t" runat="server" />--%>
             <uc4:Adv ID="Adv1" PositionId="9" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv2" PositionId="10" ClassName="row padbt10 fl" runat="server" />
+
             
-           <uc9:HotRight runat="server" ID="HotRight" />
             <uc4:Adv ID="Adv5" PositionId="18" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv6" PositionId="19" ClassName="row padbt10 fl" runat="server" />
-             <uc4:Adv ID="Adv7" PositionId="20" ClassName="row padbt10 fl" runat="server" />
+            <uc9:HotRight runat="server" ID="HotRight" />
+            <uc4:Adv ID="Adv7" PositionId="20" ClassName="row padbt10 fl" runat="server" />
             <uc4:Adv ID="Adv8" PositionId="21" ClassName="row padbt10 fl" runat="server" />
-             
+
         </div>
     </div>
 </asp:Content>

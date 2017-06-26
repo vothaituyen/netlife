@@ -213,12 +213,14 @@ namespace BOATV
                     m.Attributes.Add("property", "og:title");
                     m.Content = HttpUtility.HtmlDecode(title);
                     p.Header.Controls.AddAt(1, m);
+                    //p.Header.Controls.Add(new LiteralControl("br/"));
                 }
 
                 m = new HtmlMeta();
                 m.Attributes.Add("property", "og:type");
                 m.Attributes.Add("content", "article");
                 p.Header.Controls.AddAt(1, m);
+                //p.Header.Controls.Add(new LiteralControl("br/"));
 
                 if (!string.IsNullOrEmpty(url))
                 {
@@ -226,6 +228,7 @@ namespace BOATV
                     m.Attributes.Add("property", "og:url");
                     m.Attributes.Add("content", url.StartsWith("http") ? url : "http://" + HttpContext.Current.Request.Url.DnsSafeHost + url);
                     p.Header.Controls.AddAt(1, m);
+                    //p.Header.Controls.Add(new LiteralControl("br/"));
                 }
                 if (!string.IsNullOrEmpty(images))
                 {
@@ -233,11 +236,13 @@ namespace BOATV
                     m.Attributes.Add("property", "og:image");
                     m.Attributes.Add("content", images);
                     p.Header.Controls.AddAt(1, m);
+                    //p.Header.Controls.Add(new LiteralControl("br/"));
                 }
                 m = new HtmlMeta();
                 m.Attributes.Add("property", "og:site_name");
                 m.Attributes.Add("content", HttpContext.Current.Request.Url.DnsSafeHost);
                 p.Header.Controls.AddAt(1, m);
+                //p.Header.Controls.Add(new LiteralControl("br/"));
 
                 if (!string.IsNullOrEmpty(sapo))
                 {
@@ -245,6 +250,7 @@ namespace BOATV
                     m.Attributes.Add("property", "og:description");
                     m.Content = HttpUtility.HtmlDecode(sapo);
                     p.Header.Controls.AddAt(1, m);
+                    //p.Header.Controls.Add(new LiteralControl("<br/>"));
                 }
                 #endregion
             }

@@ -8,7 +8,7 @@
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
             <div class="col-md-2">
             <div class="ip col-md-12">
-                <input type="text" class="col-md-8" placeholder="Nhập nội dung tìm kiếm..." name="keyword" id="keyword"
+                <input type="text" class="col-md-8" placeholder="Tìm kiếm..." name="keyword" id="keyword"
                     style="margin-bottom: 0" onfocus="if(this.value=='Từ khoá') this.value='';"/>
                 <button class="col-md-2" id="btn-search" onclick="search()">
                     <img src="/Images/ic-search.jpg" />

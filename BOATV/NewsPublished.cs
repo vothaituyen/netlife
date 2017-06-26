@@ -2344,6 +2344,14 @@ namespace BOATV
 
                         }
                     }
+                    else
+                    {
+                        for (int i = 0; i < doc.DocumentNode.ChildNodes.Count; i++)
+                        {
+                            output += doc.DocumentNode.ChildNodes[i].OuterHtml;
+                        }
+                        output += "<div>";
+                    }
 
 
 

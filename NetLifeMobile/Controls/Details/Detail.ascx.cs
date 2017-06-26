@@ -15,11 +15,23 @@ namespace NetLifeMobile.Controls.Details
     {
         private string txtCat = "<a href=\"{0}\" title=\"{1}\">{1}</a>";
         private string txtCatPr = "<span><img src=\"/Images/next.jpg\" /></span><a href=\"{0}\" title=\"{1}\">{1}</a>";
-        private string itemRelate = "<div class=\"row item-list\"> 	<div class=\"col-xs-12 pd\">       <div class=\"col-xs-5 img-list-item\">          <a href=\"{0}\" title=\"{1}\">             <img src=\"{2}?width=213&crop=auto&scale=both\" title=\"{1}\" alt=\"{1}\">          </a>       </div>       <div class=\"col-xs-7 info-list-item\"><a href=\"{0}\">{1} </a></div> 	</div> </li>";
+        private string itemRelate = "<div class=\"row item-list\"> 	<div class=\"col-xs-12 pd\">       <div class=\"col-xs-5 img-list-item\">          <a href=\"{0}\" title=\"{1}\">             <img src=\"{2}?width=213&crop=auto&scale=both\" title=\"{1}\" alt=\"{1}\">          </a>       </div>       <div class=\"col-xs-7 info-list-item\"><a href=\"{0}\">{1} </a><br/><span>{3}</span></div> 	</div> </li>";
         private string itemHot = "<li class=\"news_home\"><a href=\"{0}\" title=\"{1}\"><span>{1}</span></a></li>";
         private List<NewsPublishEntity> dataEntity;
         public List<NewsPublishEntity> DataEntity { get { return dataEntity; } set { dataEntity = value; } }
 
+        private string countTime(DateTime dateTime)
+        {
+            if ((DateTime.Now - dateTime).TotalMinutes < 60)
+            {
+                return (DateTime.Now - dateTime).Minutes.ToString() + " phút trước";
+            }
+            else if ((DateTime.Now - dateTime).TotalHours < 24)
+            {
+                return (DateTime.Now - dateTime).Hours.ToString() + " tiếng trước";
+            }
+            return dateTime.ToString("dd-MM-yyyy HH:mm");
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -154,7 +166,7 @@ namespace NetLifeMobile.Controls.Details
                 Utils.SetFaceBookSEO(this.Page, ne.NEWS_TITLE, ne.NEWS_INITCONTENT, ne.Imgage.StorageUrl, Request.RawUrl);
 
                 string GOOGLE =
-                                    @"  <meta itemprop=""datePublished"" content=""{4}"" /> 
+                                    @"  <meta itemprop=""datePublished"" content=""{4}"" />
                                         <meta itemprop=""sourceOrganization"" content=""NetLife"" />
                                         <meta itemprop=""url"" property=""og:url"" content=""{0}"" />
                                         <meta itemprop=""articleSection"" content=""{1}"" />
@@ -178,7 +190,8 @@ namespace NetLifeMobile.Controls.Details
                 {
                     nep = dataEntity[i];
                     //ltrListRelate.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
-                    ltrListRelate.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl);
+
+                    ltrListRelate.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl, countTime(nep.NEWS_PUBLISHDATE));
                 }
                 //ltrListRelate.Text = ltrListRelate.Text.Replace("img", "img width=\"60\" height=\"50\"");
             }
@@ -197,7 +210,7 @@ namespace NetLifeMobile.Controls.Details
                 for (int i = 0; i < iCount; i++)
                 {
                     nep = otherNews[i];
-                    ltrOther.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl);   
+                    ltrOther.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl, countTime(nep.NEWS_PUBLISHDATE));   
                 }
             }
             var newsHot = NewsPublished.NoiBatTrangChu(5, 50);
@@ -220,7 +233,7 @@ namespace NetLifeMobile.Controls.Details
                 for (int i = 0; i < iCount; i++)
                 {
                     nep = listNew[i];
-                    ltrNew.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl);
+                    ltrNew.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl, countTime(nep.NEWS_PUBLISHDATE));
                 }
             }
 
@@ -233,7 +246,7 @@ namespace NetLifeMobile.Controls.Details
                 for (int i = 0; i < iCount; i++)
                 {
                     nep = sameCategorys[i];
-                    ltsameCategorys.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl);
+                    ltsameCategorys.Text += String.Format(itemRelate, nep.URL, nep.NEWS_TITLE, nep.Imgage.ImageUrl, countTime(nep.NEWS_PUBLISHDATE));
                 }
             }
 

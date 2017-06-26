@@ -129,20 +129,20 @@ namespace NetLife.web.Controls.Details
                 Utils.SetFaceBookSEO(this.Page, ne.NEWS_TITLE, ne.NEWS_INITCONTENT, ne.Imgage.StorageUrl, Request.RawUrl);
 
                 string GOOGLE =
-                                    @"  <meta itemprop=""datePublished"" content=""{4}"" /> 
-                                        <meta itemprop=""sourceOrganization"" content=""NetLife"" />
-                                        <meta itemprop=""url"" property=""og:url"" content=""{0}"" />
-                                        <meta itemprop=""articleSection"" content=""{1}"" />
-                                        <meta itemprop=""image"" content=""{3}"" />
+                                    @"  <meta itemprop=""datePublished"" content=""{4}"" /><br /> 
+                                        <meta itemprop=""sourceOrganization"" content=""NetLife"" /><br />
+                                        <meta itemprop=""url"" property=""og:url"" content=""{0}"" /><br />
+                                        <meta itemprop=""articleSection"" content=""{1}"" /><br />
+                                        <meta itemprop=""image"" content=""{3}"" /><br />
                                         <div style=""display: none !important"" itemscope itemtype=""http://schema.org/Recipe"">
                                             <span itemprop=""name"">{2}</span>
                                             <img itemprop=""image"" src=""{3}"" />                                             
-                                        </div>";
+                                        </div><br />";
 
                 ltrTitle.Text += string.Format(GOOGLE, ne.URL.StartsWith("http") ? ne.URL : "http://netlife.vn" + ne.URL, cat.Cat_Name, ne.NEWS_TITLE, !String.IsNullOrEmpty(ne.Imgage.StorageUrl) && ne.Imgage.StorageUrl.StartsWith("http") ? ne.Imgage.StorageUrl : Utils.ImagesThumbUrl + "/" + ne.Imgage.StorageUrl, ne.NEWS_PUBLISHDATE);
 
             }
-            if (ne != null && ne.NEWS_RELATION.Count > 0)
+            //if (ne != null && ne.NEWS_RELATION.Count > 0)
             {
 
                 var abc = ne.NEWS_RELATION.Count > 2 ? ne.NEWS_RELATION.Skip(2).Take(6).ToList() : ne.NEWS_RELATION; // Edit Take(8) -> Take(6)  edit 20160525
@@ -177,11 +177,11 @@ namespace NetLife.web.Controls.Details
                     ltrRelate.Text += String.Format(itemOtherNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
                 }
             }
-            else
-            {
-                lienquan.Visible = false;
+            //else
+            //{
+            //    lienquan.Visible = false;
 
-            }
+            //}
 
             //ltrVideo
 
@@ -199,12 +199,16 @@ namespace NetLife.web.Controls.Details
             }
 
             {
+                if (relatedNewsId.Length == 0)
+                {
+                    relatedNewsId = "20170427093838540";
+                }
                 var otherNews = NewsPublished.NP_Select_Tin_Cung_Chuyen_Muc(Lib.QueryString.ParentCategoryID, Lib.QueryString.CategoryID, Lib.QueryString.NewsID, 6, relatedNewsId);
                 if (otherNews != null)
                 {
                     NewsPublishEntity nep;
                     int iCount = otherNews != null ? otherNews.Count : 0;
-  
+
                     for (int i = 0; i < (iCount > 6 ? 6 : iCount); i++) //(int i = 0; i < iCount; i++)
                     {
                         nep = otherNews[i];
@@ -225,6 +229,7 @@ namespace NetLife.web.Controls.Details
                     cungchuyenmuc.Visible = false;
 
                 }
+
 
             }
             {
