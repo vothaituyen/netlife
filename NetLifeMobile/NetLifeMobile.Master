@@ -21,7 +21,7 @@
     <meta name="page-topic" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
     <meta name="copyright" content="netlife.vn" />
     <meta name="author" content="netlife.vn" />
-    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://tin247.com.vn/Images/favicon.ico" type="image/x-icon" />
     <meta http-equiv="audience" content="General" />
     <%--<meta http-equiv="Cache-control" content="public">--%>
     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
@@ -37,7 +37,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width = device-width" />
     <meta name="viewport" content="initial-scale=1, user-scalable=no" />
-    <link rel="icon" type="image/x-icon" href="netlife.vn/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="http://tin247.com.vn/Images/favicon.ico" />
 <%--    <link href="/Styles/Style.css" rel="stylesheet" />
     <link href="/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/Styles/bootstrap-theme.css" rel="stylesheet" />

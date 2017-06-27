@@ -1,14 +1,19 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Detail.ascx.cs" Inherits="NetLife.web.Controls.Details.Detail" %>
 <%@ Register Src="../Advs/Adv.ascx" TagName="Adv" TagPrefix="uc1" %>
-<div class="row breadcrumbdt">
-    <a href="/">
-        <img style="padding-bottom: 3px" src="/Images/home-black.jpg" /></a>
-    <span>
-        <img src="/Images/next.jpg" />
-    </span>
-    <asp:Literal runat="server" ID="ltrCattxt"></asp:Literal>
-    <asp:Literal runat="server" ID="ltrCatParent"></asp:Literal>
-</div>
+    <div class="row chuyen-muc-cat">
+        <ul>
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+        </ul>
+    </div>
+    <div class="row breadcrumbdt">
+        <a href="/">
+            <img style="padding-bottom: 3px" src="/Images/home-black.jpg" /></a>
+        <span>
+            <img src="/Images/next.jpg" />
+        </span>
+        <asp:Literal runat="server" ID="ltrCattxt"></asp:Literal>
+        <asp:Literal runat="server" ID="ltrCatParent"></asp:Literal>
+    </div>
  
 <div class="row detailinfo">
     <h1>

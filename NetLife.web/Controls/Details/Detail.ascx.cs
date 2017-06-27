@@ -29,8 +29,24 @@ namespace NetLife.web.Controls.Details
 
         //private string strListOne = "<div class=\"row img-nb\">{0}</div><div class=\"row title-nb\"> <a href=\"{1}\">{2}</a></div>";
 
+
+        int CatID = Lib.QueryString.ParentCategoryID == 0
+                ? Lib.QueryString.CategoryID
+                : Lib.QueryString.ParentCategoryID;
+        //int CatID = Lib.QueryString.CategoryID;
+        public static string childCat = "<li id=\"li{2}\"><a href=\"{0}\" title=\"{1}\">{1}</a></li>";
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            var tbl = BOCategory.GetCategoryByParent(CatID);
+            if (tbl != null && tbl.Rows.Count > 0)
+            {
+                foreach (System.Data.DataRow row in tbl.Rows)
+                {
+                    Literal1.Text += String.Format(childCat, (String.Format("/{0}.html", row["Cat_DisplayUrl"].ToString())), row["Cat_Name"].ToString(), row["Cat_ID"]);
+                }
+            }
+
 
             NewsPublishEntity ne = NewsPublished.NP_TinChiTiet(Lib.QueryString.NewsID, false);
             if (ne != null)
@@ -129,15 +145,15 @@ namespace NetLife.web.Controls.Details
                 Utils.SetFaceBookSEO(this.Page, ne.NEWS_TITLE, ne.NEWS_INITCONTENT, ne.Imgage.StorageUrl, Request.RawUrl);
 
                 string GOOGLE =
-                                    @"  <meta itemprop=""datePublished"" content=""{4}"" /><br /> 
-                                        <meta itemprop=""sourceOrganization"" content=""NetLife"" /><br />
-                                        <meta itemprop=""url"" property=""og:url"" content=""{0}"" /><br />
-                                        <meta itemprop=""articleSection"" content=""{1}"" /><br />
-                                        <meta itemprop=""image"" content=""{3}"" /><br />
+                                    @"  <meta itemprop=""datePublished"" content=""{4}"" />
+                                        <meta itemprop=""sourceOrganization"" content=""NetLife"" />
+                                        <meta itemprop=""url"" property=""og:url"" content=""{0}"" />
+                                        <meta itemprop=""articleSection"" content=""{1}"" />
+                                        <meta itemprop=""image"" content=""{3}"" />
                                         <div style=""display: none !important"" itemscope itemtype=""http://schema.org/Recipe"">
                                             <span itemprop=""name"">{2}</span>
                                             <img itemprop=""image"" src=""{3}"" />                                             
-                                        </div><br />";
+                                        </div>";
 
                 ltrTitle.Text += string.Format(GOOGLE, ne.URL.StartsWith("http") ? ne.URL : "http://netlife.vn" + ne.URL, cat.Cat_Name, ne.NEWS_TITLE, !String.IsNullOrEmpty(ne.Imgage.StorageUrl) && ne.Imgage.StorageUrl.StartsWith("http") ? ne.Imgage.StorageUrl : Utils.ImagesThumbUrl + "/" + ne.Imgage.StorageUrl, ne.NEWS_PUBLISHDATE);
 
