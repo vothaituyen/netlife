@@ -28,21 +28,23 @@ namespace NetLifeMobile.Controls.Home
         protected void Page_Load(object sender, EventArgs e)
         {
             //var domain = 
-            CategoryEntity cat = BOCategory.GetCategory(_cat_id);
-            ltrCatName.Text = String.Format(catName, cat.Cat_Name, (String.Format("/{0}.html", cat.Cat_DisplayURL.ToLower())));
+            if (_cat_id != 76) {
+                CategoryEntity cat = BOCategory.GetCategory(_cat_id);
+                ltrCatName.Text = String.Format(catName, cat.Cat_Name, (String.Format("/{0}.html", cat.Cat_DisplayURL.ToLower())));
 
-            List<NewsPublishEntity> lst = BOATV.NewsPublished.GetListNewsByNewsMode3(_cat_id, 1, 5, 6, 1, 460);
-            if (lst != null && lst.Count > 0)
-            {
-                ltrNotBat.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
-                newsId = lst[0].NEWS_ID;
-            }
-            List<NewsPublishEntity> lstNew = BOATV.NewsPublished.GetListNewsByCatAndDate(_cat_id, newsId, 1, 6, 0);
-            if (lstNew.Count > 0)
-            {
-                for (int i = 0; i < lstNew.Count; i++)
+                List<NewsPublishEntity> lst = BOATV.NewsPublished.GetListNewsByNewsMode3(_cat_id, 1, 5, 6, 1, 460);
+                if (lst != null && lst.Count > 0)
                 {
-                    lrtListNew.Text += String.Format(listNews, lstNew[i].URL_IMG, lstNew[i].URL, lstNew[i].NEWS_TITLE, lstNew[i].Imgage.ImageUrl);
+                    ltrNotBat.Text = String.Format(baiNoiBat, lst[0].URL_IMG, lst[0].URL, lst[0].NEWS_TITLE, Utils.CatSapo(lst[0].NEWS_INITCONTENT, 25));
+                    newsId = lst[0].NEWS_ID;
+                }
+                List<NewsPublishEntity> lstNew = BOATV.NewsPublished.GetListNewsByCatAndDate(_cat_id, newsId, 1, 6, 0);
+                if (lstNew.Count > 0)
+                {
+                    for (int i = 0; i < lstNew.Count; i++)
+                    {
+                        lrtListNew.Text += String.Format(listNews, lstNew[i].URL_IMG, lstNew[i].URL, lstNew[i].NEWS_TITLE, lstNew[i].Imgage.ImageUrl);
+                    }
                 }
             }
         }

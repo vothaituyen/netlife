@@ -77,14 +77,14 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <!--Adsia ads content-->
-    <script type="application/javascript" src="//ced.sascdn.com/tag/2060/smart.js" async></script>
+<%--    <script type="application/javascript" src="//ced.sascdn.com/tag/2060/smart.js" async></script>
     <script type="application/javascript">
         var sas = sas || {};
         sas.cmd = sas.cmd || [];
         sas.cmd.push(function () {
             sas.setup({ networkid: 2060, domain: "//adnetwork.adasiaholdings.com", async: true });
         });
-    </script>
+    </script>--%>
 
 </head>
 <body>

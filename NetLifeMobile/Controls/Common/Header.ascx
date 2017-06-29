@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Header.ascx.cs" Inherits="NetLifeMobile.Controls.Common.Header" %>
+<!--
 <div class="header">
     <div class="row header-mb">
         <ul id="accordion" class="col-xs-6 accordion">
@@ -51,7 +52,8 @@
         </div>
     </div>
 </div>
-
+    -->
+<!--
 <script type="text/javascript" language="JavaScript">
     $(function () {
         $('a[rel*=miendatwebPopup]').showPopup({
@@ -80,3 +82,4 @@
         }
     });
 </script>
+-->
