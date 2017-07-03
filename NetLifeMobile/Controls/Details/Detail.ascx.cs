@@ -56,19 +56,19 @@ namespace NetLifeMobile.Controls.Details
                 string adsContentExtend = "";
                 string adsContentPerfect = "";
 
-                //if (!String.IsNullOrWhiteSpace(htmlMobile2))
-                //{
-                //    adsContent = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2.Replace("\\n", " ").Replace("\\t", " "), 31).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
-                //    //adsContent = Environment.NewLine + "<div class=\"stickyads\"><a  href=\"https://www.toshiba.com.vn/san-pham/tivi/pro-theatre-series/pro-theatre-l36-series\" target=\"_blank\"><img alt=\"\" src=\"http://static.netlife.vn/2016/06/04/07/41/Left-x2300x600.png\" style=\"width: 300px; height: 600px;\"></a></div>" + Environment.NewLine;
-                //}
-                //if (!String.IsNullOrWhiteSpace(htmlMobile2Extend))
-                //{
-                //    adsContentExtend = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Extend.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
-                //}
-                //if (!String.IsNullOrWhiteSpace(htmlMobile2Perfect))
-                //{
-                //    adsContentPerfect = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Perfect.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
-                //}
+                if (!String.IsNullOrWhiteSpace(htmlMobile2))
+                {
+                    adsContent = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2.Replace("\\n", " ").Replace("\\t", " "), 31).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
+                    //adsContent = Environment.NewLine + "<div class=\"stickyads\"><a  href=\"https://www.toshiba.com.vn/san-pham/tivi/pro-theatre-series/pro-theatre-l36-series\" target=\"_blank\"><img alt=\"\" src=\"http://static.netlife.vn/2016/06/04/07/41/Left-x2300x600.png\" style=\"width: 300px; height: 600px;\"></a></div>" + Environment.NewLine;
+                }
+                if (!String.IsNullOrWhiteSpace(htmlMobile2Extend))
+                {
+                    adsContentExtend = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Extend.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
+                }
+                if (!String.IsNullOrWhiteSpace(htmlMobile2Perfect))
+                {
+                    adsContentPerfect = Environment.NewLine + "<script>" + String.Format("var zone{0}_{2} = new RunBanner({1}, \"zone{0}_{2}_Adv\"); zone{0}_{2}.Show();", Lib.QueryString.CategoryID, htmlMobile2Perfect.Replace("\\n", " ").Replace("\\t", " "), 47).Replace("INSERT_RANDOM_NUMBER_HERE", DateTime.Now.ToFileTime().ToString()) + "</script>" + Environment.NewLine;
+                }
 
 
 
@@ -104,6 +104,12 @@ namespace NetLifeMobile.Controls.Details
                 //        ltrContent.Text += Environment.NewLine;
                 //        ltrContent.Text = ltrContent.Text.Replace("<video", part[0] + "<video").Replace("video>", "video>" + part[1]);
                 //    }
+                if (!String.IsNullOrWhiteSpace(htmlVideoMobile))
+                {
+                    ltrContent.Text += Environment.NewLine;
+                    ltrContent.Text += htmlVideoMobile;
+                }
+
 
                 //}
                 // mobile 8

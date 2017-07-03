@@ -28,7 +28,7 @@ namespace NetLifeMobile.Controls.Home
         protected void Page_Load(object sender, EventArgs e)
         {
             //var domain = 
-            if (_cat_id != 76) {
+            //if (_cat_id != 76) {
                 CategoryEntity cat = BOCategory.GetCategory(_cat_id);
                 ltrCatName.Text = String.Format(catName, cat.Cat_Name, (String.Format("/{0}.html", cat.Cat_DisplayURL.ToLower())));
 
@@ -46,7 +46,7 @@ namespace NetLifeMobile.Controls.Home
                         lrtListNew.Text += String.Format(listNews, lstNew[i].URL_IMG, lstNew[i].URL, lstNew[i].NEWS_TITLE, lstNew[i].Imgage.ImageUrl);
                     }
                 }
-            }
+            //}
         }
     }
 }

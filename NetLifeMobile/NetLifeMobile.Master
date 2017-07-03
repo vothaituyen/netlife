@@ -12,16 +12,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title id="title" runat="server">Giải trí - Khám phá - Làm đẹp cùng Netlife</title>
+    <title id="title" runat="server">Netlife - Giải trí - Khám phá - Làm đẹp </title>
     
     <meta name="google-site-verification" content="OYvlk85AuqsBp-AaxP4qMpucx1_y2bJ8ddhi16ZmYX0" />
     <meta itemprop="homeLocation" content="Hochiminh City, Vietnam">
-    <meta id="keywords" name="keywords" runat="server" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
-    <meta id="description" name="description" runat="server" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
-    <meta name="page-topic" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
+    <meta id="keywords" name="keywords" runat="server" content="Netlife - Giải trí - Khám phá - Làm đẹp " />
+    <meta id="description" name="description" runat="server" content="Netlife - Giải trí - Khám phá - Làm đẹp " />
+    <meta name="page-topic" content="Netlife - Giải trí - Khám phá - Làm đẹp " />
     <meta name="copyright" content="netlife.vn" />
     <meta name="author" content="netlife.vn" />
-    <link rel="shortcut icon" href="http://tin247.com.vn/Images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://vothaituyen.com/mb/Images/favicon.ico" type="image/x-icon" />
     <meta http-equiv="audience" content="General" />
     <%--<meta http-equiv="Cache-control" content="public">--%>
     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
@@ -32,7 +32,7 @@
     <meta name="distribution" content="Global" />
     <meta name="robots" content="noodp,index,follow" />
     <meta name="revisit-after" content="1 days" />
-    <meta name="Abstract" content="Giải trí - Khám phá - Làm đẹp cùng Netlife" />
+    <meta name="Abstract" content="Netlife - Giải trí - Khám phá - Làm đẹp " />
     <meta property="fb:app_id" content="1526016807656820" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width = device-width" />
@@ -50,19 +50,19 @@
     <script  src="/Scripts/custom.js"></script>
     <script  src="/Scripts/ads.js?v=2"></script>
     <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>--%>
-    <link href="http://tin247.com.vn/mb/Styles/Style.css" rel="stylesheet" />
-    <link href="http://tin247.com.vn/mb/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="http://tin247.com.vn/mb/Styles/bootstrap-theme.css" rel="stylesheet" />
-    <link href="http://tin247.com.vn/mb/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="http://vothaituyen.com/mb/Styles/Style.css" rel="stylesheet" />
+    <link href="http://vothaituyen.com/mb/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://vothaituyen.com/mb/Styles/bootstrap-theme.css" rel="stylesheet" />
+    <link href="http://vothaituyen.com/mb/Styles/bootstrap.css" rel="stylesheet" />
 
   
 	
-	<script  src="http://tin247.com.vn/mb/Scripts/jquery-1.7.2.min.js"></script>
-    <script  src="http://tin247.com.vn/mb/Scripts/bootstrap.min.js"></script>
-    <script  src="http://tin247.com.vn/mb/Scripts/popup.js"></script>
-    <script  src="http://tin247.com.vn/mb/Scripts/custom.js"></script>
-    <script  src="http://tin247.com.vn/mb/Scripts/ads.js?v=2"></script>
-    <script  src="http://tin247.com.vn/mb/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
+	<script  src="http://vothaituyen.com/mb/Scripts/jquery-1.7.2.min.js"></script>
+    <script  src="http://vothaituyen.com/mb/Scripts/bootstrap.min.js"></script>
+    <script  src="http://vothaituyen.com/mb/Scripts/popup.js"></script>
+    <script  src="http://vothaituyen.com/mb/Scripts/custom.js"></script>
+    <script  src="http://vothaituyen.com/mb/Scripts/ads.js?v=2"></script>
+    <script  src="http://vothaituyen.com/mb/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
 
     <script>
         (function (i, s, o, g, r, a, m) {

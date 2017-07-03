@@ -19,7 +19,7 @@
     </script>
 
 </div>
-<!--
+
 <div class="col-xs-12 footer">
     <p style="font-size: 16px; color: #444;">Trang thông tin điện tử tổng hợp Netlife</p>
     <p style="font-size: 13px; color: #878787; padding: 10px 0">
@@ -34,4 +34,4 @@
         <span class="sprite sprite-phone col-xs-12">+84-8 6683-8411 </span>
     </div>
 </div>
-    -->
+    

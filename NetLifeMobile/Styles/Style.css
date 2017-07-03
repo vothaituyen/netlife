@@ -209,7 +209,7 @@
     float: left;margin: 5px 5px;list-style-type: none;
 }
 .col-md-6.pagging > li {padding: 5px; border:1px solid #f7f7f7}
-#body-content p{display:inline-block;clear:both; float:left;}/* add*/
+#body-content p{display:inline-block;clear:both; /*float:left;*/}/* add*/
 /*@media (max-width:410px) {
     .col-xs-2 {
         width: 13.66666667%;
