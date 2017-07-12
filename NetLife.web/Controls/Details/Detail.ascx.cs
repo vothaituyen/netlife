@@ -73,22 +73,40 @@ namespace NetLife.web.Controls.Details
                 ltrContent.Text = newString.Replace("src=\"/Uploaded/", "src=\"http://static.netlife.vn/Uploaded/").Replace("<div id=\"vmcbackground\"></div>", string.Format("<div id=\"vmcbackground\"><center>{0}</center></div>", adsContent));
                 ltrContent.Text = ltrContent.Text.Replace("jpg\"", "jpg?maxwidth=480\"" + " alt=\"" + ne.NEWS_TITLE + "\"");
 
+                //jwplayer
+                ltrContent.Text += "";
 
 
+                ltrContent.Text += @"<div id=""myElement""></div>
+                                    <script>
+                                    jwplayer(""myElement"").setup({
+                                      ""file"": ""http://creative.us.cf.adotube.com/creatives/dev_test/ppre1_video1_1_dev_sound.mp4"",
+                                      ""height"": 360,
+                                      ""width"": 640,
+                                      ""mute"": false,
+                                      ""autostart"": true,
+                                      ""primary"": ""flash"",
+                                      ""advertising"": {
+                                            'skipoffset': 5,
+                                            ""client"": ""vast"",
+			
+			                                    ""tag"":""http://delivery.adnetwork.vn/247/xmlvideoad/zid_1402387259/wid_1245836202/type_inline/cb_[timestamp]/w_[player-width]/h_[player-height]/purl_[content-page-url]""		
+			                                    }//example vast
+                                    });";
                 string html = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(37), Lib.Object2Integer(Lib.QueryString.CategoryID));
                 if (html.Length > 2) //add ad video 7
                 {
-                    if (html.Contains("ambient")) //ambient
-                    {
+                    //if (html.Contains("ambient")) //ambient
+                    //{
                         ltrContent.Text += Environment.NewLine;
                         ltrContent.Text += html;
-                    }
-                    else if (html.Contains("ebound")) //ebound
-                    {
-                        String[] part = html.Split('@');
-                        ltrContent.Text += Environment.NewLine;
-                        ltrContent.Text = ltrContent.Text.Replace("<video", part[0] + "<video").Replace("video>", "video>" + part[1]);
-                    }
+                    //}
+                    //else if (html.Contains("ebound")) //ebound
+                    //{
+                    //    String[] part = html.Split('@');
+                    //    ltrContent.Text += Environment.NewLine;
+                    //    ltrContent.Text = ltrContent.Text.Replace("<video", part[0] + "<video").Replace("video>", "video>" + part[1]);
+                    //}
 
                 }
                 if (!ltrContent.Text.Contains("people_write"))
@@ -168,7 +186,7 @@ namespace NetLife.web.Controls.Details
                 for (int i = 0; i < (iCount > 6 ? 6 : iCount); i++) //(int i = 0; i < iCount; i++)
                 {
                     nep = dataEntity[i];
-                    nep.Imgage = new ImageEntity(150, nep.Imgage.ImageUrl);
+                    nep.Imgage = new ImageEntity(300, nep.Imgage.ImageUrl);
                     if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
                         ltrListRelate.Text += String.Format(itemRelateNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
                     else
@@ -201,7 +219,7 @@ namespace NetLife.web.Controls.Details
 
             //ltrVideo
 
-            var video = NewsPublished.NP_Danh_Sach_Tin(0, 134, 4, 1, 150);
+            var video = NewsPublished.NP_Danh_Sach_Tin(0, 134, 4, 1, 300);
             if (video != null)
             {
                 NewsPublishEntity nep;
@@ -228,7 +246,7 @@ namespace NetLife.web.Controls.Details
                     for (int i = 0; i < (iCount > 6 ? 6 : iCount); i++) //(int i = 0; i < iCount; i++)
                     {
                         nep = otherNews[i];
-                        nep.Imgage = new ImageEntity(150, nep.Imgage.ImageUrl);
+                        nep.Imgage = new ImageEntity(300, nep.Imgage.ImageUrl);
                         /*Chinh muc tin cung chuyen muc hien thi tuong tu Muc tin lien quan*/
                         if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
                             LiteralOther1.Text += String.Format(itemOther, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);
@@ -263,7 +281,7 @@ namespace NetLife.web.Controls.Details
                     for (int i = 0; i < (iCount > 6 ? 6 : iCount); i++) //(int i = 0; i < iCount; i++)
                     {
                         nep = listNews[i];
-                        nep.Imgage = new ImageEntity(150, nep.Imgage.ImageUrl);
+                        nep.Imgage = new ImageEntity(300, nep.Imgage.ImageUrl);
                         /* EDIT: Chinh muc tin cung chuyen muc hien thi tuong tu Muc tin lien quan*/
                         if (i < 3) //Gia tri cu la 4, thay doi vi ly do giam muc xuong con 6 bai, thay vi 8 bai nhu cu
                             LiteralNews1.Text += String.Format(itemNews, nep.URL, nep.NEWS_TITLE, nep.URL_IMG);

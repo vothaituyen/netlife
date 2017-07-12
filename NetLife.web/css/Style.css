@@ -14,7 +14,7 @@ a {
     outline: 0
 }
 
-.container {
+/*.container {
     width: @container-desktop !important
 }
 
@@ -24,7 +24,7 @@ a {
 @screen-phone: @screen-xs-min;
 @screen-sm: 0;
 @screen-sm-min: @screen-sm;
-@screen-tablet: @screen-sm-min;
+@screen-tablet: @screen-sm-min;*/
 
 .noibat .ulnb h3 {
     margin: 0;

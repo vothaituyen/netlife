@@ -12,7 +12,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title id="title" runat="server">Netlife - Giải trí - Khám phá - Làm đẹp </title>
+    <title id="title" runat="server">Netlife - Giải trí - Khám phá - Làm đẹp</title>
     
     <meta name="google-site-verification" content="OYvlk85AuqsBp-AaxP4qMpucx1_y2bJ8ddhi16ZmYX0" />
     <meta itemprop="homeLocation" content="Hochiminh City, Vietnam">
@@ -21,7 +21,7 @@
     <meta name="page-topic" content="Netlife - Giải trí - Khám phá - Làm đẹp " />
     <meta name="copyright" content="netlife.vn" />
     <meta name="author" content="netlife.vn" />
-    <link rel="shortcut icon" href="http://vothaituyen.com/mb/Images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
     <meta http-equiv="audience" content="General" />
     <%--<meta http-equiv="Cache-control" content="public">--%>
     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
@@ -37,7 +37,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width = device-width" />
     <meta name="viewport" content="initial-scale=1, user-scalable=no" />
-    <link rel="icon" type="image/x-icon" href="http://tin247.com.vn/Images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
 <%--    <link href="/Styles/Style.css" rel="stylesheet" />
     <link href="/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/Styles/bootstrap-theme.css" rel="stylesheet" />
@@ -50,19 +50,19 @@
     <script  src="/Scripts/custom.js"></script>
     <script  src="/Scripts/ads.js?v=2"></script>
     <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>--%>
-    <link href="http://vothaituyen.com/mb/Styles/Style.css" rel="stylesheet" />
-    <link href="http://vothaituyen.com/mb/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="http://vothaituyen.com/mb/Styles/bootstrap-theme.css" rel="stylesheet" />
-    <link href="http://vothaituyen.com/mb/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="/Styles/Style.css" rel="stylesheet" />
+    <link href="/Styles/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Styles/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Styles/bootstrap.css" rel="stylesheet" />
 
   
 	
-	<script  src="http://vothaituyen.com/mb/Scripts/jquery-1.7.2.min.js"></script>
-    <script  src="http://vothaituyen.com/mb/Scripts/bootstrap.min.js"></script>
-    <script  src="http://vothaituyen.com/mb/Scripts/popup.js"></script>
-    <script  src="http://vothaituyen.com/mb/Scripts/custom.js"></script>
-    <script  src="http://vothaituyen.com/mb/Scripts/ads.js?v=2"></script>
-    <script  src="http://vothaituyen.com/mb/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
+	<script  src="/Scripts/jquery-1.7.2.min.js"></script>
+    <script  src="/Scripts/bootstrap.min.js"></script>
+    <script  src="/Scripts/popup.js"></script>
+    <script  src="/Scripts/custom.js"></script>
+    <script  src="/Scripts/ads.js?v=2"></script>
+    <script  src="/Scripts/jquery.fmsmedia2.dev.min.v1.0.3.js"></script>
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -192,6 +192,7 @@
 
 
         <uc3:Ads ID="Ads4" PositionId="22" runat="server" />
+        
     </form>
 </body>
 </html>
