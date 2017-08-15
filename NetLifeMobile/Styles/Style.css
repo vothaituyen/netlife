@@ -23,9 +23,7 @@
     max-width: 100%;
 }
 
-.menumb,
-.searchmb,
-.logo-mb {
+.menumb, .searchmb, .logo-mb {
     text-align: center;
     position: relative;
 }
@@ -97,8 +95,7 @@
 
         .news ul li {
             padding: 10px 0px 10px 5px;
-            border-bottom: 1px solid #eeeeee;
-            /*background: url("/Images/bg-li.jpg") no-repeat 10px 20px*/
+            border-bottom: 1px solid #eeeeee; /*background: url("/Images/bg-li.jpg") no-repeat 10px 20px*/
             ;
             font-size: 15px;
             font-weight: bold;
@@ -149,8 +146,7 @@
 
     .item-content ul li {
         padding: 10px 0px 5px 5px;
-        border-bottom: 1px solid #eeeeee;
-        /*background: url("/Images/bg-li.jpg") no-repeat 10px 20px;*/
+        border-bottom: 1px solid #eeeeee; /*background: url("/Images/bg-li.jpg") no-repeat 10px 20px;*/
         list-style-type: none;
         font-size: 15px;
         font-weight: bold;
@@ -208,7 +204,7 @@
 
     .item-list .img-list-item {
         float: left;
-        padding-right: 20px;
+        padding-right: 8px;
     }
 
     .item-list .pd {
@@ -217,7 +213,7 @@
 
     .item-list .info-list-item span {
         color: #878787;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
     }
 
@@ -244,20 +240,29 @@
         font-weight: bold;
     }
 
-.content-detail .tit-detail {
-    color: #bf282f;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 28px
+.row {
+    background-color: white
 }
+
+.content-detail {
+    background-color: transparent
+}
+
+    .content-detail .tit-detail {
+        color: #bf282f;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px
+    }
 
 .infoshare {
     padding: 20px 0;
     background-color: white;
+    padding-left: 5px;
 }
 
     .infoshare .nvb {
-        background: url("/images/pen.jpg") no-repeat left center;
+        background: url("http://tin247.com.vn/mb/images/pen.jpg") no-repeat left center;
         padding: 0 15px 0 20px;
         font-weight: bold;
         text-transform: uppercase;
@@ -265,12 +270,12 @@
     }
 
     .infoshare .gio {
-        background: url("/images/ic-clock.jpg") no-repeat left center;
+        background: url("http://tin247.com.vn/mb/images/ic-clock.jpg") no-repeat left center;
         padding: 0 10px 0 15px
     }
 
     .infoshare .ngay {
-        background: url("/images/books.jpg") no-repeat left center;
+        background: url("http://tin247.com.vn/mb/images/books.jpg") no-repeat left center;
         padding: 0 10px 0 18px
     }
 
@@ -293,8 +298,29 @@
         max-width: 100%
     }
 
-.content-info div {
-    padding-bottom: 10px;
+.content-info {
+    background-color: transparent !important
+}
+
+    .content-info div:not(#vmcbackground) {
+        background-color: white
+    }
+
+#vmcbackground center {
+    background-color: white
+}
+
+.vmcbackground_1 {
+    width: 100%;
+    height: 650px;
+}
+
+.vmcbackground_1 center {
+    z-index: -1;
+    position: fixed;
+    top: 7%;
+    height: 100%;
+    width: 100%;
 }
 
 .likefb {
@@ -315,14 +341,14 @@
     }
 
     .tags a {
-        color: #333333;
+        color: #878787;
         font-size: 13px;
         padding: 2px 12px;
-        background: #eeeeee;
+        background: #f2f2f2;
         float: left;
-        border: 1px solid #dddddd;
+        /*border: 1px solid #dddddd;*/
         margin: 0 10px 12px 0;
-        border-radius: 5px;
+        /*border-radius: 5px;*/
     }
 
         .tags a:hover {
@@ -345,8 +371,7 @@
 
         .tinlq ul li {
             font-size: 15px;
-            border-top: 1px solid #eee;
-            /*background: url('/Images/bg-li.jpg') no-repeat 10px 18px;*/
+            border-top: 1px solid #eee; /*background: url('/Images/bg-li.jpg') no-repeat 10px 18px;*/
             list-style-type: none;
             padding: 10px 0px;
         }
@@ -361,6 +386,7 @@
         font-size: 15px;
         font-weight: bold
     }
+
 
 .tinhot {
     border-top: 3px solid #eeeeee;
@@ -390,9 +416,8 @@
         font-size: 15px;
         font-weight: bold
     }
-
-
 /*Menu*/
+
 
 .accordion {
     margin: 30px auto 20px;
@@ -469,10 +494,10 @@
             transform: rotate(180deg);
         }
 
-
 /**
  * Submenu
  -----------------------------*/
+
 
 .submenu {
     display: none;
@@ -514,21 +539,19 @@
     display: none;
 }
 
-#popup,
-.popup {
+#popup, .popup {
     /*width: 335px;*/
     padding-bottom: 1px;
     display: none;
     background: #FFF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     bottom: -35px;
     right: 0;
 }
 
-#popup-header,
-.popup-header {
+#popup-header, .popup-header {
     background: url(../img/hd-bg.png);
     padding: 18px 18px 14px 18px;
     border-bottom: 1px solid #CCC;
@@ -540,8 +563,7 @@
     -webkit-border-top-right-radius: 5px;
 }
 
-    #popup-header h2,
-    .popup-header h2 {
+    #popup-header h2, .popup-header h2 {
         color: #444;
         text-align: center;
         font-size: 2em;
@@ -550,8 +572,7 @@
         text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     }
 
-    #popup-header p,
-    .popup-header p {
+    #popup-header p, .popup-header p {
         color: #444;
         font-size: 1.3em;
         margin: 0;
@@ -597,13 +618,9 @@
 #body-content p {
     display: inline-block;
     clear: both;
-    /*float:left;*/
+    float: left;
 }
-
-
 /* add*/
-
-
 /*@media (max-width:410px) {
     .col-xs-2 {
         width: 13.66666667%;
@@ -647,7 +664,6 @@
   }
  .news_home div span.relateNews{padding-left:0%;}
 }*/
-
 .news_home {
     display: block;
     clear: both;
@@ -662,8 +678,6 @@ span.relateNews {
     height: 83px !important;
     overflow: hidden;
 }
-
-
 /* add*/
 
 #gotop {
@@ -763,4 +777,11 @@ span.relateNews {
 #abdi {
     z-index: 1000;
     background-color: white;
+}
+
+a:active {
+    color: yellow;
+}
+a:hover {
+    color: red;
 }

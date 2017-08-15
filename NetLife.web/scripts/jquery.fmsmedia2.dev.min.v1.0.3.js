@@ -1,3 +1,20 @@
+function showJWPlayer(e, t, n, i, r, s) {
+    var o = {
+        file: t,
+        height: r,
+        width: i,
+        mute: false,
+        autostart: true,
+        primary: flash,
+        advertising: {
+            skipoffset: 5,
+            client: vast
+            //,tag: http://delivery.adnetwork.vn/247/xmlvideoad/zid_1402387259/wid_1245836202/type_inline/cb_[timestamp]/w_[player-width]/h_[player-height]/purl_[content-page-url]
+        }
+    };
+    jwplayer(e).setup(o)
+}
+
 function showMediaplayer() {
     $(".fmsmedia").length > 0 && $(".fmsmedia").fmsmedia()
 }

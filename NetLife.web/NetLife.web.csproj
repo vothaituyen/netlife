@@ -168,6 +168,7 @@
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\jquery-1.9.1.js" />
     <Content Include="js\jquery.bxslider.js" />
+    <Content Include="js\jwplayer\jwplayer.js" />
     <Content Include="js\npm.js" />
     <Content Include="Pages\Cache.aspx" />
     <Content Include="Pages\Detail.aspx" />

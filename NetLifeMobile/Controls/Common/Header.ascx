@@ -37,13 +37,12 @@
                 <img class="img-responsive" src="/Images/logo.png" />
             </a>
         </div>
-        
+
         <div class="col-xs-3 searchmb">
-      <%--      <a class="search-mb" id="open_popup" name="open_popup" rel="miendatwebPopup" href="#popup_content">
+                  <a class="search-mb" id="open_popup" name="open_popup" rel="miendatwebPopup" href="#popup_content">
                 <span>
                     <img src="/Images/bg-search.jpg" /></span>
-            </a>--%>
-
+            </a>
         </div>
         <div id="popup_content" class="popup col-sm-12">
 
@@ -52,8 +51,8 @@
         </div>
     </div>
 </div>
-    
-<!--
+
+
 <script type="text/javascript" language="JavaScript">
     $(function () {
         $('a[rel*=miendatwebPopup]').showPopup({
@@ -82,4 +81,4 @@
         }
     });
 </script>
--->
+

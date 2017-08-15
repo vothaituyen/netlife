@@ -77,22 +77,7 @@ namespace NetLife.web.Controls.Details
                 ltrContent.Text += "";
 
 
-                ltrContent.Text += @"<div id=""myElement""></div>
-                                    <script>
-                                    jwplayer(""myElement"").setup({
-                                      ""file"": ""http://creative.us.cf.adotube.com/creatives/dev_test/ppre1_video1_1_dev_sound.mp4"",
-                                      ""height"": 360,
-                                      ""width"": 640,
-                                      ""mute"": false,
-                                      ""autostart"": true,
-                                      ""primary"": ""flash"",
-                                      ""advertising"": {
-                                            'skipoffset': 5,
-                                            ""client"": ""vast"",
-			
-			                                    ""tag"":""http://delivery.adnetwork.vn/247/xmlvideoad/zid_1402387259/wid_1245836202/type_inline/cb_[timestamp]/w_[player-width]/h_[player-height]/purl_[content-page-url]""		
-			                                    }//example vast
-                                    });";
+
                 string html = BOAdv.GetAdvEmbedScriptItemById(Lib.Object2Integer(37), Lib.Object2Integer(Lib.QueryString.CategoryID));
                 if (html.Length > 2) //add ad video 7
                 {

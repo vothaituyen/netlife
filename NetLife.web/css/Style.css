@@ -14,7 +14,7 @@ a {
     outline: 0
 }
 
-/*.container {
+.container {
     width: @container-desktop !important
 }
 
@@ -24,7 +24,7 @@ a {
 @screen-phone: @screen-xs-min;
 @screen-sm: 0;
 @screen-sm-min: @screen-sm;
-@screen-tablet: @screen-sm-min;*/
+@screen-tablet: @screen-sm-min;
 
 .noibat .ulnb h3 {
     margin: 0;
@@ -97,7 +97,7 @@ input:-moz-placeholder {
 
 .nav li a {
     padding-left: 25px;
-    padding-right: 26px;
+    padding-right: 24px;
     background: url(/Images/boder-menu.jpg) right center no-repeat;
     margin: 0 !important
 }
@@ -851,4 +851,42 @@ input:-moz-placeholder {
         display: block;
         top: 0
     }
+}
+
+
+
+
+.dropmenu-content {
+    display: none;
+    position: absolute;
+    background-color: #056a9a;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropmenu-content a {
+        padding: 5px 10px 5px 10px !important;
+        text-decoration: none;
+        display: inherit;
+        white-space: nowrap;
+        font-size: 10px;
+        border-top: 1px solid white;
+        background: none !important;
+        color: #fff !important;
+    }
+
+.dropmenu:hover .dropmenu-content {
+    display: block;
+}
+
+.dropmenu-content a:hover {
+    background-color: #bf262d !important;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: yellow;
 }
