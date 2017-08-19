@@ -4,13 +4,13 @@
         <a class="col-xs-5 dsk" href="http://netlife.vn?desktopview=true">
             <img src="/Images/ic-desktop.jpg" /></span></a>
     </div>--%>
-    <div class="col-xs-6">
+    <%--<div class="col-xs-6">--%>
         <div id="gotop" class="fa fa-angle-up" title="Trượt lên trên">
             <a href="#">
                 <%--<img src="/Images/ic-backtop.jpg" />--%>
             </a>
         </div>
-    </div>
+    <%--</div>--%>
     <script>
         $('#gotop').click(function(){
             jQuery('html, body').animate({
@@ -19,6 +19,7 @@
     </script>
 
 </div>
+
 
 <div class="col-xs-12 footer">
     <p style="font-size: 16px; color: #444;">Trang thông tin điện tử tổng hợp Netlife</p>

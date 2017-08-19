@@ -116,6 +116,7 @@
         </div>
         <uc2:Footer ID="Footer1" runat="server" />
         <img style="display: none" src="/Log/LogView.ashx?categoryId=<% = Lib.QueryString.CategoryID %>&newsId=<% = Lib.QueryString.NewsID %>&d=<% = DateTime.Now.ToFileTime() %>" />
+        
         <script type="text/javascript">
             $(document).ready(function () {
                 $('.slider1').bxSlider({

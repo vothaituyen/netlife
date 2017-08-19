@@ -240,15 +240,26 @@
         font-weight: bold;
     }
 
-.row {
-    background-color: white
+.desktop, .content, .row_top, .footer, .desktop, .container center, .tinhot, .infoshare, .tinlq, .row_ads1, .row_ads2, .row_ads3, .row_ads4 {
+    z-index: 1000;
+    position: relative;
+    background-color: #fff;
+}
+#ContentPlaceHolder1_Detail1_tags {
+    position: relative !important;
+    z-index: 1000 !important;
+    background-color: transparent !important;
+}
+.content-detail h1, .content-detail h3 {
+    position: relative !important;
+    z-index: 1001 !important;
+    background-color: #fff;
 }
 
-.content-detail {
-    background-color: transparent
-}
 
-    .content-detail .tit-detail {
+
+
+ .content-detail .tit-detail {
         color: #bf282f;
         font-size: 24px;
         font-weight: bold;
@@ -298,25 +309,26 @@
         max-width: 100%
     }
 
-.content-info {
-    background-color: transparent !important
+.content-info div:not(#vmcbackground_1) {
+    z-index: 1000;
+    position: relative;
+    background-color: white;
 }
-
-    .content-info div:not(#vmcbackground) {
-        background-color: white
-    }
 
 #vmcbackground center {
-    background-color: white
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    background-color: white;
 }
 
-.vmcbackground_1 {
+#vmcbackground_1 {
     width: 100%;
-    height: 650px;
+    height: 750px;
 }
 
-.vmcbackground_1 center {
-    z-index: -1;
+#vmcbackground_1 center {
+    z-index: 10;
     position: fixed;
     top: 7%;
     height: 100%;
@@ -618,7 +630,7 @@
 #body-content p {
     display: inline-block;
     clear: both;
-    float: left;
+    /*float: left;*/
 }
 /* add*/
 /*@media (max-width:410px) {

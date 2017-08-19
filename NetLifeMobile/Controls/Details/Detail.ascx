@@ -2,7 +2,7 @@
 <%@ Import Namespace="ATVCommon" %>
 <%@ Register Src="../Advs/Ads.ascx" TagName="Ads" TagPrefix="uc1" %>
 <center><uc1:Ads ID="Ads6" PositionId="40" runat="server" /></center>
-<div class="row">
+<div class="row row_top">
     <div class="col-xs-12">
         <span class="rcorners">
             <asp:Literal runat="server" ID="ltrCatParentMenu"></asp:Literal>
@@ -25,7 +25,7 @@
     <h3 class="col-xs-12 sub-title">
         <asp:Literal ID="ltrDes" runat="server"></asp:Literal>
     </h3>
-    	<div class="row" style="padding-bottom: 10px">
+    <div class="row row_ads1" style="padding-bottom: 10px">
         <center>   <uc1:Ads ID="Ads1" PositionId="30" runat="server" /></center>
     </div>
     <div class="row tinhot">
@@ -41,7 +41,7 @@
         <asp:Literal ID="ltrContent" runat="server"></asp:Literal>
     </div>
 
-         <div class="col-xs-12 infoshare" style="margin-top:5px;">
+    <div class="col-xs-12 infoshare" style="margin-top:5px;">
         <span class="nvb" runat="server" visible="False">
             <asp:Literal ID="ltrAthor" runat="server"></asp:Literal></span><span class="gio"><asp:Literal ID="ltrTime" runat="server"></asp:Literal></span><span class="ngay"><asp:Literal ID="ltrDate" runat="server"></asp:Literal></span>
              <div class="row likefb">
@@ -71,7 +71,7 @@
         <asp:Literal runat="server" ID="ltrKeyword"></asp:Literal>
     </div>
 </div>
-<div class="row">
+<div class="row row_ads3">
     <center> <uc1:Ads ID="Ads3" PositionId="32" runat="server" /></center>
 </div>
 
@@ -81,7 +81,7 @@
         <asp:Literal runat="server" ID="ltrNew"></asp:Literal>
     </ul>
 </div>
-<div class="row" style="padding-top: 10px">
+<div class="row row_ads2" style="padding-top: 10px">
     <center>    <uc1:Ads ID="Ads2" PositionId="33" runat="server" /></center>
 </div>
 
@@ -92,7 +92,7 @@
     </ul>
 </div>
 
-<div class="row" style="padding-top: 10px">
+<div class="row row_ads4" style="padding-top: 10px">
     <center>    <uc1:Ads ID="Ads4" PositionId="34" runat="server" /></center>
 </div>
 
@@ -102,7 +102,9 @@
         <asp:Literal runat="server" ID="ltrListRelate"></asp:Literal>
     </ul>
 </div>
+<div class="row row_ads4" style="padding-top: 10px">
    <center>    <uc1:Ads ID="Ads7" PositionId="43" runat="server" /></center>
+    </div>
 
 <div class="row tinlq">
     <h2>Tin cùng chuyên mục</h2>

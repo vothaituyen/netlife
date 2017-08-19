@@ -118,22 +118,22 @@
             };
 
 
-            //$(window).scrollStopped(function () {
-            //    var iCurScrollPos = $(this).scrollTop();
+            $(window).scrollStopped(function () {
+                var iCurScrollPos = $(this).scrollTop();
 
-            //    if (iCurScrollPos < 100) {
-            //        $(".header").slideDown("slow");
-            //        return;
-            //    }
+                if (iCurScrollPos < 100) {
+                    $(".header").slideDown("slow");
+                    return;
+                }
 
-            //    if (iCurScrollPos >= iScrollPos) {
-            //        $(".header").slideUp("slow");
-            //    } else {
-            //        $(".header").slideDown("slow");
-            //    }
-            //    iScrollPos = iCurScrollPos;
+                if (iCurScrollPos >= iScrollPos) {
+                    $(".header").slideUp("slow");
+                } else {
+                    $(".header").slideDown("slow");
+                }
+                iScrollPos = iCurScrollPos;
 
-            //});
+            });
 
 
 

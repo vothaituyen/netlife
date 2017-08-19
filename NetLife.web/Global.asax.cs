@@ -105,7 +105,7 @@ namespace NetLife.web
         private string sLogFormat;
         private string sErrorTime;
         string writeErrorToFile = System.Configuration.ConfigurationSettings.AppSettings["WriteErrorToFile"] != null ? System.Configuration.ConfigurationSettings.AppSettings["WriteErrorToFile"].ToString() : "";
-       /* protected void Application_Error(Object sender, EventArgs e)
+        protected void Application_Error(Object sender, EventArgs e)
         {
             Exception ex = Server.GetLastError().GetBaseException();
 
@@ -123,7 +123,7 @@ namespace NetLife.web
             HttpApplication app = sender as HttpApplication;
             app.Response.Filter = null;
         }
-        */
+
         private void ErrorLog(string sPathName, string sErrMsg)
         {
             string filename = sPathName + "\\Error_" + sErrorTime + ".txt";
