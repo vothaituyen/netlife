@@ -50,11 +50,6 @@
     <Reference Include="BOATV">
       <HintPath>..\BOATV\bin\BOATV.dll</HintPath>
     </Reference>
-    <Reference Include="NetLife.web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\NetLife.web\bin\NetLife.web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />

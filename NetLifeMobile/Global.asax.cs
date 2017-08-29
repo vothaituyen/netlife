@@ -9,8 +9,8 @@ using System.Web.Security;
 using NetLifeMobile;
 using System.IO.Compression;
 using BOATV;
-using NetLife.web.Log;
-using NetLife.web.Pages.Ads;
+//using NetLife.web.Log;
+//using NetLife.web.Pages.Ads;
 using NetLife.web.Pages;
 using NetLife.web;
 
@@ -20,11 +20,11 @@ namespace NetLifeMobile
     {
         void Application_Start(object sender, EventArgs e)
         {
-            var log = new Thread(UpdateLog);
-            log.Start();
+            //var log = new Thread(UpdateLog);
+            //log.Start();
 
-            var monitor = new Thread(CacheMonitorManagerUpdate);
-            monitor.Start();
+            //var monitor = new Thread(CacheMonitorManagerUpdate);
+            //monitor.Start();
         }
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
@@ -61,26 +61,26 @@ namespace NetLifeMobile
         }
         private void UpdateLog()
         {
-            var log = new BOATV.Log();
-            while (true)
-            {
-                //Cap nhat PageView theo chuyen muc
-                log.CaculateLogViewCategory(LogView.ViewQueue);
+            //var log = new BOATV.Log();
+            //while (true)
+            //{
+            //    //Cap nhat PageView theo chuyen muc
+            //    log.CaculateLogViewCategory(LogView.ViewQueue);
 
-                //Cap nhat PageView theo bai viet
-                log.CaculateLogViewNews(LogView.NewsQueue);
+            //    //Cap nhat PageView theo bai viet
+            //    log.CaculateLogViewNews(LogView.NewsQueue);
                 
 
-                //log.CaculateLogClickAds(Pages.Ads.log.ClickQueue);
+            //    //log.CaculateLogClickAds(Pages.Ads.log.ClickQueue);
 
-                //log.CaculateLogViewAds(Pages.Ads.log.ImpressionQueue);
-                log.CaculateLogClickAds(NetLife.web.Pages.Ads.log.ClickQueue);
+            //    //log.CaculateLogViewAds(Pages.Ads.log.ImpressionQueue);
+            //    log.CaculateLogClickAds(NetLife.web.Pages.Ads.log.ClickQueue);
                 
-                log.CaculateLogViewAds(NetLife.web.Pages.Ads.log.ImpressionQueue);
+            //    log.CaculateLogViewAds(NetLife.web.Pages.Ads.log.ImpressionQueue);
                 
 
-                Thread.Sleep(5 * 60 * 1000);
-            }
+            //    Thread.Sleep(5 * 60 * 1000);
+            //}
         }
         private void CacheMonitorManagerUpdate()
         {

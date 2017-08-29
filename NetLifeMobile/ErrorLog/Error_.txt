@@ -658,3 +658,1034 @@ The file '/404.aspx' does not exist.
    at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
    at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=0&Cat_ID=54&PageIndex=1&Cat_Name=sao
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Search.aspx?key=a
+The type 'NetLife.web.Controls.Lists.Paging' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=0&Cat_ID=54&PageIndex=1&Cat_Name=sao
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=0&Cat_ID=54&PageIndex=1&Cat_Name=sao
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/sao-hoa-ng11111u.html
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=50&Cat_ID=124&PageIndex=1&Cat_Name=thoi-trang
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 14
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 65
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=0&Cat_ID=50&PageIndex=1&Cat_Name=dep
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 65
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/Page404.aspx?404;http://localhost:41458/Images/favicon.ico
+The type 'NetLife.web.Pages.Page404' is ambiguous: it could come from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLifeMobile.DLL' or from assembly 'D:\NETLIFE\Source_Web_20170413\Web\NetLifeMobile\bin\NetLife.web.DLL'. Please specify the assembly explicitly in the type name.
+   at System.Web.UI.Util.GetTypeFromAssemblies(IEnumerable assemblies, String typeName, Boolean ignoreCase)
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 65
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=54&Cat_ID=99&PageIndex=1&Cat_Name=sao-hoa-ngu
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 65
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+http://localhost:41458/Pages/List.aspx?Cat_ParentID=0&Cat_ID=50&PageIndex=1&Cat_Name=dep
+The file '/404.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(VirtualPath virtualPath, String inputFile, HttpContext context)
+   at System.Web.UI.PageParser.GetCompiledPageInstance(String virtualPath, String inputFile, HttpContext context)
+   at ATVCommon.UrlRewrite.RewriteModule.GetHandler(HttpContext context, String requestType, String url1, String pathTranslated) in D:\NETLIFE\Source_Web_20170413\Web\ATVCommon\UrlRewrite\RewriteModule.cs:line 65
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
